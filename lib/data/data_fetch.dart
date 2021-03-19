@@ -66,7 +66,8 @@ Future<List<AgentModel>> loadAgents() async {
 
 Future<List<PropertyModel>> loadProperties() async {
   http.Client client = new http.Client();
-  final _response = await client.get(Uri.parse("$BaseURL2/properties"));
+  // final _response = await client.get(Uri.parse("$BaseURL2/properties"));
+  final _response = await client.get(Uri.parse("$BaseURL2/properties?page=1&per_page=1"));
   if (_response != null && _response.statusCode == 200) {
     List properties = json.decode(_response.body);
     print(properties);
