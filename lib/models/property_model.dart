@@ -93,6 +93,10 @@ class PropertyModel {
   String get lat => propertyMeta.houzez_geolocation_lat;
   String get lng => propertyMeta.houzez_geolocation_long;
 
+  String toString(){
+    return "$address;$bathrooms;$bedrooms;$garages;$zipcode;$lat;$lng;$description;";
+  }
+
 }
 
 class PropertyMeta {

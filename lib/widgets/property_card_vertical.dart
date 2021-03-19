@@ -40,12 +40,16 @@ class _PropertyCardVerticalState extends State<PropertyCardVertical> {
                   if (event == null) {
                     return w;
                   }
-                  return Center(
-                    child: CircularProgressIndicator(
-                      value: event.expectedTotalBytes != null
-                          ? event.cumulativeBytesLoaded /
-                              event.expectedTotalBytes
-                          : null,
+                  return Container(
+                    width: MediaQuery.of(context).size.width,
+                    height: MediaQuery.of(context).size.width * 2/ 3,
+                    child: Center(
+                      child: CircularProgressIndicator(
+                        value: event.expectedTotalBytes != null
+                            ? event.cumulativeBytesLoaded /
+                                event.expectedTotalBytes
+                            : null,
+                      ),
                     ),
                   );
                 },

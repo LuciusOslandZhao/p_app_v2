@@ -48,13 +48,16 @@ class _TestPageState extends State<TestPage> {
                   child: TextField(
                     style: new TextStyle(color: _getInputTextColor()),
                     focusNode: _focusNode,
-                    onChanged: (value) {},
+                    onChanged: (value) {
+                      model.filterSearchResults(value);
+                    },
                     controller: editingController,
                     decoration: InputDecoration(
                         focusedBorder: OutlineInputBorder(
                             borderRadius:
                                 BorderRadius.all(Radius.circular(5.0)),
-                            borderSide: BorderSide(color: _getInputTextColor())),
+                            borderSide:
+                                BorderSide(color: _getInputTextColor())),
                         labelText: "Search",
                         labelStyle: TextStyle(color: _getInputTextColor()),
                         hintText: "Search",
@@ -65,6 +68,17 @@ class _TestPageState extends State<TestPage> {
                         )),
                   ),
                 ),
+                model.pickList.isEmpty
+                    ? Center(
+                        child: Text("Nothing"),
+                      )
+                    : Column(
+                        // scrollDirection: Axis.vertical,
+                        children: [
+                            // if (model.pickList != null)
+                              for (var item in model.pickList)
+                                PropertyCardVertical(property: item),
+                          ])
               ],
             );
     });

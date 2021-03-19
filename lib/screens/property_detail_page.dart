@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_html/flutter_html.dart';
 import 'package:p_app_v2/models/property_model.dart';
 
 class PropertyDetailPage extends StatefulWidget {
@@ -19,19 +20,13 @@ class _PropertyDetailPageState extends State<PropertyDetailPage> {
   @override
   Widget build(BuildContext context) {
     return Theme(
-      data: ThemeData(
-        primaryColor:Colors.white
-      ),
-          child: Scaffold(
-        appBar: AppBar(
-          
-        ),
-            body: Padding(
-              padding: EdgeInsets.all(8),
-                        child: ListView(
-                          scrollDirection: Axis.vertical,
-                          children: [
-          SizedBox(
+      data: ThemeData(primaryColor: Colors.white),
+      child: Scaffold(
+        appBar: AppBar(),
+        body: Padding(
+          padding: EdgeInsets.all(8),
+          child: ListView(scrollDirection: Axis.vertical, children: [
+            SizedBox(
               height: 300,
               child: ListView(
                 semanticChildCount: property.imageUrls.length,
@@ -44,11 +39,10 @@ class _PropertyDetailPageState extends State<PropertyDetailPage> {
                     ),
                 ],
               ),
-          ),
-
-          Text("${property.description}"),
-        ]),
             ),
+            Html(data: property.description),
+          ]),
+        ),
       ),
     );
   }

@@ -4,6 +4,10 @@ import 'package:http/http.dart' as http;
 import 'package:p_app_v2/models/agent_model.dart';
 import 'package:p_app_v2/models/property_model.dart';
 
+
+
+
+
 List<PropertyModel> parseHouses(String responseBody) {
   final parsed = jsonDecode(responseBody).cast<Map<String, dynamic>>();
 
