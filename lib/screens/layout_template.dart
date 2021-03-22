@@ -3,6 +3,7 @@ import 'package:p_app_v2/screens/browse_list_page.dart';
 import 'package:p_app_v2/screens/fav_list_page.dart';
 import 'package:p_app_v2/screens/settings_page.dart';
 import 'package:p_app_v2/screens/test_page.dart';
+import 'package:p_app_v2/screens/test_screens/slide_left_to_parent/parent_screen.dart';
 
 class MainLayoutTemplate extends StatefulWidget {
   @override
@@ -12,6 +13,7 @@ class MainLayoutTemplate extends StatefulWidget {
 class _MainLayoutTemplateState extends State<MainLayoutTemplate> {
   int _currentIndex;
   List screens = [
+    TestParentScrollScreen(),
     TestPage(),
     BrowseListPage(),
     FavouriteListPage(),
@@ -34,7 +36,8 @@ class _MainLayoutTemplateState extends State<MainLayoutTemplate> {
         ),
         body: Padding(
           padding: EdgeInsets.all(8),
-          child: screens[_currentIndex],),
+          child: screens[_currentIndex],
+        ),
         bottomNavigationBar: BottomNavigationBar(
           currentIndex: _currentIndex,
           onTap: changeTab,
@@ -46,6 +49,8 @@ class _MainLayoutTemplateState extends State<MainLayoutTemplate> {
                 icon: Icon(Icons.list_alt_outlined), label: ""),
             BottomNavigationBarItem(
                 icon: Icon(Icons.star_border_outlined), label: ""),
+            BottomNavigationBarItem(
+                icon: Icon(Icons.person_outline), label: ""),
             BottomNavigationBarItem(
                 icon: Icon(Icons.person_outline), label: ""),
           ],
