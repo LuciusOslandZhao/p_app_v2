@@ -20,11 +20,12 @@ class _PropertyDetailPageState extends State<PropertyDetailPage> {
 
   _PropertyDetailPageState({this.property});
 
-@override
-void initState(){
-  super.initState();
-  if (Platform.isAndroid) WebView.platform = SurfaceAndroidWebView();
-}
+  @override
+  void initState() {
+    super.initState();
+    if (Platform.isAndroid) WebView.platform = SurfaceAndroidWebView();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Theme(
@@ -117,61 +118,131 @@ void initState(){
                         padding: EdgeInsets.all(8),
                         child: Text("OVERVIEW", style: TextStyle(fontSize: 24)),
                       ),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: [
-                          Column(
-                            children: [
-                              Column(
-                                children: [
-                                  Text("Townhouse"),
-                                  Text("Prooperty Type")
-                                ],
-                              ),
+                      Table(
+                          // border: TableBorder.all(),
+                          columnWidths: const <int, TableColumnWidth>{
+                            0: IntrinsicColumnWidth(),
+                            1: FlexColumnWidth(),
+                            2: FixedColumnWidth(64),
+                          },
+                          defaultVerticalAlignment:
+                              TableCellVerticalAlignment.middle,
+                          children: <TableRow>[
+                            TableRow(children: <Widget>[
+                              Container(child: Text("Townhouse")),
+                              Container(height: 32),
                               Container(
-                                height: 30,
-                              ),
-                              Column(
-                                children: [
-                                  Row(
+                                child: Expanded(
+                                  child: Row(
                                     children: [
                                       Icon(Icons.bathtub),
                                       Text("1.5")
                                     ],
                                   ),
-                                  Text("Bathroom")
-                                ],
+                                ),
                               ),
-                            ],
-                          ),
-                          Column(
-                            children: [
-                              Column(
-                                children: [
-                                  Row(
+                              Container(height: 32),
+                              Container(height: 32),
+                            ]),
+                            TableRow(children: <Widget>[
+                              Container(child: Text("Prooperty Type")),
+                              Container(height: 32),
+                              Container(child: Text("Bathroom")),
+                              Container(height: 32),
+                              Container(height: 32),
+                            ]),
+                            TableRow(children: <Widget>[
+                              Container(height: 32),
+                              Container(height: 32),
+                              Container(height: 32),
+                              Container(height: 32),
+                              Container(height: 32),
+                            ]),
+                            TableRow(children: <Widget>[
+                              Container(
+                                child: Expanded(
+                                  child: Row(
                                     children: [Icon(Icons.king_bed), Text("3")],
                                   ),
-                                  Text("Bedroom")
-                                ],
+                                ),
                               ),
+                              Container(height: 32),
                               Container(
-                                height: 30,
-                              ),
-                              Column(
-                                children: [
-                                  Row(
+                                child: Expanded(
+                                  child: Row(
                                     children: [
-                                      Icon(Icons.car_rental),
+                                      Icon(Icons.drive_eta),
                                       Text("2")
                                     ],
                                   ),
-                                  Text("Garages")
-                                ],
+                                ),
                               ),
-                            ],
-                          )
-                        ],
-                      )
+                              Container(height: 32),
+                              Container(height: 32),
+                            ]),
+                            TableRow(children: <Widget>[
+                              Container(child: Text("Bedroom")),
+                              Container(height: 32),
+                              Container(child: Text("Garages")),
+                              Container(height: 32),
+                              Container(height: 32),
+                            ]),
+                          ]),
+                      // Row(
+                      //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      //   children: [
+                      //     Column(
+                      //       children: [
+                      //         Column(
+                      //           children: [
+                      //             Text("Townhouse"),
+                      //             Text("Prooperty Type")
+                      //           ],
+                      //         ),
+                      //         Container(
+                      //           height: 30,
+                      //         ),
+                      //         Column(
+                      //           children: [
+                      //             Row(
+                      // children: [
+                      //   Icon(Icons.bathtub),
+                      //   Text("1.5")
+                      // ],
+                      //             ),
+                      //             Text("Bathroom")
+                      //           ],
+                      //         ),
+                      //       ],
+                      //     ),
+                      //     Column(
+                      //       children: [
+                      //         Column(
+                      //           children: [
+                      //             Row(
+                      //               children: [Icon(Icons.king_bed), Text("3")],
+                      //             ),
+                      //             Text("Bedroom")
+                      //           ],
+                      //         ),
+                      //         Container(
+                      //           height: 30,
+                      //         ),
+                      //         Column(
+                      //           children: [
+                      //             Row(
+                      //               children: [
+                      //                 Icon(Icons.car_rental),
+                      //                 Text("2")
+                      //               ],
+                      //             ),
+                      //             Text("Garages")
+                      //           ],
+                      //         ),
+                      //       ],
+                      //     )
+                      //   ],
+                      // )
                     ],
                   )),
             ),
@@ -195,13 +266,11 @@ void initState(){
                   ],
                 )),
             Container(
-              height: 300,
-              width: 400,
-              child: WebView(
-                initialUrl: "https://www.youtube.com/embed/f02mOEt11OQ/",
-
-              )
-            ),
+                height: 300,
+                width: 400,
+                child: WebView(
+                  // initialUrl: "https://www.youtube.com/embed/f02mOEt11OQ/",
+                )),
             Container(
                 height: 300,
                 width: 300,

@@ -13,7 +13,7 @@ class MainLayoutTemplate extends StatefulWidget {
 class _MainLayoutTemplateState extends State<MainLayoutTemplate> {
   int _currentIndex;
   List screens = [
-    TestParentScrollScreen(),
+    // TestParentScrollScreen(),
     TestPage(),
     BrowseListPage(),
     FavouriteListPage(),
@@ -51,8 +51,8 @@ class _MainLayoutTemplateState extends State<MainLayoutTemplate> {
                 icon: Icon(Icons.star_border_outlined), label: ""),
             BottomNavigationBarItem(
                 icon: Icon(Icons.person_outline), label: ""),
-            BottomNavigationBarItem(
-                icon: Icon(Icons.person_outline), label: ""),
+            // BottomNavigationBarItem(
+            //     icon: Icon(Icons.person_outline), label: ""),
           ],
         ),
       ),
