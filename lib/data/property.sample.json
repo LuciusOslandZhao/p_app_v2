@@ -1,0 +1,2138 @@
+[
+    {
+        "id": 19511,
+        "date": "2021-03-19T12:09:41",
+        "date_gmt": "2021-03-19T01:09:41",
+        "guid": {
+            "rendered": "https:\/\/www.canberryproperties.com.au\/?post_type=property&#038;p=19511"
+        },
+        "modified": "2021-03-19T12:12:25",
+        "modified_gmt": "2021-03-19T01:12:25",
+        "slug": "inner-city-living-and-a-perfect-lifestyle",
+        "status": "publish",
+        "type": "property",
+        "link": "https:\/\/www.canberryproperties.com.au\/index.php\/property\/inner-city-living-and-a-perfect-lifestyle\/",
+        "title": {
+            "rendered": "Inner-city living and a perfect lifestyle!"
+        },
+        "content": {
+            "rendered": "\n<p>This stylish two-bedroom apartment is situated in the Canberra city precinct, perfect for you to experience the convenience of a vibrant inner-city life.<\/p>\n\n\n\n<p>The apartment itself celebrates open plan living, with a kitchen featuring high end appliances and stone bench tops. An inviting dining and lounge area opens out to a great sized balcony, providing ample space to enjoy outdoor entertaining. Offering two spacious bedrooms both with built in robes. The master bedroom has its own ensuite and the main bathroom is luxurious in design.<\/p>\n\n\n\n<p>With only a short stroll to an abundance of leisure and social attractions such as restaurants, cafes, bars, cinemas, the Canberra centre, and the light rail, you simply cannot get an easier lifestyle than this.<\/p>\n\n\n\n<p>Features<\/p>\n\n\n\n<p>Two spacious bedrooms, main with ensuite<br>Open plan living and dining<br>Great size kitchen with quality stainless steel appliances<br>Balcony with great views<br>Roof top outdoor entertaining terrace<br>Lift access and visitor intercom<br>Convenient location<br>Walking distance to an abundance of leisure and social interactions<br>Light rail and Canberra centre is just a short stroll away close by<\/p>\n\n\n\n<p>This is a rare opportunity to come by so act quick and secure this off-the -plan luxury apartment for yourself now.<\/p>\n",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "<p>This stylish two-bedroom apartment is situated in the Canberra city precinct, perfect for you to experience the convenience of a vibrant inner-city life. The apartment itself celebrates open plan living, with a kitchen featuring high end appliances and stone bench tops. An inviting dining and lounge area opens out to a great sized balcony, providing [&hellip;]<\/p>\n",
+            "protected": false
+        },
+        "author": 1,
+        "featured_media": 19517,
+        "parent": 0,
+        "menu_order": 0,
+        "template": "",
+        "property_type": [
+            16
+        ],
+        "property_status": [
+            30
+        ],
+        "property_feature": [],
+        "property_label": [],
+        "property_area": [
+            125
+        ],
+        "property_meta": {
+            "_edit_lock": [
+                "1616116355:1"
+            ],
+            "_edit_last": [
+                "1"
+            ],
+            "fave_property_map": [
+                "1"
+            ],
+            "fave_property_location": [
+                "-35.2802244,149.1364364,15"
+            ],
+            "houzez_geolocation_lat": [
+                "-35.2802244"
+            ],
+            "houzez_geolocation_long": [
+                "149.1364364"
+            ],
+            "fave_property_map_street_view": [
+                "hide"
+            ],
+            "fave_featured": [
+                "0"
+            ],
+            "fave_loggedintoview": [
+                "0"
+            ],
+            "fave_agent_display_option": [
+                "agent_info"
+            ],
+            "fave_agents": [
+                "72"
+            ],
+            "fave_property_agency": [
+                "-1"
+            ],
+            "fave_prop_homeslider": [
+                "no"
+            ],
+            "fave_single_top_area": [
+                "global"
+            ],
+            "fave_single_content_area": [
+                "global"
+            ],
+            "rs_page_bg_color": [
+                ""
+            ],
+            "houzez_manual_expire": [
+                "0"
+            ],
+            "_houzez_expiration_date_status": [
+                "saved"
+            ],
+            "fave_property_price": [
+                "579000"
+            ],
+            "fave_property_bedrooms": [
+                "2"
+            ],
+            "fave_property_bathrooms": [
+                "2"
+            ],
+            "fave_property_garage": [
+                "1"
+            ],
+            "fave_property_map_address": [
+                "Cooyong St, Canberra ACT 2601, Australia"
+            ],
+            "fave_property_address": [
+                "123\/Door 606 Metropol, Reid, ACT 2612"
+            ],
+            "fave_property_zip": [
+                "2612"
+            ],
+            "_thumbnail_id": [
+                "19517"
+            ],
+            "houzez_total_property_views": [
+                "38"
+            ],
+            "houzez_views_by_date": [
+                "a:5:{s:10:\"03-19-2021\";i:11;s:10:\"03-20-2021\";i:3;s:10:\"03-21-2021\";i:7;s:10:\"03-22-2021\";i:12;s:10:\"03-23-2021\";i:5;}"
+            ],
+            "houzez_recently_viewed": [
+                "2021-03-23 23:14:18"
+            ],
+            "ekit_post_views_count": [
+                "38"
+            ],
+            "fave_property_images": [
+                "19514",
+                "19513",
+                "19515",
+                "19516"
+            ]
+        },
+        "_links": {
+            "self": [
+                {
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/properties\/19511"
+                }
+            ],
+            "collection": [
+                {
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/properties"
+                }
+            ],
+            "about": [
+                {
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/types\/property"
+                }
+            ],
+            "author": [
+                {
+                    "embeddable": true,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/users\/1"
+                }
+            ],
+            "version-history": [
+                {
+                    "count": 1,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/properties\/19511\/revisions"
+                }
+            ],
+            "predecessor-version": [
+                {
+                    "id": 19512,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/properties\/19511\/revisions\/19512"
+                }
+            ],
+            "wp:featuredmedia": [
+                {
+                    "embeddable": true,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/media\/19517"
+                }
+            ],
+            "wp:attachment": [
+                {
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/media?parent=19511"
+                }
+            ],
+            "wp:term": [
+                {
+                    "taxonomy": "property_type",
+                    "embeddable": true,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/property_type?post=19511"
+                },
+                {
+                    "taxonomy": "property_status",
+                    "embeddable": true,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/property_status?post=19511"
+                },
+                {
+                    "taxonomy": "property_feature",
+                    "embeddable": true,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/property_feature?post=19511"
+                },
+                {
+                    "taxonomy": "property_label",
+                    "embeddable": true,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/property_label?post=19511"
+                },
+                {
+                    "taxonomy": "property_area",
+                    "embeddable": true,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/property_area?post=19511"
+                }
+            ],
+            "curies": [
+                {
+                    "name": "wp",
+                    "href": "https:\/\/api.w.org\/{rel}",
+                    "templated": true
+                }
+            ]
+        }
+    },
+    {
+        "id": 19498,
+        "date": "2021-03-17T15:36:27",
+        "date_gmt": "2021-03-17T04:36:27",
+        "guid": {
+            "rendered": "https:\/\/www.canberryproperties.com.au\/?post_type=property&#038;p=19498"
+        },
+        "modified": "2021-03-19T12:13:23",
+        "modified_gmt": "2021-03-19T01:13:23",
+        "slug": "108-4-grazier-lane-belconnen-act-2617",
+        "status": "publish",
+        "type": "property",
+        "link": "https:\/\/www.canberryproperties.com.au\/index.php\/property\/108-4-grazier-lane-belconnen-act-2617\/",
+        "title": {
+            "rendered": "Great Opportunity in landmark Dusk for investor &#038; owner occupier"
+        },
+        "content": {
+            "rendered": "\n<h1><\/h1>\n\n\n\n<p>A landmark development in the evolving Belconnen Town Centre, perfect for the wise investor.<br>Dusk packs a punch for a competitive price. An open living and dining area for entertainment and an easy connected layout make this 2 bedroom, 2 bathroom apartment an attractive opportunity.<br><br>Enjoying a northern aspect with uninterrupted views of Lake Ginniderra from the balcony, this unit boasts a functional and simple design. It has quality SMEG appliances in the kitchen and stylish finishes throughout which set this property apart from others in its category.<br><br>Dusk enjoys a superb lakefront location, with five star amenities within walking distance. The complex has been designed to offer a space to entertain, exclusive to its residents, the level 14 common area, offers private cooking, dining and leisure facilities.<br>Dusk&#8217;s lower levels will be occupied by top commercial tenants including Woolworths Metro, plus five star dining thanks to Trecento, BZB and No.10, with more to come.<br><br>Tenancy Information<br>The property is currently tenanted for $500 per week in a fixed term until November 2021, however this can be negotiated.<br><br>Summary of features:<br>* 75 m2 living space<br>* 8 m2 balcony<br>* 6.0 star EER<br>* Balcony with uninterrupted lake views<br>* High quality appliances and finishes<br>* High investment yields<br>* SMEG appliances (oven, cooktop, dishwasher, rangehood)<br>* LED downlights throughout<br>* Secure basement parking<br>* Intercom access<br><br>Strata: $2,800\/year<br>Rates: $350\/quarter<br>Land Tax: $410\/quarter<br><\/p>\n",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "<p>A landmark development in the evolving Belconnen Town Centre, perfect for the wise investor.Dusk packs a punch for a competitive price. An open living and dining area for entertainment and an easy connected layout make this 2 bedroom, 2 bathroom apartment an attractive opportunity. Enjoying a northern aspect with uninterrupted views of Lake Ginniderra from [&hellip;]<\/p>\n",
+            "protected": false
+        },
+        "author": 1,
+        "featured_media": 19505,
+        "parent": 0,
+        "menu_order": 0,
+        "template": "",
+        "property_type": [
+            16
+        ],
+        "property_status": [
+            30
+        ],
+        "property_feature": [],
+        "property_label": [],
+        "property_area": [
+            118
+        ],
+        "property_meta": {
+            "_edit_lock": [
+                "1616116404:1"
+            ],
+            "_edit_last": [
+                "1"
+            ],
+            "fave_property_map": [
+                "1"
+            ],
+            "fave_property_location": [
+                "-35.2401725,149.0719813,15"
+            ],
+            "houzez_geolocation_lat": [
+                "-35.2401725"
+            ],
+            "houzez_geolocation_long": [
+                "149.0719813"
+            ],
+            "fave_property_map_street_view": [
+                "hide"
+            ],
+            "fave_featured": [
+                "0"
+            ],
+            "fave_loggedintoview": [
+                "0"
+            ],
+            "fave_agent_display_option": [
+                "agent_info"
+            ],
+            "fave_agents": [
+                "156"
+            ],
+            "fave_property_agency": [
+                "-1"
+            ],
+            "fave_prop_homeslider": [
+                "no"
+            ],
+            "fave_single_top_area": [
+                "global"
+            ],
+            "fave_single_content_area": [
+                "global"
+            ],
+            "rs_page_bg_color": [
+                ""
+            ],
+            "houzez_manual_expire": [
+                "0"
+            ],
+            "_houzez_expiration_date_status": [
+                "saved"
+            ],
+            "_thumbnail_id": [
+                "19505"
+            ],
+            "houzez_total_property_views": [
+                "236"
+            ],
+            "houzez_views_by_date": [
+                "a:7:{s:10:\"03-17-2021\";i:12;s:10:\"03-18-2021\";i:7;s:10:\"03-19-2021\";i:78;s:10:\"03-20-2021\";i:34;s:10:\"03-21-2021\";i:37;s:10:\"03-22-2021\";i:41;s:10:\"03-23-2021\";i:27;}"
+            ],
+            "houzez_recently_viewed": [
+                "2021-03-24 09:01:17"
+            ],
+            "ekit_post_views_count": [
+                "214"
+            ],
+            "fave_property_map_address": [
+                "108\/4 Grazier La, Belconnen ACT 2617, Australia"
+            ],
+            "fave_property_address": [
+                "108\/4 Grazier Lane BELCONNEN, ACT 2617"
+            ],
+            "fave_property_zip": [
+                "2617"
+            ],
+            "fave_property_bedrooms": [
+                "2"
+            ],
+            "fave_property_bathrooms": [
+                "2"
+            ],
+            "fave_property_garage": [
+                "1"
+            ],
+            "fave_property_price": [
+                "469,900"
+            ],
+            "fave_property_images": [
+                "19502",
+                "19501",
+                "19499",
+                "19500"
+            ]
+        },
+        "_links": {
+            "self": [
+                {
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/properties\/19498"
+                }
+            ],
+            "collection": [
+                {
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/properties"
+                }
+            ],
+            "about": [
+                {
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/types\/property"
+                }
+            ],
+            "author": [
+                {
+                    "embeddable": true,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/users\/1"
+                }
+            ],
+            "version-history": [
+                {
+                    "count": 3,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/properties\/19498\/revisions"
+                }
+            ],
+            "predecessor-version": [
+                {
+                    "id": 19508,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/properties\/19498\/revisions\/19508"
+                }
+            ],
+            "wp:featuredmedia": [
+                {
+                    "embeddable": true,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/media\/19505"
+                }
+            ],
+            "wp:attachment": [
+                {
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/media?parent=19498"
+                }
+            ],
+            "wp:term": [
+                {
+                    "taxonomy": "property_type",
+                    "embeddable": true,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/property_type?post=19498"
+                },
+                {
+                    "taxonomy": "property_status",
+                    "embeddable": true,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/property_status?post=19498"
+                },
+                {
+                    "taxonomy": "property_feature",
+                    "embeddable": true,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/property_feature?post=19498"
+                },
+                {
+                    "taxonomy": "property_label",
+                    "embeddable": true,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/property_label?post=19498"
+                },
+                {
+                    "taxonomy": "property_area",
+                    "embeddable": true,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/property_area?post=19498"
+                }
+            ],
+            "curies": [
+                {
+                    "name": "wp",
+                    "href": "https:\/\/api.w.org\/{rel}",
+                    "templated": true
+                }
+            ]
+        }
+    },
+    {
+        "id": 19486,
+        "date": "2021-03-17T15:14:05",
+        "date_gmt": "2021-03-17T04:14:05",
+        "guid": {
+            "rendered": "https:\/\/www.canberryproperties.com.au\/?post_type=property&#038;p=19486"
+        },
+        "modified": "2021-03-17T15:14:06",
+        "modified_gmt": "2021-03-17T04:14:06",
+        "slug": "a-dream-location-packed-with-potential",
+        "status": "publish",
+        "type": "property",
+        "link": "https:\/\/www.canberryproperties.com.au\/index.php\/property\/a-dream-location-packed-with-potential\/",
+        "title": {
+            "rendered": "A Dream Location Packed with Potential!"
+        },
+        "content": {
+            "rendered": "\n<p>Situated in the Emerald Terrace Complex above the popular Amaroo Town Centre, this two-bedroom home would suit first home buyers or those looking to add a quality property to their investment portfolio. Everything you need is only a few steps away, including Coles, gyms, plenty of food outlets, cafes and much more. In addition to all that, the Gungahlin town centre and Casey marketplace are both just a short drive away.<br><br>North facing and set over three levels, this quality terrace home is spacious light filled and very modern. The kitchen has quality stainless steel appliances, stone bench tops and ample cupboard space for your everyday cooking convenience.<br><br>Heading upstairs to the third level, you will be greeted with two good sized bedrooms, the master featuring its own ensuite with a huge built in robe with mirrored sliding doors. The second bedroom is complimented by the main bathroom adding convenience and privacy to your lifestyle.<br>Finally there is a spare rumpus\/bedroom downstairs, accessible from the double garage.<br><br>This is a great home or investment, so come in and inspect today.<br><br>Features:<br><br>* Two good size rooms with built in robes<br>* Main bedroom has its own ensuite<br>* Additional rumpus or bedroom on the ground floor<br>* Spacious open plan living<br>* Central kitchen with stainless steel appliances and stone bench tops<br>* Two balconies one on each side of the home<br>* RC air conditioning in the main living area<br>* RC air conditioning the master bedroom<br>* Outlook to Reserve<br>* All your shopping needs are right downstairs<br>* Short drive to Gungahlin town centre and Casey market town<br><br>Rates: $1404.66 pa<br>Land Tax: $1706.61 pa<br>Built: 2017<br>Total Living: 172sqm<br>Body Corp: $637.55 pq<br><\/p>\n",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "<p>Situated in the Emerald Terrace Complex above the popular Amaroo Town Centre, this two-bedroom home would suit first home buyers or those looking to add a quality property to their investment portfolio. Everything you need is only a few steps away, including Coles, gyms, plenty of food outlets, cafes and much more. In addition to [&hellip;]<\/p>\n",
+            "protected": false
+        },
+        "author": 1,
+        "featured_media": 19494,
+        "parent": 0,
+        "menu_order": 0,
+        "template": "",
+        "property_type": [
+            79
+        ],
+        "property_status": [
+            30
+        ],
+        "property_feature": [],
+        "property_label": [],
+        "property_area": [
+            124
+        ],
+        "property_meta": {
+            "_edit_lock": [
+                "1616047685:1"
+            ],
+            "_edit_last": [
+                "1"
+            ],
+            "fave_property_price": [
+                "By Negotiation"
+            ],
+            "fave_property_bedrooms": [
+                "2"
+            ],
+            "fave_property_bathrooms": [
+                "2"
+            ],
+            "fave_property_garage": [
+                "2"
+            ],
+            "fave_property_map": [
+                "1"
+            ],
+            "fave_property_map_address": [
+                "16\/815 Horse Park Dr, Amaroo ACT 2914, Australia"
+            ],
+            "fave_property_location": [
+                "-35.1642971,149.1318657,15"
+            ],
+            "houzez_geolocation_lat": [
+                "-35.1642971"
+            ],
+            "houzez_geolocation_long": [
+                "149.1318657"
+            ],
+            "fave_property_map_street_view": [
+                "hide"
+            ],
+            "fave_property_address": [
+                "16\/815 Horse Park Drive AMAROO, ACT 2914"
+            ],
+            "fave_property_zip": [
+                "2914"
+            ],
+            "fave_featured": [
+                "0"
+            ],
+            "fave_loggedintoview": [
+                "0"
+            ],
+            "fave_agent_display_option": [
+                "agent_info"
+            ],
+            "fave_agents": [
+                "72"
+            ],
+            "fave_property_agency": [
+                "-1"
+            ],
+            "fave_prop_homeslider": [
+                "no"
+            ],
+            "fave_single_top_area": [
+                "global"
+            ],
+            "fave_single_content_area": [
+                "global"
+            ],
+            "rs_page_bg_color": [
+                ""
+            ],
+            "houzez_manual_expire": [
+                "0"
+            ],
+            "_houzez_expiration_date_status": [
+                "saved"
+            ],
+            "_thumbnail_id": [
+                "19494"
+            ],
+            "fave_property_images": [
+                "19488",
+                "19492",
+                "19493",
+                "19489",
+                "19491",
+                "19490"
+            ],
+            "houzez_total_property_views": [
+                "344"
+            ],
+            "houzez_views_by_date": [
+                "a:7:{s:10:\"03-17-2021\";i:12;s:10:\"03-18-2021\";i:16;s:10:\"03-19-2021\";i:105;s:10:\"03-20-2021\";i:65;s:10:\"03-21-2021\";i:54;s:10:\"03-22-2021\";i:57;s:10:\"03-23-2021\";i:35;}"
+            ],
+            "houzez_recently_viewed": [
+                "2021-03-24 10:23:26"
+            ],
+            "ekit_post_views_count": [
+                "335"
+            ]
+        },
+        "_links": {
+            "self": [
+                {
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/properties\/19486"
+                }
+            ],
+            "collection": [
+                {
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/properties"
+                }
+            ],
+            "about": [
+                {
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/types\/property"
+                }
+            ],
+            "author": [
+                {
+                    "embeddable": true,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/users\/1"
+                }
+            ],
+            "version-history": [
+                {
+                    "count": 2,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/properties\/19486\/revisions"
+                }
+            ],
+            "predecessor-version": [
+                {
+                    "id": 19495,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/properties\/19486\/revisions\/19495"
+                }
+            ],
+            "wp:featuredmedia": [
+                {
+                    "embeddable": true,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/media\/19494"
+                }
+            ],
+            "wp:attachment": [
+                {
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/media?parent=19486"
+                }
+            ],
+            "wp:term": [
+                {
+                    "taxonomy": "property_type",
+                    "embeddable": true,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/property_type?post=19486"
+                },
+                {
+                    "taxonomy": "property_status",
+                    "embeddable": true,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/property_status?post=19486"
+                },
+                {
+                    "taxonomy": "property_feature",
+                    "embeddable": true,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/property_feature?post=19486"
+                },
+                {
+                    "taxonomy": "property_label",
+                    "embeddable": true,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/property_label?post=19486"
+                },
+                {
+                    "taxonomy": "property_area",
+                    "embeddable": true,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/property_area?post=19486"
+                }
+            ],
+            "curies": [
+                {
+                    "name": "wp",
+                    "href": "https:\/\/api.w.org\/{rel}",
+                    "templated": true
+                }
+            ]
+        }
+    },
+    {
+        "id": 19472,
+        "date": "2021-03-17T15:01:25",
+        "date_gmt": "2021-03-17T04:01:25",
+        "guid": {
+            "rendered": "https:\/\/www.canberryproperties.com.au\/?post_type=property&#038;p=19472"
+        },
+        "modified": "2021-03-17T15:28:45",
+        "modified_gmt": "2021-03-17T04:28:45",
+        "slug": "flexible-living-for-the-extended-family",
+        "status": "publish",
+        "type": "property",
+        "link": "https:\/\/www.canberryproperties.com.au\/index.php\/property\/flexible-living-for-the-extended-family\/",
+        "title": {
+            "rendered": "Flexible living for the extended family"
+        },
+        "content": {
+            "rendered": "\n<p>Auction Location: On Site.<br><br>Conveniently located in the popular suburb of Harrison, a rare opportunity has become available for you to purchase this versatile family home for the extended family. This would be a perfect investment If you are looking for a multipurpose floor plan that can be completely sectioned into two separate family homes.<br><br>Upon entry, you will be welcomed by a spacious formal lounge perfectly designed for your everyday entertaining needs. Adjoining this appealing living space, you have two separate studies which could be utilised as a home office, extra storage or guest room. The potential on what you can do with these two rooms is unlimited.<br><br>Featuring five bedrooms, four with built in robes and the master with a walk-in robe and ensuite. The first section of the home consists of three bedrooms, formal lounge, combined living and dining and a versatile kitchen with plenty of cupboard space. The second part of the home is serviced by two other bedrooms, a good size bathroom, dining area, spacious lounge\/rumpus room and a full-sized kitchen. Space and privacy will never be an issue with this family home.<br><br>Located only a few minutes&#8217; walk to the light rail stop, Harrison School, Franklin shops which consists of Woolworths, medical centres and food outlets. The Gungahlin Town Centre is only a short drive away and close enough to even take a stroll there on a nice sunny day.<br><br>This is a rare one to come by so don&#8217;t miss out on the opportunity to secure a family home that has so much to offer.<br><br>* Rates: $3337.50 pa<br>* Land Tax: $3527.25pa<br>* Total Living: 232sqm<br>* Land: 476sqm<br>* Built: 2007<br><\/p>\n",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "<p>Auction Location: On Site. Conveniently located in the popular suburb of Harrison, a rare opportunity has become available for you to purchase this versatile family home for the extended family. This would be a perfect investment If you are looking for a multipurpose floor plan that can be completely sectioned into two separate family homes. [&hellip;]<\/p>\n",
+            "protected": false
+        },
+        "author": 1,
+        "featured_media": 19483,
+        "parent": 0,
+        "menu_order": 0,
+        "template": "",
+        "property_type": [
+            78
+        ],
+        "property_status": [
+            30
+        ],
+        "property_feature": [],
+        "property_label": [],
+        "property_area": [
+            107
+        ],
+        "property_meta": {
+            "_edit_lock": [
+                "1615955312:1"
+            ],
+            "_edit_last": [
+                "1"
+            ],
+            "fave_property_map": [
+                "1"
+            ],
+            "fave_property_location": [
+                "-35.1890227,149.1585623,15"
+            ],
+            "houzez_geolocation_lat": [
+                "-35.1890227"
+            ],
+            "houzez_geolocation_long": [
+                "149.1585623"
+            ],
+            "fave_property_map_street_view": [
+                "hide"
+            ],
+            "fave_featured": [
+                "0"
+            ],
+            "fave_loggedintoview": [
+                "0"
+            ],
+            "fave_agent_display_option": [
+                "agent_info"
+            ],
+            "fave_agents": [
+                "72"
+            ],
+            "fave_property_agency": [
+                "-1"
+            ],
+            "fave_prop_homeslider": [
+                "no"
+            ],
+            "fave_single_top_area": [
+                "global"
+            ],
+            "fave_single_content_area": [
+                "global"
+            ],
+            "rs_page_bg_color": [
+                ""
+            ],
+            "houzez_manual_expire": [
+                "0"
+            ],
+            "_houzez_expiration_date_status": [
+                "saved"
+            ],
+            "fave_property_price": [
+                "AUCTION"
+            ],
+            "fave_property_bedrooms": [
+                "5"
+            ],
+            "fave_property_bathrooms": [
+                "3"
+            ],
+            "fave_property_garage": [
+                "2"
+            ],
+            "fave_property_map_address": [
+                "19 Anchorage St, Harrison ACT 2914, Australia"
+            ],
+            "fave_property_address": [
+                "19 Anchorage Street HARRISON, ACT 2914"
+            ],
+            "fave_property_zip": [
+                "2914"
+            ],
+            "_thumbnail_id": [
+                "19483"
+            ],
+            "houzez_total_property_views": [
+                "412"
+            ],
+            "houzez_views_by_date": [
+                "a:7:{s:10:\"03-17-2021\";i:19;s:10:\"03-18-2021\";i:8;s:10:\"03-19-2021\";i:118;s:10:\"03-20-2021\";i:69;s:10:\"03-21-2021\";i:65;s:10:\"03-22-2021\";i:83;s:10:\"03-23-2021\";i:53;}"
+            ],
+            "houzez_recently_viewed": [
+                "2021-03-24 10:23:23"
+            ],
+            "ekit_post_views_count": [
+                "383"
+            ],
+            "fave_property_images": [
+                "19478",
+                "19475",
+                "19476",
+                "19477",
+                "19480",
+                "19481",
+                "19482",
+                "19479"
+            ]
+        },
+        "_links": {
+            "self": [
+                {
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/properties\/19472"
+                }
+            ],
+            "collection": [
+                {
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/properties"
+                }
+            ],
+            "about": [
+                {
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/types\/property"
+                }
+            ],
+            "author": [
+                {
+                    "embeddable": true,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/users\/1"
+                }
+            ],
+            "version-history": [
+                {
+                    "count": 2,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/properties\/19472\/revisions"
+                }
+            ],
+            "predecessor-version": [
+                {
+                    "id": 19474,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/properties\/19472\/revisions\/19474"
+                }
+            ],
+            "wp:featuredmedia": [
+                {
+                    "embeddable": true,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/media\/19483"
+                }
+            ],
+            "wp:attachment": [
+                {
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/media?parent=19472"
+                }
+            ],
+            "wp:term": [
+                {
+                    "taxonomy": "property_type",
+                    "embeddable": true,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/property_type?post=19472"
+                },
+                {
+                    "taxonomy": "property_status",
+                    "embeddable": true,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/property_status?post=19472"
+                },
+                {
+                    "taxonomy": "property_feature",
+                    "embeddable": true,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/property_feature?post=19472"
+                },
+                {
+                    "taxonomy": "property_label",
+                    "embeddable": true,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/property_label?post=19472"
+                },
+                {
+                    "taxonomy": "property_area",
+                    "embeddable": true,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/property_area?post=19472"
+                }
+            ],
+            "curies": [
+                {
+                    "name": "wp",
+                    "href": "https:\/\/api.w.org\/{rel}",
+                    "templated": true
+                }
+            ]
+        }
+    },
+    {
+        "id": 19432,
+        "date": "2021-03-10T13:19:42",
+        "date_gmt": "2021-03-10T02:19:42",
+        "guid": {
+            "rendered": "https:\/\/www.canberryproperties.com.au\/?post_type=property&#038;p=19432"
+        },
+        "modified": "2021-03-10T13:19:43",
+        "modified_gmt": "2021-03-10T02:19:43",
+        "slug": "24-carmody-street-casey",
+        "status": "publish",
+        "type": "property",
+        "link": "https:\/\/www.canberryproperties.com.au\/index.php\/property\/24-carmody-street-casey\/",
+        "title": {
+            "rendered": "24 Carmody Street, Casey,"
+        },
+        "content": {
+            "rendered": "\n<p>24 Carmody Street, Casey,<\/p>\n",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "<p>24 Carmody Street, Casey,<\/p>\n",
+            "protected": false
+        },
+        "author": 6,
+        "featured_media": 19433,
+        "parent": 0,
+        "menu_order": 0,
+        "template": "",
+        "property_type": [
+            78
+        ],
+        "property_status": [
+            29
+        ],
+        "property_feature": [],
+        "property_label": [
+            121
+        ],
+        "property_area": [
+            117
+        ],
+        "property_meta": {
+            "_edit_lock": [
+                "1615858947:1"
+            ],
+            "_thumbnail_id": [
+                "19433"
+            ],
+            "_edit_last": [
+                "6"
+            ],
+            "fave_property_price": [
+                "leased"
+            ],
+            "fave_property_bedrooms": [
+                "3"
+            ],
+            "fave_property_bathrooms": [
+                "2"
+            ],
+            "fave_property_garage": [
+                "1"
+            ],
+            "fave_property_map": [
+                "1"
+            ],
+            "fave_property_map_address": [
+                "24 Carmody St, Casey ACT 2913, Australia"
+            ],
+            "fave_property_location": [
+                "-35.1769873,149.0891761,15"
+            ],
+            "houzez_geolocation_lat": [
+                "-35.1769873"
+            ],
+            "houzez_geolocation_long": [
+                "149.0891761"
+            ],
+            "fave_property_map_street_view": [
+                "hide"
+            ],
+            "fave_featured": [
+                "0"
+            ],
+            "fave_loggedintoview": [
+                "0"
+            ],
+            "fave_agent_display_option": [
+                "none"
+            ],
+            "fave_agents": [
+                "-1"
+            ],
+            "fave_property_agency": [
+                "-1"
+            ],
+            "fave_prop_homeslider": [
+                "no"
+            ],
+            "fave_single_top_area": [
+                "global"
+            ],
+            "fave_single_content_area": [
+                "global"
+            ],
+            "rs_page_bg_color": [
+                ""
+            ],
+            "houzez_manual_expire": [
+                "0"
+            ],
+            "_houzez_expiration_date_status": [
+                "saved"
+            ],
+            "houzez_total_property_views": [
+                "22"
+            ],
+            "houzez_views_by_date": [
+                "a:10:{s:10:\"03-11-2021\";i:2;s:10:\"03-12-2021\";i:2;s:10:\"03-13-2021\";i:1;s:10:\"03-16-2021\";i:1;s:10:\"03-17-2021\";i:1;s:10:\"03-18-2021\";i:4;s:10:\"03-19-2021\";i:6;s:10:\"03-21-2021\";i:1;s:10:\"03-22-2021\";i:3;s:10:\"03-23-2021\";i:1;}"
+            ],
+            "houzez_recently_viewed": [
+                "2021-03-23 23:13:16"
+            ],
+            "ekit_post_views_count": [
+                "22"
+            ]
+        },
+        "_links": {
+            "self": [
+                {
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/properties\/19432"
+                }
+            ],
+            "collection": [
+                {
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/properties"
+                }
+            ],
+            "about": [
+                {
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/types\/property"
+                }
+            ],
+            "author": [
+                {
+                    "embeddable": true,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/users\/6"
+                }
+            ],
+            "version-history": [
+                {
+                    "count": 1,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/properties\/19432\/revisions"
+                }
+            ],
+            "predecessor-version": [
+                {
+                    "id": 19434,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/properties\/19432\/revisions\/19434"
+                }
+            ],
+            "wp:featuredmedia": [
+                {
+                    "embeddable": true,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/media\/19433"
+                }
+            ],
+            "wp:attachment": [
+                {
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/media?parent=19432"
+                }
+            ],
+            "wp:term": [
+                {
+                    "taxonomy": "property_type",
+                    "embeddable": true,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/property_type?post=19432"
+                },
+                {
+                    "taxonomy": "property_status",
+                    "embeddable": true,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/property_status?post=19432"
+                },
+                {
+                    "taxonomy": "property_feature",
+                    "embeddable": true,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/property_feature?post=19432"
+                },
+                {
+                    "taxonomy": "property_label",
+                    "embeddable": true,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/property_label?post=19432"
+                },
+                {
+                    "taxonomy": "property_area",
+                    "embeddable": true,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/property_area?post=19432"
+                }
+            ],
+            "curies": [
+                {
+                    "name": "wp",
+                    "href": "https:\/\/api.w.org\/{rel}",
+                    "templated": true
+                }
+            ]
+        }
+    },
+    {
+        "id": 19427,
+        "date": "2021-03-10T13:16:33",
+        "date_gmt": "2021-03-10T02:16:33",
+        "guid": {
+            "rendered": "https:\/\/www.canberryproperties.com.au\/?post_type=property&#038;p=19427"
+        },
+        "modified": "2021-03-10T13:20:37",
+        "modified_gmt": "2021-03-10T02:20:37",
+        "slug": "12-40-lhotsky-street-charnwood",
+        "status": "publish",
+        "type": "property",
+        "link": "https:\/\/www.canberryproperties.com.au\/index.php\/property\/12-40-lhotsky-street-charnwood\/",
+        "title": {
+            "rendered": "12\/40 Lhotsky Street, Charnwood"
+        },
+        "content": {
+            "rendered": "\n<p>12\/40 Lhotsky Street, Charnwood<\/p>\n",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "<p>12\/40 Lhotsky Street, Charnwood<\/p>\n",
+            "protected": false
+        },
+        "author": 6,
+        "featured_media": 19429,
+        "parent": 0,
+        "menu_order": 0,
+        "template": "",
+        "property_type": [
+            79
+        ],
+        "property_status": [
+            29
+        ],
+        "property_feature": [],
+        "property_label": [
+            121
+        ],
+        "property_area": [
+            123
+        ],
+        "property_meta": {
+            "_edit_lock": [
+                "1615342838:6"
+            ],
+            "_edit_last": [
+                "6"
+            ],
+            "fave_property_map": [
+                "1"
+            ],
+            "fave_property_location": [
+                "-35.2050518,149.031816,15"
+            ],
+            "houzez_geolocation_lat": [
+                "-35.2050518"
+            ],
+            "houzez_geolocation_long": [
+                "149.031816"
+            ],
+            "fave_property_map_street_view": [
+                "hide"
+            ],
+            "fave_featured": [
+                "0"
+            ],
+            "fave_loggedintoview": [
+                "0"
+            ],
+            "fave_agent_display_option": [
+                "none"
+            ],
+            "fave_agents": [
+                "-1"
+            ],
+            "fave_property_agency": [
+                "-1"
+            ],
+            "fave_prop_homeslider": [
+                "no"
+            ],
+            "fave_single_top_area": [
+                "global"
+            ],
+            "fave_single_content_area": [
+                "global"
+            ],
+            "rs_page_bg_color": [
+                ""
+            ],
+            "houzez_manual_expire": [
+                "0"
+            ],
+            "_houzez_expiration_date_status": [
+                "saved"
+            ],
+            "_thumbnail_id": [
+                "19429"
+            ],
+            "fave_property_price": [
+                "leased"
+            ],
+            "fave_property_bedrooms": [
+                "2"
+            ],
+            "fave_property_bathrooms": [
+                "1"
+            ],
+            "fave_property_garage": [
+                "2"
+            ],
+            "fave_property_map_address": [
+                "Wingate, Unit 12\/40 Lhotsky St, Charnwood ACT 2615, Australia"
+            ],
+            "houzez_total_property_views": [
+                "36"
+            ],
+            "houzez_views_by_date": [
+                "a:11:{s:10:\"03-10-2021\";i:8;s:10:\"03-11-2021\";i:6;s:10:\"03-12-2021\";i:2;s:10:\"03-13-2021\";i:1;s:10:\"03-14-2021\";i:1;s:10:\"03-16-2021\";i:3;s:10:\"03-18-2021\";i:1;s:10:\"03-19-2021\";i:8;s:10:\"03-20-2021\";i:2;s:10:\"03-22-2021\";i:1;s:10:\"03-23-2021\";i:3;}"
+            ],
+            "houzez_recently_viewed": [
+                "2021-03-23 23:13:17"
+            ],
+            "ekit_post_views_count": [
+                "36"
+            ]
+        },
+        "_links": {
+            "self": [
+                {
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/properties\/19427"
+                }
+            ],
+            "collection": [
+                {
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/properties"
+                }
+            ],
+            "about": [
+                {
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/types\/property"
+                }
+            ],
+            "author": [
+                {
+                    "embeddable": true,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/users\/6"
+                }
+            ],
+            "version-history": [
+                {
+                    "count": 2,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/properties\/19427\/revisions"
+                }
+            ],
+            "predecessor-version": [
+                {
+                    "id": 19430,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/properties\/19427\/revisions\/19430"
+                }
+            ],
+            "wp:featuredmedia": [
+                {
+                    "embeddable": true,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/media\/19429"
+                }
+            ],
+            "wp:attachment": [
+                {
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/media?parent=19427"
+                }
+            ],
+            "wp:term": [
+                {
+                    "taxonomy": "property_type",
+                    "embeddable": true,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/property_type?post=19427"
+                },
+                {
+                    "taxonomy": "property_status",
+                    "embeddable": true,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/property_status?post=19427"
+                },
+                {
+                    "taxonomy": "property_feature",
+                    "embeddable": true,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/property_feature?post=19427"
+                },
+                {
+                    "taxonomy": "property_label",
+                    "embeddable": true,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/property_label?post=19427"
+                },
+                {
+                    "taxonomy": "property_area",
+                    "embeddable": true,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/property_area?post=19427"
+                }
+            ],
+            "curies": [
+                {
+                    "name": "wp",
+                    "href": "https:\/\/api.w.org\/{rel}",
+                    "templated": true
+                }
+            ]
+        }
+    },
+    {
+        "id": 19423,
+        "date": "2021-03-10T11:49:41",
+        "date_gmt": "2021-03-10T00:49:41",
+        "guid": {
+            "rendered": "https:\/\/www.canberryproperties.com.au\/?post_type=property&#038;p=19423"
+        },
+        "modified": "2021-03-10T13:20:59",
+        "modified_gmt": "2021-03-10T02:20:59",
+        "slug": "2-329-flemington-road-franklin",
+        "status": "publish",
+        "type": "property",
+        "link": "https:\/\/www.canberryproperties.com.au\/index.php\/property\/2-329-flemington-road-franklin\/",
+        "title": {
+            "rendered": "2\/329 Flemington Road, Franklin"
+        },
+        "content": {
+            "rendered": "\n<p>2\/329 Flemington Road, Franklin<\/p>\n",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "<p>2\/329 Flemington Road, Franklin<\/p>\n",
+            "protected": false
+        },
+        "author": 6,
+        "featured_media": 19424,
+        "parent": 0,
+        "menu_order": 0,
+        "template": "",
+        "property_type": [
+            16
+        ],
+        "property_status": [
+            29
+        ],
+        "property_feature": [],
+        "property_label": [
+            121
+        ],
+        "property_area": [
+            101
+        ],
+        "property_meta": {
+            "_edit_lock": [
+                "1615342860:6"
+            ],
+            "_thumbnail_id": [
+                "19424"
+            ],
+            "_edit_last": [
+                "6"
+            ],
+            "fave_property_price": [
+                "leased"
+            ],
+            "fave_property_bedrooms": [
+                "2"
+            ],
+            "fave_property_bathrooms": [
+                "1"
+            ],
+            "fave_property_garage": [
+                "1"
+            ],
+            "fave_property_map": [
+                "1"
+            ],
+            "fave_property_map_address": [
+                "Edge Apartments, 2\/329 Flemington Rd, Franklin ACT 2913, Australia"
+            ],
+            "fave_property_location": [
+                "-35.1877882,149.1458763,15"
+            ],
+            "houzez_geolocation_lat": [
+                "-35.1877882"
+            ],
+            "houzez_geolocation_long": [
+                "149.1458763"
+            ],
+            "fave_property_map_street_view": [
+                "hide"
+            ],
+            "fave_featured": [
+                "0"
+            ],
+            "fave_loggedintoview": [
+                "0"
+            ],
+            "fave_agent_display_option": [
+                "none"
+            ],
+            "fave_agents": [
+                "-1"
+            ],
+            "fave_property_agency": [
+                "-1"
+            ],
+            "fave_prop_homeslider": [
+                "no"
+            ],
+            "fave_single_top_area": [
+                "global"
+            ],
+            "fave_single_content_area": [
+                "global"
+            ],
+            "rs_page_bg_color": [
+                ""
+            ],
+            "houzez_manual_expire": [
+                "0"
+            ],
+            "_houzez_expiration_date_status": [
+                "saved"
+            ],
+            "houzez_total_property_views": [
+                "19"
+            ],
+            "houzez_views_by_date": [
+                "a:9:{s:10:\"03-10-2021\";i:2;s:10:\"03-11-2021\";i:1;s:10:\"03-12-2021\";i:1;s:10:\"03-13-2021\";i:1;s:10:\"03-16-2021\";i:2;s:10:\"03-18-2021\";i:2;s:10:\"03-19-2021\";i:6;s:10:\"03-20-2021\";i:2;s:10:\"03-23-2021\";i:2;}"
+            ],
+            "houzez_recently_viewed": [
+                "2021-03-23 23:13:18"
+            ],
+            "ekit_post_views_count": [
+                "19"
+            ]
+        },
+        "_links": {
+            "self": [
+                {
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/properties\/19423"
+                }
+            ],
+            "collection": [
+                {
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/properties"
+                }
+            ],
+            "about": [
+                {
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/types\/property"
+                }
+            ],
+            "author": [
+                {
+                    "embeddable": true,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/users\/6"
+                }
+            ],
+            "version-history": [
+                {
+                    "count": 1,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/properties\/19423\/revisions"
+                }
+            ],
+            "predecessor-version": [
+                {
+                    "id": 19425,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/properties\/19423\/revisions\/19425"
+                }
+            ],
+            "wp:featuredmedia": [
+                {
+                    "embeddable": true,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/media\/19424"
+                }
+            ],
+            "wp:attachment": [
+                {
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/media?parent=19423"
+                }
+            ],
+            "wp:term": [
+                {
+                    "taxonomy": "property_type",
+                    "embeddable": true,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/property_type?post=19423"
+                },
+                {
+                    "taxonomy": "property_status",
+                    "embeddable": true,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/property_status?post=19423"
+                },
+                {
+                    "taxonomy": "property_feature",
+                    "embeddable": true,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/property_feature?post=19423"
+                },
+                {
+                    "taxonomy": "property_label",
+                    "embeddable": true,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/property_label?post=19423"
+                },
+                {
+                    "taxonomy": "property_area",
+                    "embeddable": true,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/property_area?post=19423"
+                }
+            ],
+            "curies": [
+                {
+                    "name": "wp",
+                    "href": "https:\/\/api.w.org\/{rel}",
+                    "templated": true
+                }
+            ]
+        }
+    },
+    {
+        "id": 19418,
+        "date": "2021-03-10T11:45:57",
+        "date_gmt": "2021-03-10T00:45:57",
+        "guid": {
+            "rendered": "https:\/\/www.canberryproperties.com.au\/?post_type=property&#038;p=19418"
+        },
+        "modified": "2021-03-10T13:22:45",
+        "modified_gmt": "2021-03-10T02:22:45",
+        "slug": "185-140-thynne-street-bruce",
+        "status": "publish",
+        "type": "property",
+        "link": "https:\/\/www.canberryproperties.com.au\/index.php\/property\/185-140-thynne-street-bruce\/",
+        "title": {
+            "rendered": "185\/140 Thynne Street, Bruce"
+        },
+        "content": {
+            "rendered": "\n<p>185\/140 Thynne Street, Bruce<\/p>\n",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "<p>185\/140 Thynne Street, Bruce<\/p>\n",
+            "protected": false
+        },
+        "author": 6,
+        "featured_media": 19420,
+        "parent": 0,
+        "menu_order": 0,
+        "template": "",
+        "property_type": [
+            79
+        ],
+        "property_status": [
+            29
+        ],
+        "property_feature": [],
+        "property_label": [
+            121
+        ],
+        "property_area": [
+            122
+        ],
+        "property_meta": {
+            "_edit_lock": [
+                "1615342966:6"
+            ],
+            "_edit_last": [
+                "6"
+            ],
+            "fave_property_map": [
+                "1"
+            ],
+            "fave_property_location": [
+                "-35.2421651,149.0996792,15"
+            ],
+            "houzez_geolocation_lat": [
+                "-35.2421651"
+            ],
+            "houzez_geolocation_long": [
+                "149.0996792"
+            ],
+            "fave_property_map_street_view": [
+                "hide"
+            ],
+            "fave_featured": [
+                "0"
+            ],
+            "fave_loggedintoview": [
+                "0"
+            ],
+            "fave_agent_display_option": [
+                "none"
+            ],
+            "fave_agents": [
+                "-1"
+            ],
+            "fave_property_agency": [
+                "-1"
+            ],
+            "fave_prop_homeslider": [
+                "no"
+            ],
+            "fave_single_top_area": [
+                "global"
+            ],
+            "fave_single_content_area": [
+                "global"
+            ],
+            "rs_page_bg_color": [
+                ""
+            ],
+            "houzez_manual_expire": [
+                "0"
+            ],
+            "_houzez_expiration_date_status": [
+                "saved"
+            ],
+            "_thumbnail_id": [
+                "19420"
+            ],
+            "fave_property_price": [
+                "leased"
+            ],
+            "fave_property_bedrooms": [
+                "3"
+            ],
+            "fave_property_bathrooms": [
+                "2"
+            ],
+            "fave_property_garage": [
+                "2"
+            ],
+            "fave_property_map_address": [
+                "Eclipse, 185\/140 Thynne St, Bruce ACT 2617, Australia"
+            ],
+            "houzez_total_property_views": [
+                "25"
+            ],
+            "houzez_views_by_date": [
+                "a:8:{s:10:\"03-10-2021\";i:4;s:10:\"03-11-2021\";i:7;s:10:\"03-12-2021\";i:1;s:10:\"03-13-2021\";i:1;s:10:\"03-14-2021\";i:1;s:10:\"03-18-2021\";i:3;s:10:\"03-19-2021\";i:5;s:10:\"03-23-2021\";i:3;}"
+            ],
+            "houzez_recently_viewed": [
+                "2021-03-23 23:13:19"
+            ],
+            "ekit_post_views_count": [
+                "25"
+            ]
+        },
+        "_links": {
+            "self": [
+                {
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/properties\/19418"
+                }
+            ],
+            "collection": [
+                {
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/properties"
+                }
+            ],
+            "about": [
+                {
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/types\/property"
+                }
+            ],
+            "author": [
+                {
+                    "embeddable": true,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/users\/6"
+                }
+            ],
+            "version-history": [
+                {
+                    "count": 2,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/properties\/19418\/revisions"
+                }
+            ],
+            "predecessor-version": [
+                {
+                    "id": 19421,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/properties\/19418\/revisions\/19421"
+                }
+            ],
+            "wp:featuredmedia": [
+                {
+                    "embeddable": true,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/media\/19420"
+                }
+            ],
+            "wp:attachment": [
+                {
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/media?parent=19418"
+                }
+            ],
+            "wp:term": [
+                {
+                    "taxonomy": "property_type",
+                    "embeddable": true,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/property_type?post=19418"
+                },
+                {
+                    "taxonomy": "property_status",
+                    "embeddable": true,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/property_status?post=19418"
+                },
+                {
+                    "taxonomy": "property_feature",
+                    "embeddable": true,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/property_feature?post=19418"
+                },
+                {
+                    "taxonomy": "property_label",
+                    "embeddable": true,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/property_label?post=19418"
+                },
+                {
+                    "taxonomy": "property_area",
+                    "embeddable": true,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/property_area?post=19418"
+                }
+            ],
+            "curies": [
+                {
+                    "name": "wp",
+                    "href": "https:\/\/api.w.org\/{rel}",
+                    "templated": true
+                }
+            ]
+        }
+    },
+    {
+        "id": 19412,
+        "date": "2021-03-10T11:41:16",
+        "date_gmt": "2021-03-10T00:41:16",
+        "guid": {
+            "rendered": "https:\/\/www.canberryproperties.com.au\/?post_type=property&#038;p=19412"
+        },
+        "modified": "2021-03-10T13:23:10",
+        "modified_gmt": "2021-03-10T02:23:10",
+        "slug": "98-75-elizabeth-jolley-crescent-franklin",
+        "status": "publish",
+        "type": "property",
+        "link": "https:\/\/www.canberryproperties.com.au\/index.php\/property\/98-75-elizabeth-jolley-crescent-franklin\/",
+        "title": {
+            "rendered": "98\/75 Elizabeth Jolley Crescent, Franklin"
+        },
+        "content": {
+            "rendered": "\n<p>98\/75 Elizabeth Jolley Crescent, Franklin<\/p>\n",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "<p>98\/75 Elizabeth Jolley Crescent, Franklin<\/p>\n",
+            "protected": false
+        },
+        "author": 6,
+        "featured_media": 19414,
+        "parent": 0,
+        "menu_order": 0,
+        "template": "",
+        "property_type": [
+            16
+        ],
+        "property_status": [
+            29
+        ],
+        "property_feature": [],
+        "property_label": [
+            121
+        ],
+        "property_area": [
+            101
+        ],
+        "property_meta": {
+            "_edit_lock": [
+                "1615342991:6"
+            ],
+            "_edit_last": [
+                "6"
+            ],
+            "fave_property_map": [
+                "1"
+            ],
+            "fave_property_location": [
+                "-35.1881027,149.1447335,15"
+            ],
+            "houzez_geolocation_lat": [
+                "-35.1881027"
+            ],
+            "houzez_geolocation_long": [
+                "149.1447335"
+            ],
+            "fave_property_map_street_view": [
+                "hide"
+            ],
+            "fave_featured": [
+                "0"
+            ],
+            "fave_loggedintoview": [
+                "0"
+            ],
+            "fave_agent_display_option": [
+                "none"
+            ],
+            "fave_agents": [
+                "-1"
+            ],
+            "fave_property_agency": [
+                "-1"
+            ],
+            "fave_prop_homeslider": [
+                "no"
+            ],
+            "fave_single_top_area": [
+                "global"
+            ],
+            "fave_single_content_area": [
+                "global"
+            ],
+            "rs_page_bg_color": [
+                ""
+            ],
+            "houzez_manual_expire": [
+                "0"
+            ],
+            "_houzez_expiration_date_status": [
+                "saved"
+            ],
+            "_thumbnail_id": [
+                "19414"
+            ],
+            "fave_property_map_address": [
+                "Mosac Apartments, 98\/75 Elizabeth Jolley Cres, Franklin ACT 2913, Australia"
+            ],
+            "fave_property_bedrooms": [
+                "2"
+            ],
+            "fave_property_bathrooms": [
+                "2"
+            ],
+            "fave_property_garage": [
+                "2"
+            ],
+            "houzez_total_property_views": [
+                "26"
+            ],
+            "houzez_views_by_date": [
+                "a:10:{s:10:\"03-10-2021\";i:12;s:10:\"03-11-2021\";i:2;s:10:\"03-12-2021\";i:1;s:10:\"03-16-2021\";i:1;s:10:\"03-17-2021\";i:1;s:10:\"03-18-2021\";i:1;s:10:\"03-19-2021\";i:4;s:10:\"03-20-2021\";i:1;s:10:\"03-21-2021\";i:2;s:10:\"03-22-2021\";i:1;}"
+            ],
+            "houzez_recently_viewed": [
+                "2021-03-22 14:49:14"
+            ],
+            "ekit_post_views_count": [
+                "26"
+            ],
+            "fave_property_price": [
+                "leased"
+            ]
+        },
+        "_links": {
+            "self": [
+                {
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/properties\/19412"
+                }
+            ],
+            "collection": [
+                {
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/properties"
+                }
+            ],
+            "about": [
+                {
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/types\/property"
+                }
+            ],
+            "author": [
+                {
+                    "embeddable": true,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/users\/6"
+                }
+            ],
+            "version-history": [
+                {
+                    "count": 2,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/properties\/19412\/revisions"
+                }
+            ],
+            "predecessor-version": [
+                {
+                    "id": 19415,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/properties\/19412\/revisions\/19415"
+                }
+            ],
+            "wp:featuredmedia": [
+                {
+                    "embeddable": true,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/media\/19414"
+                }
+            ],
+            "wp:attachment": [
+                {
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/media?parent=19412"
+                }
+            ],
+            "wp:term": [
+                {
+                    "taxonomy": "property_type",
+                    "embeddable": true,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/property_type?post=19412"
+                },
+                {
+                    "taxonomy": "property_status",
+                    "embeddable": true,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/property_status?post=19412"
+                },
+                {
+                    "taxonomy": "property_feature",
+                    "embeddable": true,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/property_feature?post=19412"
+                },
+                {
+                    "taxonomy": "property_label",
+                    "embeddable": true,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/property_label?post=19412"
+                },
+                {
+                    "taxonomy": "property_area",
+                    "embeddable": true,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/property_area?post=19412"
+                }
+            ],
+            "curies": [
+                {
+                    "name": "wp",
+                    "href": "https:\/\/api.w.org\/{rel}",
+                    "templated": true
+                }
+            ]
+        }
+    },
+    {
+        "id": 19407,
+        "date": "2021-03-10T11:38:12",
+        "date_gmt": "2021-03-10T00:38:12",
+        "guid": {
+            "rendered": "https:\/\/www.canberryproperties.com.au\/?post_type=property&#038;p=19407"
+        },
+        "modified": "2021-03-10T13:23:35",
+        "modified_gmt": "2021-03-10T02:23:35",
+        "slug": "105-stockman-avenue-lawson",
+        "status": "publish",
+        "type": "property",
+        "link": "https:\/\/www.canberryproperties.com.au\/index.php\/property\/105-stockman-avenue-lawson\/",
+        "title": {
+            "rendered": "105 Stockman Avenue, Lawson"
+        },
+        "content": {
+            "rendered": "\n<p>105 Stockman Avenue, Lawson<\/p>\n",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "<p>105 Stockman Avenue, Lawson<\/p>\n",
+            "protected": false
+        },
+        "author": 6,
+        "featured_media": 19409,
+        "parent": 0,
+        "menu_order": 0,
+        "template": "",
+        "property_type": [
+            79
+        ],
+        "property_status": [
+            29
+        ],
+        "property_feature": [],
+        "property_label": [
+            121
+        ],
+        "property_area": [
+            120
+        ],
+        "property_meta": {
+            "_edit_lock": [
+                "1615343015:6"
+            ],
+            "_edit_last": [
+                "6"
+            ],
+            "fave_property_map": [
+                "1"
+            ],
+            "fave_property_location": [
+                "-35.2275117,149.0890598,15"
+            ],
+            "houzez_geolocation_lat": [
+                "-35.2275117"
+            ],
+            "houzez_geolocation_long": [
+                "149.0890598"
+            ],
+            "fave_property_map_street_view": [
+                "hide"
+            ],
+            "fave_featured": [
+                "0"
+            ],
+            "fave_loggedintoview": [
+                "0"
+            ],
+            "fave_agent_display_option": [
+                "none"
+            ],
+            "fave_agents": [
+                "-1"
+            ],
+            "fave_property_agency": [
+                "-1"
+            ],
+            "fave_prop_homeslider": [
+                "no"
+            ],
+            "fave_single_top_area": [
+                "global"
+            ],
+            "fave_single_content_area": [
+                "global"
+            ],
+            "rs_page_bg_color": [
+                ""
+            ],
+            "houzez_manual_expire": [
+                "0"
+            ],
+            "_houzez_expiration_date_status": [
+                "saved"
+            ],
+            "_thumbnail_id": [
+                "19409"
+            ],
+            "fave_property_bedrooms": [
+                "3"
+            ],
+            "fave_property_bathrooms": [
+                "2"
+            ],
+            "fave_property_garage": [
+                "2"
+            ],
+            "fave_property_map_address": [
+                "105 Stockman Ave, Lawson ACT 2617, Australia"
+            ],
+            "houzez_total_property_views": [
+                "27"
+            ],
+            "houzez_views_by_date": [
+                "a:8:{s:10:\"03-10-2021\";i:10;s:10:\"03-11-2021\";i:7;s:10:\"03-12-2021\";i:1;s:10:\"03-16-2021\";i:1;s:10:\"03-18-2021\";i:2;s:10:\"03-19-2021\";i:3;s:10:\"03-22-2021\";i:1;s:10:\"03-23-2021\";i:2;}"
+            ],
+            "houzez_recently_viewed": [
+                "2021-03-23 23:12:11"
+            ],
+            "ekit_post_views_count": [
+                "27"
+            ],
+            "fave_property_price": [
+                "leased"
+            ]
+        },
+        "_links": {
+            "self": [
+                {
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/properties\/19407"
+                }
+            ],
+            "collection": [
+                {
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/properties"
+                }
+            ],
+            "about": [
+                {
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/types\/property"
+                }
+            ],
+            "author": [
+                {
+                    "embeddable": true,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/users\/6"
+                }
+            ],
+            "version-history": [
+                {
+                    "count": 2,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/properties\/19407\/revisions"
+                }
+            ],
+            "predecessor-version": [
+                {
+                    "id": 19410,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/properties\/19407\/revisions\/19410"
+                }
+            ],
+            "wp:featuredmedia": [
+                {
+                    "embeddable": true,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/media\/19409"
+                }
+            ],
+            "wp:attachment": [
+                {
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/media?parent=19407"
+                }
+            ],
+            "wp:term": [
+                {
+                    "taxonomy": "property_type",
+                    "embeddable": true,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/property_type?post=19407"
+                },
+                {
+                    "taxonomy": "property_status",
+                    "embeddable": true,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/property_status?post=19407"
+                },
+                {
+                    "taxonomy": "property_feature",
+                    "embeddable": true,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/property_feature?post=19407"
+                },
+                {
+                    "taxonomy": "property_label",
+                    "embeddable": true,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/property_label?post=19407"
+                },
+                {
+                    "taxonomy": "property_area",
+                    "embeddable": true,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/property_area?post=19407"
+                }
+            ],
+            "curies": [
+                {
+                    "name": "wp",
+                    "href": "https:\/\/api.w.org\/{rel}",
+                    "templated": true
+                }
+            ]
+        }
+    }
+]

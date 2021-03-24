@@ -18,7 +18,8 @@ class _FavouriteListPageState extends State<FavouriteListPage> {
                 strokeWidth: 3,
               ),
             )
-          : ListView(
+          : model.favourites.length<1 ? Center(child: Text('No Content'),):
+          ListView(
               scrollDirection: Axis.vertical,
               children: model.favourites.isEmpty? [
                Center(child: 

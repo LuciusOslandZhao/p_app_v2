@@ -1,0 +1,219 @@
+{
+    "id": 19511,
+    "date": "2021-03-19T12:09:41",
+    "date_gmt": "2021-03-19T01:09:41",
+    "guid": {
+        "rendered": "https:\/\/www.canberryproperties.com.au\/?post_type=property&#038;p=19511"
+    },
+    "modified": "2021-03-19T12:12:25",
+    "modified_gmt": "2021-03-19T01:12:25",
+    "slug": "inner-city-living-and-a-perfect-lifestyle",
+    "status": "publish",
+    "type": "property",
+    "link": "https:\/\/www.canberryproperties.com.au\/index.php\/property\/inner-city-living-and-a-perfect-lifestyle\/",
+    "title": {
+        "rendered": "Inner-city living and a perfect lifestyle!"
+    },
+    "content": {
+        "rendered": "\n<p>This stylish two-bedroom apartment is situated in the Canberra city precinct, perfect for you to experience the convenience of a vibrant inner-city life.<\/p>\n\n\n\n<p>The apartment itself celebrates open plan living, with a kitchen featuring high end appliances and stone bench tops. An inviting dining and lounge area opens out to a great sized balcony, providing ample space to enjoy outdoor entertaining. Offering two spacious bedrooms both with built in robes. The master bedroom has its own ensuite and the main bathroom is luxurious in design.<\/p>\n\n\n\n<p>With only a short stroll to an abundance of leisure and social attractions such as restaurants, cafes, bars, cinemas, the Canberra centre, and the light rail, you simply cannot get an easier lifestyle than this.<\/p>\n\n\n\n<p>Features<\/p>\n\n\n\n<p>Two spacious bedrooms, main with ensuite<br>Open plan living and dining<br>Great size kitchen with quality stainless steel appliances<br>Balcony with great views<br>Roof top outdoor entertaining terrace<br>Lift access and visitor intercom<br>Convenient location<br>Walking distance to an abundance of leisure and social interactions<br>Light rail and Canberra centre is just a short stroll away close by<\/p>\n\n\n\n<p>This is a rare opportunity to come by so act quick and secure this off-the -plan luxury apartment for yourself now.<\/p>\n",
+        "protected": false
+    },
+    "excerpt": {
+        "rendered": "<p>This stylish two-bedroom apartment is situated in the Canberra city precinct, perfect for you to experience the convenience of a vibrant inner-city life. The apartment itself celebrates open plan living, with a kitchen featuring high end appliances and stone bench tops. An inviting dining and lounge area opens out to a great sized balcony, providing [&hellip;]<\/p>\n",
+        "protected": false
+    },
+    "author": 1,
+    "featured_media": 19517,
+    "parent": 0,
+    "menu_order": 0,
+    "template": "",
+    "property_type": [
+        16
+    ],
+    "property_status": [
+        30
+    ],
+    "property_feature": [],
+    "property_label": [],
+    "property_area": [
+        125
+    ],
+    "property_meta": {
+        "_edit_lock": [
+            "1616116355:1"
+        ],
+        "_edit_last": [
+            "1"
+        ],
+        "fave_property_map": [
+            "1"
+        ],
+        "fave_property_location": [
+            "-35.2802244,149.1364364,15"
+        ],
+        "houzez_geolocation_lat": [
+            "-35.2802244"
+        ],
+        "houzez_geolocation_long": [
+            "149.1364364"
+        ],
+        "fave_property_map_street_view": [
+            "hide"
+        ],
+        "fave_featured": [
+            "0"
+        ],
+        "fave_loggedintoview": [
+            "0"
+        ],
+        "fave_agent_display_option": [
+            "agent_info"
+        ],
+        "fave_agents": [
+            "72"
+        ],
+        "fave_property_agency": [
+            "-1"
+        ],
+        "fave_prop_homeslider": [
+            "no"
+        ],
+        "fave_single_top_area": [
+            "global"
+        ],
+        "fave_single_content_area": [
+            "global"
+        ],
+        "rs_page_bg_color": [
+            ""
+        ],
+        "houzez_manual_expire": [
+            "0"
+        ],
+        "_houzez_expiration_date_status": [
+            "saved"
+        ],
+        "fave_property_price": [
+            "579000"
+        ],
+        "fave_property_bedrooms": [
+            "2"
+        ],
+        "fave_property_bathrooms": [
+            "2"
+        ],
+        "fave_property_garage": [
+            "1"
+        ],
+        "fave_property_map_address": [
+            "Cooyong St, Canberra ACT 2601, Australia"
+        ],
+        "fave_property_address": [
+            "123\/Door 606 Metropol, Reid, ACT 2612"
+        ],
+        "fave_property_zip": [
+            "2612"
+        ],
+        "_thumbnail_id": [
+            "19517"
+        ],
+        "houzez_total_property_views": [
+            "38"
+        ],
+        "houzez_views_by_date": [
+            "a:5:{s:10:\"03-19-2021\";i:11;s:10:\"03-20-2021\";i:3;s:10:\"03-21-2021\";i:7;s:10:\"03-22-2021\";i:12;s:10:\"03-23-2021\";i:5;}"
+        ],
+        "houzez_recently_viewed": [
+            "2021-03-23 23:14:18"
+        ],
+        "ekit_post_views_count": [
+            "38"
+        ],
+        "fave_property_images": [
+            "19514",
+            "19513",
+            "19515",
+            "19516"
+        ]
+    },
+    "_links": {
+        "self": [
+            {
+                "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/properties\/19511"
+            }
+        ],
+        "collection": [
+            {
+                "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/properties"
+            }
+        ],
+        "about": [
+            {
+                "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/types\/property"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/users\/1"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 1,
+                "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/properties\/19511\/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 19512,
+                "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/properties\/19511\/revisions\/19512"
+            }
+        ],
+        "wp:featuredmedia": [
+            {
+                "embeddable": true,
+                "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/media\/19517"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/media?parent=19511"
+            }
+        ],
+        "wp:term": [
+            {
+                "taxonomy": "property_type",
+                "embeddable": true,
+                "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/property_type?post=19511"
+            },
+            {
+                "taxonomy": "property_status",
+                "embeddable": true,
+                "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/property_status?post=19511"
+            },
+            {
+                "taxonomy": "property_feature",
+                "embeddable": true,
+                "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/property_feature?post=19511"
+            },
+            {
+                "taxonomy": "property_label",
+                "embeddable": true,
+                "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/property_label?post=19511"
+            },
+            {
+                "taxonomy": "property_area",
+                "embeddable": true,
+                "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/property_area?post=19511"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https:\/\/api.w.org\/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}

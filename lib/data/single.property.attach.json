@@ -1,0 +1,862 @@
+[
+    {
+        "id": 19517,
+        "date": "2021-03-19T12:09:05",
+        "date_gmt": "2021-03-19T01:09:05",
+        "guid": {
+            "rendered": "https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/M6.png"
+        },
+        "modified": "2021-03-19T12:09:05",
+        "modified_gmt": "2021-03-19T01:09:05",
+        "slug": "m6",
+        "status": "inherit",
+        "type": "attachment",
+        "link": "https:\/\/www.canberryproperties.com.au\/index.php\/property\/inner-city-living-and-a-perfect-lifestyle\/m6\/",
+        "title": {
+            "rendered": "M6"
+        },
+        "author": 1,
+        "comment_status": "open",
+        "ping_status": "closed",
+        "template": "",
+        "meta": [],
+        "description": {
+            "rendered": "<p class=\"attachment\"><a href='https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/M6.png'><img width=\"300\" height=\"225\" src=\"https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/M6-300x225.png\" class=\"attachment-medium size-medium\" alt=\"\" loading=\"lazy\" srcset=\"https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/M6-300x225.png 300w, https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/M6.png 592w, https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/M6-584x438.png 584w, https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/M6-120x90.png 120w, https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/M6-496x372.png 496w\" sizes=\"(max-width: 300px) 100vw, 300px\" \/><\/a><\/p>\n"
+        },
+        "caption": {
+            "rendered": ""
+        },
+        "alt_text": "",
+        "media_type": "image",
+        "mime_type": "image\/png",
+        "media_details": {
+            "width": 592,
+            "height": 444,
+            "file": "2021\/03\/M6.png",
+            "sizes": {
+                "medium": {
+                    "file": "M6-300x225.png",
+                    "width": 300,
+                    "height": 225,
+                    "mime_type": "image\/png",
+                    "source_url": "https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/M6-300x225.png"
+                },
+                "thumbnail": {
+                    "file": "M6-150x150.png",
+                    "width": 150,
+                    "height": 150,
+                    "mime_type": "image\/png",
+                    "source_url": "https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/M6-150x150.png"
+                },
+                "houzez-item-image-1": {
+                    "file": "M6-592x444.png",
+                    "width": 592,
+                    "height": 444,
+                    "mime_type": "image\/png",
+                    "source_url": "https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/M6-592x444.png"
+                },
+                "houzez-item-image-6": {
+                    "file": "M6-584x438.png",
+                    "width": 584,
+                    "height": 438,
+                    "mime_type": "image\/png",
+                    "source_url": "https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/M6-584x438.png"
+                },
+                "houzez-map-info": {
+                    "file": "M6-120x90.png",
+                    "width": 120,
+                    "height": 90,
+                    "mime_type": "image\/png",
+                    "source_url": "https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/M6-120x90.png"
+                },
+                "houzez-image_masonry": {
+                    "file": "M6-496x372.png",
+                    "width": 496,
+                    "height": 372,
+                    "mime_type": "image\/png",
+                    "source_url": "https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/M6-496x372.png"
+                },
+                "full": {
+                    "file": "M6.png",
+                    "width": 592,
+                    "height": 444,
+                    "mime_type": "image\/png",
+                    "source_url": "https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/M6.png"
+                }
+            },
+            "image_meta": {
+                "aperture": "0",
+                "credit": "",
+                "camera": "",
+                "caption": "",
+                "created_timestamp": "0",
+                "copyright": "",
+                "focal_length": "0",
+                "iso": "0",
+                "shutter_speed": "0",
+                "title": "",
+                "orientation": "0",
+                "keywords": []
+            }
+        },
+        "post": 19511,
+        "source_url": "https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/M6.png",
+        "_links": {
+            "self": [
+                {
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/media\/19517"
+                }
+            ],
+            "collection": [
+                {
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/media"
+                }
+            ],
+            "about": [
+                {
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/types\/attachment"
+                }
+            ],
+            "author": [
+                {
+                    "embeddable": true,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/users\/1"
+                }
+            ],
+            "replies": [
+                {
+                    "embeddable": true,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/comments?post=19517"
+                }
+            ]
+        }
+    },
+    {
+        "id": 19516,
+        "date": "2021-03-19T12:03:35",
+        "date_gmt": "2021-03-19T01:03:35",
+        "guid": {
+            "rendered": "https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00716_85a9-1a41-3ed8-473a-6d15-9ff5-b5f3-8c24_20210319102336_original.jpg"
+        },
+        "modified": "2021-03-19T12:03:35",
+        "modified_gmt": "2021-03-19T01:03:35",
+        "slug": "dsc00716_85a9-1a41-3ed8-473a-6d15-9ff5-b5f3-8c24_20210319102336_original",
+        "status": "inherit",
+        "type": "attachment",
+        "link": "https:\/\/www.canberryproperties.com.au\/index.php\/property\/inner-city-living-and-a-perfect-lifestyle\/dsc00716_85a9-1a41-3ed8-473a-6d15-9ff5-b5f3-8c24_20210319102336_original\/",
+        "title": {
+            "rendered": "DSC00716_85a9-1a41-3ed8-473a-6d15-9ff5-b5f3-8c24_20210319102336_original"
+        },
+        "author": 1,
+        "comment_status": "open",
+        "ping_status": "closed",
+        "template": "",
+        "meta": [],
+        "description": {
+            "rendered": "<p class=\"attachment\"><a href='https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00716_85a9-1a41-3ed8-473a-6d15-9ff5-b5f3-8c24_20210319102336_original-scaled.jpg'><img width=\"300\" height=\"200\" src=\"https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00716_85a9-1a41-3ed8-473a-6d15-9ff5-b5f3-8c24_20210319102336_original-300x200.jpg\" class=\"attachment-medium size-medium\" alt=\"\" loading=\"lazy\" srcset=\"https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00716_85a9-1a41-3ed8-473a-6d15-9ff5-b5f3-8c24_20210319102336_original-300x200.jpg 300w, https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00716_85a9-1a41-3ed8-473a-6d15-9ff5-b5f3-8c24_20210319102336_original-1024x683.jpg 1024w, https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00716_85a9-1a41-3ed8-473a-6d15-9ff5-b5f3-8c24_20210319102336_original-768x512.jpg 768w, https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00716_85a9-1a41-3ed8-473a-6d15-9ff5-b5f3-8c24_20210319102336_original-1536x1024.jpg 1536w, https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00716_85a9-1a41-3ed8-473a-6d15-9ff5-b5f3-8c24_20210319102336_original-2048x1365.jpg 2048w, https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00716_85a9-1a41-3ed8-473a-6d15-9ff5-b5f3-8c24_20210319102336_original-1170x785.jpg 1170w, https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00716_85a9-1a41-3ed8-473a-6d15-9ff5-b5f3-8c24_20210319102336_original-900x600.jpg 900w, https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00716_85a9-1a41-3ed8-473a-6d15-9ff5-b5f3-8c24_20210319102336_original-496x331.jpg 496w\" sizes=\"(max-width: 300px) 100vw, 300px\" \/><\/a><\/p>\n"
+        },
+        "caption": {
+            "rendered": ""
+        },
+        "alt_text": "",
+        "media_type": "image",
+        "mime_type": "image\/jpeg",
+        "media_details": {
+            "width": 2560,
+            "height": 1707,
+            "file": "2021\/03\/DSC00716_85a9-1a41-3ed8-473a-6d15-9ff5-b5f3-8c24_20210319102336_original-scaled.jpg",
+            "sizes": {
+                "medium": {
+                    "file": "DSC00716_85a9-1a41-3ed8-473a-6d15-9ff5-b5f3-8c24_20210319102336_original-300x200.jpg",
+                    "width": 300,
+                    "height": 200,
+                    "mime_type": "image\/jpeg",
+                    "source_url": "https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00716_85a9-1a41-3ed8-473a-6d15-9ff5-b5f3-8c24_20210319102336_original-300x200.jpg"
+                },
+                "large": {
+                    "file": "DSC00716_85a9-1a41-3ed8-473a-6d15-9ff5-b5f3-8c24_20210319102336_original-1024x683.jpg",
+                    "width": 1024,
+                    "height": 683,
+                    "mime_type": "image\/jpeg",
+                    "source_url": "https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00716_85a9-1a41-3ed8-473a-6d15-9ff5-b5f3-8c24_20210319102336_original-1024x683.jpg"
+                },
+                "thumbnail": {
+                    "file": "DSC00716_85a9-1a41-3ed8-473a-6d15-9ff5-b5f3-8c24_20210319102336_original-150x150.jpg",
+                    "width": 150,
+                    "height": 150,
+                    "mime_type": "image\/jpeg",
+                    "source_url": "https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00716_85a9-1a41-3ed8-473a-6d15-9ff5-b5f3-8c24_20210319102336_original-150x150.jpg"
+                },
+                "medium_large": {
+                    "file": "DSC00716_85a9-1a41-3ed8-473a-6d15-9ff5-b5f3-8c24_20210319102336_original-768x512.jpg",
+                    "width": 768,
+                    "height": 512,
+                    "mime_type": "image\/jpeg",
+                    "source_url": "https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00716_85a9-1a41-3ed8-473a-6d15-9ff5-b5f3-8c24_20210319102336_original-768x512.jpg"
+                },
+                "1536x1536": {
+                    "file": "DSC00716_85a9-1a41-3ed8-473a-6d15-9ff5-b5f3-8c24_20210319102336_original-1536x1024.jpg",
+                    "width": 1536,
+                    "height": 1024,
+                    "mime_type": "image\/jpeg",
+                    "source_url": "https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00716_85a9-1a41-3ed8-473a-6d15-9ff5-b5f3-8c24_20210319102336_original-1536x1024.jpg"
+                },
+                "2048x2048": {
+                    "file": "DSC00716_85a9-1a41-3ed8-473a-6d15-9ff5-b5f3-8c24_20210319102336_original-2048x1365.jpg",
+                    "width": 2048,
+                    "height": 1365,
+                    "mime_type": "image\/jpeg",
+                    "source_url": "https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00716_85a9-1a41-3ed8-473a-6d15-9ff5-b5f3-8c24_20210319102336_original-2048x1365.jpg"
+                },
+                "houzez-gallery": {
+                    "file": "DSC00716_85a9-1a41-3ed8-473a-6d15-9ff5-b5f3-8c24_20210319102336_original-1170x785.jpg",
+                    "width": 1170,
+                    "height": 785,
+                    "mime_type": "image\/jpeg",
+                    "source_url": "https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00716_85a9-1a41-3ed8-473a-6d15-9ff5-b5f3-8c24_20210319102336_original-1170x785.jpg"
+                },
+                "houzez-item-image-1": {
+                    "file": "DSC00716_85a9-1a41-3ed8-473a-6d15-9ff5-b5f3-8c24_20210319102336_original-592x444.jpg",
+                    "width": 592,
+                    "height": 444,
+                    "mime_type": "image\/jpeg",
+                    "source_url": "https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00716_85a9-1a41-3ed8-473a-6d15-9ff5-b5f3-8c24_20210319102336_original-592x444.jpg"
+                },
+                "houzez-item-image-4": {
+                    "file": "DSC00716_85a9-1a41-3ed8-473a-6d15-9ff5-b5f3-8c24_20210319102336_original-758x564.jpg",
+                    "width": 758,
+                    "height": 564,
+                    "mime_type": "image\/jpeg",
+                    "source_url": "https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00716_85a9-1a41-3ed8-473a-6d15-9ff5-b5f3-8c24_20210319102336_original-758x564.jpg"
+                },
+                "houzez-item-image-6": {
+                    "file": "DSC00716_85a9-1a41-3ed8-473a-6d15-9ff5-b5f3-8c24_20210319102336_original-584x438.jpg",
+                    "width": 584,
+                    "height": 438,
+                    "mime_type": "image\/jpeg",
+                    "source_url": "https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00716_85a9-1a41-3ed8-473a-6d15-9ff5-b5f3-8c24_20210319102336_original-584x438.jpg"
+                },
+                "houzez-variable-gallery": {
+                    "file": "DSC00716_85a9-1a41-3ed8-473a-6d15-9ff5-b5f3-8c24_20210319102336_original-900x600.jpg",
+                    "width": 900,
+                    "height": 600,
+                    "mime_type": "image\/jpeg",
+                    "source_url": "https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00716_85a9-1a41-3ed8-473a-6d15-9ff5-b5f3-8c24_20210319102336_original-900x600.jpg"
+                },
+                "houzez-map-info": {
+                    "file": "DSC00716_85a9-1a41-3ed8-473a-6d15-9ff5-b5f3-8c24_20210319102336_original-120x90.jpg",
+                    "width": 120,
+                    "height": 90,
+                    "mime_type": "image\/jpeg",
+                    "source_url": "https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00716_85a9-1a41-3ed8-473a-6d15-9ff5-b5f3-8c24_20210319102336_original-120x90.jpg"
+                },
+                "houzez-image_masonry": {
+                    "file": "DSC00716_85a9-1a41-3ed8-473a-6d15-9ff5-b5f3-8c24_20210319102336_original-496x331.jpg",
+                    "width": 496,
+                    "height": 331,
+                    "mime_type": "image\/jpeg",
+                    "source_url": "https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00716_85a9-1a41-3ed8-473a-6d15-9ff5-b5f3-8c24_20210319102336_original-496x331.jpg"
+                },
+                "full": {
+                    "file": "DSC00716_85a9-1a41-3ed8-473a-6d15-9ff5-b5f3-8c24_20210319102336_original-scaled.jpg",
+                    "width": 2560,
+                    "height": 1707,
+                    "mime_type": "image\/jpeg",
+                    "source_url": "https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00716_85a9-1a41-3ed8-473a-6d15-9ff5-b5f3-8c24_20210319102336_original-scaled.jpg"
+                }
+            },
+            "image_meta": {
+                "aperture": "2.8",
+                "credit": "",
+                "camera": "ILCE-7M2",
+                "caption": "",
+                "created_timestamp": "1615670482",
+                "copyright": "",
+                "focal_length": "16",
+                "iso": "250",
+                "shutter_speed": "0.01",
+                "title": "",
+                "orientation": "0",
+                "keywords": []
+            },
+            "original_image": "DSC00716_85a9-1a41-3ed8-473a-6d15-9ff5-b5f3-8c24_20210319102336_original.jpg"
+        },
+        "post": 19511,
+        "source_url": "https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00716_85a9-1a41-3ed8-473a-6d15-9ff5-b5f3-8c24_20210319102336_original-scaled.jpg",
+        "_links": {
+            "self": [
+                {
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/media\/19516"
+                }
+            ],
+            "collection": [
+                {
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/media"
+                }
+            ],
+            "about": [
+                {
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/types\/attachment"
+                }
+            ],
+            "author": [
+                {
+                    "embeddable": true,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/users\/1"
+                }
+            ],
+            "replies": [
+                {
+                    "embeddable": true,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/comments?post=19516"
+                }
+            ]
+        }
+    },
+    {
+        "id": 19515,
+        "date": "2021-03-19T12:03:13",
+        "date_gmt": "2021-03-19T01:03:13",
+        "guid": {
+            "rendered": "https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00722_c502-0c4e-a144-ea1f-bd37-0768-35d4-3914_20210319102356_original.jpg"
+        },
+        "modified": "2021-03-19T12:03:13",
+        "modified_gmt": "2021-03-19T01:03:13",
+        "slug": "dsc00722_c502-0c4e-a144-ea1f-bd37-0768-35d4-3914_20210319102356_original",
+        "status": "inherit",
+        "type": "attachment",
+        "link": "https:\/\/www.canberryproperties.com.au\/index.php\/property\/inner-city-living-and-a-perfect-lifestyle\/dsc00722_c502-0c4e-a144-ea1f-bd37-0768-35d4-3914_20210319102356_original\/",
+        "title": {
+            "rendered": "DSC00722_c502-0c4e-a144-ea1f-bd37-0768-35d4-3914_20210319102356_original"
+        },
+        "author": 1,
+        "comment_status": "open",
+        "ping_status": "closed",
+        "template": "",
+        "meta": [],
+        "description": {
+            "rendered": "<p class=\"attachment\"><a href='https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00722_c502-0c4e-a144-ea1f-bd37-0768-35d4-3914_20210319102356_original-scaled.jpg'><img width=\"300\" height=\"203\" src=\"https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00722_c502-0c4e-a144-ea1f-bd37-0768-35d4-3914_20210319102356_original-300x203.jpg\" class=\"attachment-medium size-medium\" alt=\"\" loading=\"lazy\" srcset=\"https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00722_c502-0c4e-a144-ea1f-bd37-0768-35d4-3914_20210319102356_original-300x203.jpg 300w, https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00722_c502-0c4e-a144-ea1f-bd37-0768-35d4-3914_20210319102356_original-1024x693.jpg 1024w, https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00722_c502-0c4e-a144-ea1f-bd37-0768-35d4-3914_20210319102356_original-768x519.jpg 768w, https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00722_c502-0c4e-a144-ea1f-bd37-0768-35d4-3914_20210319102356_original-1536x1039.jpg 1536w, https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00722_c502-0c4e-a144-ea1f-bd37-0768-35d4-3914_20210319102356_original-2048x1385.jpg 2048w, https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00722_c502-0c4e-a144-ea1f-bd37-0768-35d4-3914_20210319102356_original-887x600.jpg 887w, https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00722_c502-0c4e-a144-ea1f-bd37-0768-35d4-3914_20210319102356_original-496x335.jpg 496w\" sizes=\"(max-width: 300px) 100vw, 300px\" \/><\/a><\/p>\n"
+        },
+        "caption": {
+            "rendered": ""
+        },
+        "alt_text": "",
+        "media_type": "image",
+        "mime_type": "image\/jpeg",
+        "media_details": {
+            "width": 2560,
+            "height": 1732,
+            "file": "2021\/03\/DSC00722_c502-0c4e-a144-ea1f-bd37-0768-35d4-3914_20210319102356_original-scaled.jpg",
+            "sizes": {
+                "medium": {
+                    "file": "DSC00722_c502-0c4e-a144-ea1f-bd37-0768-35d4-3914_20210319102356_original-300x203.jpg",
+                    "width": 300,
+                    "height": 203,
+                    "mime_type": "image\/jpeg",
+                    "source_url": "https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00722_c502-0c4e-a144-ea1f-bd37-0768-35d4-3914_20210319102356_original-300x203.jpg"
+                },
+                "large": {
+                    "file": "DSC00722_c502-0c4e-a144-ea1f-bd37-0768-35d4-3914_20210319102356_original-1024x693.jpg",
+                    "width": 1024,
+                    "height": 693,
+                    "mime_type": "image\/jpeg",
+                    "source_url": "https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00722_c502-0c4e-a144-ea1f-bd37-0768-35d4-3914_20210319102356_original-1024x693.jpg"
+                },
+                "thumbnail": {
+                    "file": "DSC00722_c502-0c4e-a144-ea1f-bd37-0768-35d4-3914_20210319102356_original-150x150.jpg",
+                    "width": 150,
+                    "height": 150,
+                    "mime_type": "image\/jpeg",
+                    "source_url": "https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00722_c502-0c4e-a144-ea1f-bd37-0768-35d4-3914_20210319102356_original-150x150.jpg"
+                },
+                "medium_large": {
+                    "file": "DSC00722_c502-0c4e-a144-ea1f-bd37-0768-35d4-3914_20210319102356_original-768x519.jpg",
+                    "width": 768,
+                    "height": 519,
+                    "mime_type": "image\/jpeg",
+                    "source_url": "https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00722_c502-0c4e-a144-ea1f-bd37-0768-35d4-3914_20210319102356_original-768x519.jpg"
+                },
+                "1536x1536": {
+                    "file": "DSC00722_c502-0c4e-a144-ea1f-bd37-0768-35d4-3914_20210319102356_original-1536x1039.jpg",
+                    "width": 1536,
+                    "height": 1039,
+                    "mime_type": "image\/jpeg",
+                    "source_url": "https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00722_c502-0c4e-a144-ea1f-bd37-0768-35d4-3914_20210319102356_original-1536x1039.jpg"
+                },
+                "2048x2048": {
+                    "file": "DSC00722_c502-0c4e-a144-ea1f-bd37-0768-35d4-3914_20210319102356_original-2048x1385.jpg",
+                    "width": 2048,
+                    "height": 1385,
+                    "mime_type": "image\/jpeg",
+                    "source_url": "https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00722_c502-0c4e-a144-ea1f-bd37-0768-35d4-3914_20210319102356_original-2048x1385.jpg"
+                },
+                "houzez-gallery": {
+                    "file": "DSC00722_c502-0c4e-a144-ea1f-bd37-0768-35d4-3914_20210319102356_original-1170x785.jpg",
+                    "width": 1170,
+                    "height": 785,
+                    "mime_type": "image\/jpeg",
+                    "source_url": "https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00722_c502-0c4e-a144-ea1f-bd37-0768-35d4-3914_20210319102356_original-1170x785.jpg"
+                },
+                "houzez-item-image-1": {
+                    "file": "DSC00722_c502-0c4e-a144-ea1f-bd37-0768-35d4-3914_20210319102356_original-592x444.jpg",
+                    "width": 592,
+                    "height": 444,
+                    "mime_type": "image\/jpeg",
+                    "source_url": "https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00722_c502-0c4e-a144-ea1f-bd37-0768-35d4-3914_20210319102356_original-592x444.jpg"
+                },
+                "houzez-item-image-4": {
+                    "file": "DSC00722_c502-0c4e-a144-ea1f-bd37-0768-35d4-3914_20210319102356_original-758x564.jpg",
+                    "width": 758,
+                    "height": 564,
+                    "mime_type": "image\/jpeg",
+                    "source_url": "https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00722_c502-0c4e-a144-ea1f-bd37-0768-35d4-3914_20210319102356_original-758x564.jpg"
+                },
+                "houzez-item-image-6": {
+                    "file": "DSC00722_c502-0c4e-a144-ea1f-bd37-0768-35d4-3914_20210319102356_original-584x438.jpg",
+                    "width": 584,
+                    "height": 438,
+                    "mime_type": "image\/jpeg",
+                    "source_url": "https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00722_c502-0c4e-a144-ea1f-bd37-0768-35d4-3914_20210319102356_original-584x438.jpg"
+                },
+                "houzez-variable-gallery": {
+                    "file": "DSC00722_c502-0c4e-a144-ea1f-bd37-0768-35d4-3914_20210319102356_original-887x600.jpg",
+                    "width": 887,
+                    "height": 600,
+                    "mime_type": "image\/jpeg",
+                    "source_url": "https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00722_c502-0c4e-a144-ea1f-bd37-0768-35d4-3914_20210319102356_original-887x600.jpg"
+                },
+                "houzez-map-info": {
+                    "file": "DSC00722_c502-0c4e-a144-ea1f-bd37-0768-35d4-3914_20210319102356_original-120x90.jpg",
+                    "width": 120,
+                    "height": 90,
+                    "mime_type": "image\/jpeg",
+                    "source_url": "https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00722_c502-0c4e-a144-ea1f-bd37-0768-35d4-3914_20210319102356_original-120x90.jpg"
+                },
+                "houzez-image_masonry": {
+                    "file": "DSC00722_c502-0c4e-a144-ea1f-bd37-0768-35d4-3914_20210319102356_original-496x335.jpg",
+                    "width": 496,
+                    "height": 335,
+                    "mime_type": "image\/jpeg",
+                    "source_url": "https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00722_c502-0c4e-a144-ea1f-bd37-0768-35d4-3914_20210319102356_original-496x335.jpg"
+                },
+                "full": {
+                    "file": "DSC00722_c502-0c4e-a144-ea1f-bd37-0768-35d4-3914_20210319102356_original-scaled.jpg",
+                    "width": 2560,
+                    "height": 1732,
+                    "mime_type": "image\/jpeg",
+                    "source_url": "https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00722_c502-0c4e-a144-ea1f-bd37-0768-35d4-3914_20210319102356_original-scaled.jpg"
+                }
+            },
+            "image_meta": {
+                "aperture": "8",
+                "credit": "",
+                "camera": "ILCE-7M2",
+                "caption": "",
+                "created_timestamp": "1615671599",
+                "copyright": "",
+                "focal_length": "21",
+                "iso": "400",
+                "shutter_speed": "0.002",
+                "title": "",
+                "orientation": "0",
+                "keywords": []
+            },
+            "original_image": "DSC00722_c502-0c4e-a144-ea1f-bd37-0768-35d4-3914_20210319102356_original.jpg"
+        },
+        "post": 19511,
+        "source_url": "https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00722_c502-0c4e-a144-ea1f-bd37-0768-35d4-3914_20210319102356_original-scaled.jpg",
+        "_links": {
+            "self": [
+                {
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/media\/19515"
+                }
+            ],
+            "collection": [
+                {
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/media"
+                }
+            ],
+            "about": [
+                {
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/types\/attachment"
+                }
+            ],
+            "author": [
+                {
+                    "embeddable": true,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/users\/1"
+                }
+            ],
+            "replies": [
+                {
+                    "embeddable": true,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/comments?post=19515"
+                }
+            ]
+        }
+    },
+    {
+        "id": 19514,
+        "date": "2021-03-19T12:02:50",
+        "date_gmt": "2021-03-19T01:02:50",
+        "guid": {
+            "rendered": "https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00717_7cb4-7008-7ac8-44e9-df81-f06a-082a-cde0_20210319102347_original.jpg"
+        },
+        "modified": "2021-03-19T12:02:50",
+        "modified_gmt": "2021-03-19T01:02:50",
+        "slug": "dsc00717_7cb4-7008-7ac8-44e9-df81-f06a-082a-cde0_20210319102347_original",
+        "status": "inherit",
+        "type": "attachment",
+        "link": "https:\/\/www.canberryproperties.com.au\/index.php\/property\/inner-city-living-and-a-perfect-lifestyle\/dsc00717_7cb4-7008-7ac8-44e9-df81-f06a-082a-cde0_20210319102347_original\/",
+        "title": {
+            "rendered": "DSC00717_7cb4-7008-7ac8-44e9-df81-f06a-082a-cde0_20210319102347_original"
+        },
+        "author": 1,
+        "comment_status": "open",
+        "ping_status": "closed",
+        "template": "",
+        "meta": [],
+        "description": {
+            "rendered": "<p class=\"attachment\"><a href='https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00717_7cb4-7008-7ac8-44e9-df81-f06a-082a-cde0_20210319102347_original-scaled.jpg'><img width=\"300\" height=\"200\" src=\"https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00717_7cb4-7008-7ac8-44e9-df81-f06a-082a-cde0_20210319102347_original-300x200.jpg\" class=\"attachment-medium size-medium\" alt=\"\" loading=\"lazy\" srcset=\"https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00717_7cb4-7008-7ac8-44e9-df81-f06a-082a-cde0_20210319102347_original-300x200.jpg 300w, https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00717_7cb4-7008-7ac8-44e9-df81-f06a-082a-cde0_20210319102347_original-1024x683.jpg 1024w, https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00717_7cb4-7008-7ac8-44e9-df81-f06a-082a-cde0_20210319102347_original-768x512.jpg 768w, https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00717_7cb4-7008-7ac8-44e9-df81-f06a-082a-cde0_20210319102347_original-1536x1024.jpg 1536w, https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00717_7cb4-7008-7ac8-44e9-df81-f06a-082a-cde0_20210319102347_original-2048x1365.jpg 2048w, https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00717_7cb4-7008-7ac8-44e9-df81-f06a-082a-cde0_20210319102347_original-1170x785.jpg 1170w, https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00717_7cb4-7008-7ac8-44e9-df81-f06a-082a-cde0_20210319102347_original-900x600.jpg 900w, https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00717_7cb4-7008-7ac8-44e9-df81-f06a-082a-cde0_20210319102347_original-496x331.jpg 496w\" sizes=\"(max-width: 300px) 100vw, 300px\" \/><\/a><\/p>\n"
+        },
+        "caption": {
+            "rendered": ""
+        },
+        "alt_text": "",
+        "media_type": "image",
+        "mime_type": "image\/jpeg",
+        "media_details": {
+            "width": 2560,
+            "height": 1707,
+            "file": "2021\/03\/DSC00717_7cb4-7008-7ac8-44e9-df81-f06a-082a-cde0_20210319102347_original-scaled.jpg",
+            "sizes": {
+                "medium": {
+                    "file": "DSC00717_7cb4-7008-7ac8-44e9-df81-f06a-082a-cde0_20210319102347_original-300x200.jpg",
+                    "width": 300,
+                    "height": 200,
+                    "mime_type": "image\/jpeg",
+                    "source_url": "https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00717_7cb4-7008-7ac8-44e9-df81-f06a-082a-cde0_20210319102347_original-300x200.jpg"
+                },
+                "large": {
+                    "file": "DSC00717_7cb4-7008-7ac8-44e9-df81-f06a-082a-cde0_20210319102347_original-1024x683.jpg",
+                    "width": 1024,
+                    "height": 683,
+                    "mime_type": "image\/jpeg",
+                    "source_url": "https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00717_7cb4-7008-7ac8-44e9-df81-f06a-082a-cde0_20210319102347_original-1024x683.jpg"
+                },
+                "thumbnail": {
+                    "file": "DSC00717_7cb4-7008-7ac8-44e9-df81-f06a-082a-cde0_20210319102347_original-150x150.jpg",
+                    "width": 150,
+                    "height": 150,
+                    "mime_type": "image\/jpeg",
+                    "source_url": "https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00717_7cb4-7008-7ac8-44e9-df81-f06a-082a-cde0_20210319102347_original-150x150.jpg"
+                },
+                "medium_large": {
+                    "file": "DSC00717_7cb4-7008-7ac8-44e9-df81-f06a-082a-cde0_20210319102347_original-768x512.jpg",
+                    "width": 768,
+                    "height": 512,
+                    "mime_type": "image\/jpeg",
+                    "source_url": "https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00717_7cb4-7008-7ac8-44e9-df81-f06a-082a-cde0_20210319102347_original-768x512.jpg"
+                },
+                "1536x1536": {
+                    "file": "DSC00717_7cb4-7008-7ac8-44e9-df81-f06a-082a-cde0_20210319102347_original-1536x1024.jpg",
+                    "width": 1536,
+                    "height": 1024,
+                    "mime_type": "image\/jpeg",
+                    "source_url": "https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00717_7cb4-7008-7ac8-44e9-df81-f06a-082a-cde0_20210319102347_original-1536x1024.jpg"
+                },
+                "2048x2048": {
+                    "file": "DSC00717_7cb4-7008-7ac8-44e9-df81-f06a-082a-cde0_20210319102347_original-2048x1365.jpg",
+                    "width": 2048,
+                    "height": 1365,
+                    "mime_type": "image\/jpeg",
+                    "source_url": "https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00717_7cb4-7008-7ac8-44e9-df81-f06a-082a-cde0_20210319102347_original-2048x1365.jpg"
+                },
+                "houzez-gallery": {
+                    "file": "DSC00717_7cb4-7008-7ac8-44e9-df81-f06a-082a-cde0_20210319102347_original-1170x785.jpg",
+                    "width": 1170,
+                    "height": 785,
+                    "mime_type": "image\/jpeg",
+                    "source_url": "https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00717_7cb4-7008-7ac8-44e9-df81-f06a-082a-cde0_20210319102347_original-1170x785.jpg"
+                },
+                "houzez-item-image-1": {
+                    "file": "DSC00717_7cb4-7008-7ac8-44e9-df81-f06a-082a-cde0_20210319102347_original-592x444.jpg",
+                    "width": 592,
+                    "height": 444,
+                    "mime_type": "image\/jpeg",
+                    "source_url": "https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00717_7cb4-7008-7ac8-44e9-df81-f06a-082a-cde0_20210319102347_original-592x444.jpg"
+                },
+                "houzez-item-image-4": {
+                    "file": "DSC00717_7cb4-7008-7ac8-44e9-df81-f06a-082a-cde0_20210319102347_original-758x564.jpg",
+                    "width": 758,
+                    "height": 564,
+                    "mime_type": "image\/jpeg",
+                    "source_url": "https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00717_7cb4-7008-7ac8-44e9-df81-f06a-082a-cde0_20210319102347_original-758x564.jpg"
+                },
+                "houzez-item-image-6": {
+                    "file": "DSC00717_7cb4-7008-7ac8-44e9-df81-f06a-082a-cde0_20210319102347_original-584x438.jpg",
+                    "width": 584,
+                    "height": 438,
+                    "mime_type": "image\/jpeg",
+                    "source_url": "https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00717_7cb4-7008-7ac8-44e9-df81-f06a-082a-cde0_20210319102347_original-584x438.jpg"
+                },
+                "houzez-variable-gallery": {
+                    "file": "DSC00717_7cb4-7008-7ac8-44e9-df81-f06a-082a-cde0_20210319102347_original-900x600.jpg",
+                    "width": 900,
+                    "height": 600,
+                    "mime_type": "image\/jpeg",
+                    "source_url": "https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00717_7cb4-7008-7ac8-44e9-df81-f06a-082a-cde0_20210319102347_original-900x600.jpg"
+                },
+                "houzez-map-info": {
+                    "file": "DSC00717_7cb4-7008-7ac8-44e9-df81-f06a-082a-cde0_20210319102347_original-120x90.jpg",
+                    "width": 120,
+                    "height": 90,
+                    "mime_type": "image\/jpeg",
+                    "source_url": "https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00717_7cb4-7008-7ac8-44e9-df81-f06a-082a-cde0_20210319102347_original-120x90.jpg"
+                },
+                "houzez-image_masonry": {
+                    "file": "DSC00717_7cb4-7008-7ac8-44e9-df81-f06a-082a-cde0_20210319102347_original-496x331.jpg",
+                    "width": 496,
+                    "height": 331,
+                    "mime_type": "image\/jpeg",
+                    "source_url": "https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00717_7cb4-7008-7ac8-44e9-df81-f06a-082a-cde0_20210319102347_original-496x331.jpg"
+                },
+                "full": {
+                    "file": "DSC00717_7cb4-7008-7ac8-44e9-df81-f06a-082a-cde0_20210319102347_original-scaled.jpg",
+                    "width": 2560,
+                    "height": 1707,
+                    "mime_type": "image\/jpeg",
+                    "source_url": "https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00717_7cb4-7008-7ac8-44e9-df81-f06a-082a-cde0_20210319102347_original-scaled.jpg"
+                }
+            },
+            "image_meta": {
+                "aperture": "6.3",
+                "credit": "",
+                "camera": "ILCE-7M2",
+                "caption": "",
+                "created_timestamp": "1615671262",
+                "copyright": "",
+                "focal_length": "20",
+                "iso": "400",
+                "shutter_speed": "0.0025",
+                "title": "",
+                "orientation": "0",
+                "keywords": []
+            },
+            "original_image": "DSC00717_7cb4-7008-7ac8-44e9-df81-f06a-082a-cde0_20210319102347_original.jpg"
+        },
+        "post": 19511,
+        "source_url": "https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00717_7cb4-7008-7ac8-44e9-df81-f06a-082a-cde0_20210319102347_original-scaled.jpg",
+        "_links": {
+            "self": [
+                {
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/media\/19514"
+                }
+            ],
+            "collection": [
+                {
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/media"
+                }
+            ],
+            "about": [
+                {
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/types\/attachment"
+                }
+            ],
+            "author": [
+                {
+                    "embeddable": true,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/users\/1"
+                }
+            ],
+            "replies": [
+                {
+                    "embeddable": true,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/comments?post=19514"
+                }
+            ]
+        }
+    },
+    {
+        "id": 19513,
+        "date": "2021-03-19T12:02:28",
+        "date_gmt": "2021-03-19T01:02:28",
+        "guid": {
+            "rendered": "https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00713_c317-5400-6aca-ab03-344d-56b7-124a-86ee_20210319102326_original.jpg"
+        },
+        "modified": "2021-03-19T12:02:28",
+        "modified_gmt": "2021-03-19T01:02:28",
+        "slug": "dsc00713_c317-5400-6aca-ab03-344d-56b7-124a-86ee_20210319102326_original",
+        "status": "inherit",
+        "type": "attachment",
+        "link": "https:\/\/www.canberryproperties.com.au\/index.php\/property\/inner-city-living-and-a-perfect-lifestyle\/dsc00713_c317-5400-6aca-ab03-344d-56b7-124a-86ee_20210319102326_original\/",
+        "title": {
+            "rendered": "DSC00713_c317-5400-6aca-ab03-344d-56b7-124a-86ee_20210319102326_original"
+        },
+        "author": 1,
+        "comment_status": "open",
+        "ping_status": "closed",
+        "template": "",
+        "meta": [],
+        "description": {
+            "rendered": "<p class=\"attachment\"><a href='https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00713_c317-5400-6aca-ab03-344d-56b7-124a-86ee_20210319102326_original-scaled.jpg'><img width=\"300\" height=\"200\" src=\"https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00713_c317-5400-6aca-ab03-344d-56b7-124a-86ee_20210319102326_original-300x200.jpg\" class=\"attachment-medium size-medium\" alt=\"\" loading=\"lazy\" srcset=\"https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00713_c317-5400-6aca-ab03-344d-56b7-124a-86ee_20210319102326_original-300x200.jpg 300w, https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00713_c317-5400-6aca-ab03-344d-56b7-124a-86ee_20210319102326_original-1024x683.jpg 1024w, https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00713_c317-5400-6aca-ab03-344d-56b7-124a-86ee_20210319102326_original-768x512.jpg 768w, https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00713_c317-5400-6aca-ab03-344d-56b7-124a-86ee_20210319102326_original-1536x1024.jpg 1536w, https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00713_c317-5400-6aca-ab03-344d-56b7-124a-86ee_20210319102326_original-2048x1365.jpg 2048w, https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00713_c317-5400-6aca-ab03-344d-56b7-124a-86ee_20210319102326_original-1170x785.jpg 1170w, https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00713_c317-5400-6aca-ab03-344d-56b7-124a-86ee_20210319102326_original-900x600.jpg 900w, https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00713_c317-5400-6aca-ab03-344d-56b7-124a-86ee_20210319102326_original-496x331.jpg 496w\" sizes=\"(max-width: 300px) 100vw, 300px\" \/><\/a><\/p>\n"
+        },
+        "caption": {
+            "rendered": ""
+        },
+        "alt_text": "",
+        "media_type": "image",
+        "mime_type": "image\/jpeg",
+        "media_details": {
+            "width": 2560,
+            "height": 1707,
+            "file": "2021\/03\/DSC00713_c317-5400-6aca-ab03-344d-56b7-124a-86ee_20210319102326_original-scaled.jpg",
+            "sizes": {
+                "medium": {
+                    "file": "DSC00713_c317-5400-6aca-ab03-344d-56b7-124a-86ee_20210319102326_original-300x200.jpg",
+                    "width": 300,
+                    "height": 200,
+                    "mime_type": "image\/jpeg",
+                    "source_url": "https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00713_c317-5400-6aca-ab03-344d-56b7-124a-86ee_20210319102326_original-300x200.jpg"
+                },
+                "large": {
+                    "file": "DSC00713_c317-5400-6aca-ab03-344d-56b7-124a-86ee_20210319102326_original-1024x683.jpg",
+                    "width": 1024,
+                    "height": 683,
+                    "mime_type": "image\/jpeg",
+                    "source_url": "https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00713_c317-5400-6aca-ab03-344d-56b7-124a-86ee_20210319102326_original-1024x683.jpg"
+                },
+                "thumbnail": {
+                    "file": "DSC00713_c317-5400-6aca-ab03-344d-56b7-124a-86ee_20210319102326_original-150x150.jpg",
+                    "width": 150,
+                    "height": 150,
+                    "mime_type": "image\/jpeg",
+                    "source_url": "https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00713_c317-5400-6aca-ab03-344d-56b7-124a-86ee_20210319102326_original-150x150.jpg"
+                },
+                "medium_large": {
+                    "file": "DSC00713_c317-5400-6aca-ab03-344d-56b7-124a-86ee_20210319102326_original-768x512.jpg",
+                    "width": 768,
+                    "height": 512,
+                    "mime_type": "image\/jpeg",
+                    "source_url": "https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00713_c317-5400-6aca-ab03-344d-56b7-124a-86ee_20210319102326_original-768x512.jpg"
+                },
+                "1536x1536": {
+                    "file": "DSC00713_c317-5400-6aca-ab03-344d-56b7-124a-86ee_20210319102326_original-1536x1024.jpg",
+                    "width": 1536,
+                    "height": 1024,
+                    "mime_type": "image\/jpeg",
+                    "source_url": "https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00713_c317-5400-6aca-ab03-344d-56b7-124a-86ee_20210319102326_original-1536x1024.jpg"
+                },
+                "2048x2048": {
+                    "file": "DSC00713_c317-5400-6aca-ab03-344d-56b7-124a-86ee_20210319102326_original-2048x1365.jpg",
+                    "width": 2048,
+                    "height": 1365,
+                    "mime_type": "image\/jpeg",
+                    "source_url": "https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00713_c317-5400-6aca-ab03-344d-56b7-124a-86ee_20210319102326_original-2048x1365.jpg"
+                },
+                "houzez-gallery": {
+                    "file": "DSC00713_c317-5400-6aca-ab03-344d-56b7-124a-86ee_20210319102326_original-1170x785.jpg",
+                    "width": 1170,
+                    "height": 785,
+                    "mime_type": "image\/jpeg",
+                    "source_url": "https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00713_c317-5400-6aca-ab03-344d-56b7-124a-86ee_20210319102326_original-1170x785.jpg"
+                },
+                "houzez-item-image-1": {
+                    "file": "DSC00713_c317-5400-6aca-ab03-344d-56b7-124a-86ee_20210319102326_original-592x444.jpg",
+                    "width": 592,
+                    "height": 444,
+                    "mime_type": "image\/jpeg",
+                    "source_url": "https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00713_c317-5400-6aca-ab03-344d-56b7-124a-86ee_20210319102326_original-592x444.jpg"
+                },
+                "houzez-item-image-4": {
+                    "file": "DSC00713_c317-5400-6aca-ab03-344d-56b7-124a-86ee_20210319102326_original-758x564.jpg",
+                    "width": 758,
+                    "height": 564,
+                    "mime_type": "image\/jpeg",
+                    "source_url": "https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00713_c317-5400-6aca-ab03-344d-56b7-124a-86ee_20210319102326_original-758x564.jpg"
+                },
+                "houzez-item-image-6": {
+                    "file": "DSC00713_c317-5400-6aca-ab03-344d-56b7-124a-86ee_20210319102326_original-584x438.jpg",
+                    "width": 584,
+                    "height": 438,
+                    "mime_type": "image\/jpeg",
+                    "source_url": "https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00713_c317-5400-6aca-ab03-344d-56b7-124a-86ee_20210319102326_original-584x438.jpg"
+                },
+                "houzez-variable-gallery": {
+                    "file": "DSC00713_c317-5400-6aca-ab03-344d-56b7-124a-86ee_20210319102326_original-900x600.jpg",
+                    "width": 900,
+                    "height": 600,
+                    "mime_type": "image\/jpeg",
+                    "source_url": "https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00713_c317-5400-6aca-ab03-344d-56b7-124a-86ee_20210319102326_original-900x600.jpg"
+                },
+                "houzez-map-info": {
+                    "file": "DSC00713_c317-5400-6aca-ab03-344d-56b7-124a-86ee_20210319102326_original-120x90.jpg",
+                    "width": 120,
+                    "height": 90,
+                    "mime_type": "image\/jpeg",
+                    "source_url": "https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00713_c317-5400-6aca-ab03-344d-56b7-124a-86ee_20210319102326_original-120x90.jpg"
+                },
+                "houzez-image_masonry": {
+                    "file": "DSC00713_c317-5400-6aca-ab03-344d-56b7-124a-86ee_20210319102326_original-496x331.jpg",
+                    "width": 496,
+                    "height": 331,
+                    "mime_type": "image\/jpeg",
+                    "source_url": "https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00713_c317-5400-6aca-ab03-344d-56b7-124a-86ee_20210319102326_original-496x331.jpg"
+                },
+                "full": {
+                    "file": "DSC00713_c317-5400-6aca-ab03-344d-56b7-124a-86ee_20210319102326_original-scaled.jpg",
+                    "width": 2560,
+                    "height": 1707,
+                    "mime_type": "image\/jpeg",
+                    "source_url": "https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00713_c317-5400-6aca-ab03-344d-56b7-124a-86ee_20210319102326_original-scaled.jpg"
+                }
+            },
+            "image_meta": {
+                "aperture": "8",
+                "credit": "",
+                "camera": "ILCE-7M2",
+                "caption": "",
+                "created_timestamp": "1615669836",
+                "copyright": "",
+                "focal_length": "19",
+                "iso": "500",
+                "shutter_speed": "0.002",
+                "title": "",
+                "orientation": "0",
+                "keywords": []
+            },
+            "original_image": "DSC00713_c317-5400-6aca-ab03-344d-56b7-124a-86ee_20210319102326_original.jpg"
+        },
+        "post": 19511,
+        "source_url": "https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2021\/03\/DSC00713_c317-5400-6aca-ab03-344d-56b7-124a-86ee_20210319102326_original-scaled.jpg",
+        "_links": {
+            "self": [
+                {
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/media\/19513"
+                }
+            ],
+            "collection": [
+                {
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/media"
+                }
+            ],
+            "about": [
+                {
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/types\/attachment"
+                }
+            ],
+            "author": [
+                {
+                    "embeddable": true,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/users\/1"
+                }
+            ],
+            "replies": [
+                {
+                    "embeddable": true,
+                    "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/comments?post=19513"
+                }
+            ]
+        }
+    }
+]

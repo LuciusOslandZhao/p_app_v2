@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:p_app_v2/models/app_state_model.dart';
 import 'package:p_app_v2/models/property_model.dart';
 import 'package:p_app_v2/screens/property_detail_page.dart';
+import 'package:p_app_v2/models/app_state_model.dart';
 import 'package:p_app_v2/widgets/fav_button.dart';
 import 'package:provider/provider.dart';
 
-// import 'fav_star_button.dart';
 
 class PropertyCardVertical extends StatefulWidget {
   final PropertyModel property;
@@ -81,4 +81,10 @@ class _PropertyCardVerticalState extends State<PropertyCardVertical> {
       ),
     );
   }
+
+  // void toggleFavProperty(AppState app, int id) {
+  //   setState(() {
+  //     app.toggleFav(property.id);
+  //   });
+  // }
 }

@@ -64,10 +64,13 @@ Future<List<AgentModel>> loadAgents() async {
   }
 }
 
-Future<List<PropertyModel>> loadProperties() async {
+
+
+Future<List<PropertyModel>> loadProperties({ int page=1,int perPage=1,bool all=false}) async {
   http.Client client = new http.Client();
   // final _response = await client.get(Uri.parse("$BaseURL2/properties"));
-  final _response = await client.get(Uri.parse("$BaseURL2/properties?page=1&per_page=1"));
+  final _response = all?await client.get(Uri.parse("$BaseURL2/properties")): await client.get(Uri.parse("$BaseURL2/properties?page=$page&per_page=$perPage"));
+  // final _response = await client.get(Uri.parse("$BaseURL2/properties"));
   if (_response != null && _response.statusCode == 200) {
     List properties = json.decode(_response.body);
     print(properties);

@@ -3,6 +3,8 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_html/flutter_html.dart';
 import 'package:p_app_v2/models/property_model.dart';
+import 'package:p_app_v2/widgets/google_maps.dart';
+import 'package:p_app_v2/widgets/google_maps_widget.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
 class PropertyDetailPage extends StatefulWidget {
@@ -20,10 +22,14 @@ class _PropertyDetailPageState extends State<PropertyDetailPage> {
 
   _PropertyDetailPageState({this.property});
 
+  String maps;
+
   @override
   void initState() {
-    super.initState();
+    maps =
+        '<html lang="en"><body><iframe width="100%" height="100%" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCXHxN1Jd-3wYZUrPq0zIRe-t52puaGR2U &q=${property.address}"></iframe></body></html>';
     if (Platform.isAndroid) WebView.platform = SurfaceAndroidWebView();
+    super.initState();
   }
 
   @override
@@ -43,6 +49,9 @@ class _PropertyDetailPageState extends State<PropertyDetailPage> {
                 children: [
                   for (var imageurl in property.imageUrls)
                     Image(
+                      // loadingBuilder: (ctx,image,progress){
+
+                      // },
                       width: MediaQuery.of(context).size.width,
                       image: NetworkImage("$imageurl"),
                     ),
@@ -50,237 +59,248 @@ class _PropertyDetailPageState extends State<PropertyDetailPage> {
               ),
             ),
             Container(
-                child: Column(children: [
-              Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
-                Icon(
-                  Icons.image,
-                  size: 50,
+                child: 
+              // Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
+              //   Icon(
+              //     Icons.image,
+              //     size: 50,
+              //   ),
+              //   Padding(
+              //       padding: EdgeInsets.all(8),
+              //       child: Row(children: [
+              //         Icon(
+              //           Icons.star,
+              //           size: 50,
+              //         ),
+              //         Icon(
+              //           Icons.share,
+              //           size: 50,
+              //         ),
+              //       ])),
+              // ]),
+
+              Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  GestureDetector(
+                    onTap: (){
+                      
+                    },
+                                      child: Container(
+                      margin: const EdgeInsets.only(left:5.0),
+                      padding: const EdgeInsets.only(left:5.0,right:5,top: 3,bottom: 3),
+                      decoration: BoxDecoration(
+                        color: Colors.blue,
+                        borderRadius: BorderRadius.circular(2),
+                          border: Border.all(
+                            color: Colors.blue)),
+                      child: Text("FOR SALE",style: TextStyle(color: Colors.white,fontSize: 14, fontWeight: FontWeight.bold),
+                    )),
+                  )
+                ],
+              ),
+            ),
+            Divider(),
+            Container(
+                // color: Colors.red,
+                child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Padding(
+                  padding: EdgeInsets.only(top: 10, bottom: 10),
+                  child: Text(
+                    "${property.title}",
+                    style: TextStyle(fontSize: 24),
+                  ),
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Icon(Icons.place),
+                    Padding(
+                      padding: const EdgeInsets.only(left: 5.0),
+                      child: Text("${property.address}"),
+                    ),
+                  ],
                 ),
                 Padding(
-                    padding: EdgeInsets.all(8),
-                    child: Row(children: [
-                      Icon(
-                        Icons.star,
-                        size: 50,
-                      ),
-                      Icon(
-                        Icons.share,
-                        size: 50,
-                      ),
-                    ])),
-              ]),
-              ButtonBar(
-                  alignment: MainAxisAlignment.start,
-                  buttonMinWidth: 100,
-                  children: [
-                    FlatButton(
-                      color: Colors.blue,
-                      textColor: Colors.white,
-                      child: const Text('FOR SALE'),
-                      onPressed: () {},
-                    ),
-                  ]),
-            ])),
-            Container(
-                color: Colors.red,
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Padding(
-                      padding: EdgeInsets.only(top: 10, bottom: 10),
-                      child: Text(
-                        "Airport with jdsdb efecjdc ndanj",
-                        style: TextStyle(fontSize: 24),
-                      ),
-                    ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Icon(Icons.follow_the_signs),
-                        Text("71 xxx St, Holt,ACT"),
-                      ],
-                    ),
-                    Padding(
-                      padding: EdgeInsets.only(top: 10, bottom: 10),
-                      child: Text("By negotiation",
-                          style: TextStyle(fontSize: 24)),
-                    )
-                  ],
-                )),
+                  padding: EdgeInsets.only(top: 10, bottom: 10),
+                  child: Text("By negotiation", style: TextStyle(fontSize: 24)),
+                )
+              ],
+            )),
+            Divider(),
             Padding(
               padding: EdgeInsets.only(top: 20),
               child: Container(
-                  color: Colors.yellow,
+                  // color: Colors.yellow,
                   child: Column(
-                    children: [
-                      Padding(
-                        padding: EdgeInsets.all(8),
-                        child: Text("OVERVIEW", style: TextStyle(fontSize: 24)),
-                      ),
-                      Table(
-                          // border: TableBorder.all(),
-                          columnWidths: const <int, TableColumnWidth>{
-                            0: IntrinsicColumnWidth(),
-                            1: FlexColumnWidth(),
-                            2: FixedColumnWidth(64),
-                          },
-                          defaultVerticalAlignment:
-                              TableCellVerticalAlignment.middle,
-                          children: <TableRow>[
-                            TableRow(children: <Widget>[
-                              Container(child: Text("Townhouse")),
-                              Container(height: 32),
-                              Container(
-                                child: Expanded(
-                                  child: Row(
-                                    children: [
-                                      Icon(Icons.bathtub),
-                                      Text("1.5")
-                                    ],
-                                  ),
-                                ),
-                              ),
-                              Container(height: 32),
-                              Container(height: 32),
-                            ]),
-                            TableRow(children: <Widget>[
-                              Container(child: Text("Prooperty Type")),
-                              Container(height: 32),
-                              Container(child: Text("Bathroom")),
-                              Container(height: 32),
-                              Container(height: 32),
-                            ]),
-                            TableRow(children: <Widget>[
-                              Container(height: 32),
-                              Container(height: 32),
-                              Container(height: 32),
-                              Container(height: 32),
-                              Container(height: 32),
-                            ]),
-                            TableRow(children: <Widget>[
-                              Container(
-                                child: Expanded(
-                                  child: Row(
-                                    children: [Icon(Icons.king_bed), Text("3")],
-                                  ),
-                                ),
-                              ),
-                              Container(height: 32),
-                              Container(
-                                child: Expanded(
-                                  child: Row(
-                                    children: [
-                                      Icon(Icons.drive_eta),
-                                      Text("2")
-                                    ],
-                                  ),
-                                ),
-                              ),
-                              Container(height: 32),
-                              Container(height: 32),
-                            ]),
-                            TableRow(children: <Widget>[
-                              Container(child: Text("Bedroom")),
-                              Container(height: 32),
-                              Container(child: Text("Garages")),
-                              Container(height: 32),
-                              Container(height: 32),
-                            ]),
-                          ]),
-                      // Row(
-                      //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      //   children: [
-                      //     Column(
-                      //       children: [
-                      //         Column(
-                      //           children: [
-                      //             Text("Townhouse"),
-                      //             Text("Prooperty Type")
-                      //           ],
-                      //         ),
-                      //         Container(
-                      //           height: 30,
-                      //         ),
-                      //         Column(
-                      //           children: [
-                      //             Row(
-                      // children: [
-                      //   Icon(Icons.bathtub),
-                      //   Text("1.5")
-                      // ],
-                      //             ),
-                      //             Text("Bathroom")
-                      //           ],
-                      //         ),
-                      //       ],
-                      //     ),
-                      //     Column(
-                      //       children: [
-                      //         Column(
-                      //           children: [
-                      //             Row(
-                      //               children: [Icon(Icons.king_bed), Text("3")],
-                      //             ),
-                      //             Text("Bedroom")
-                      //           ],
-                      //         ),
-                      //         Container(
-                      //           height: 30,
-                      //         ),
-                      //         Column(
-                      //           children: [
-                      //             Row(
-                      //               children: [
-                      //                 Icon(Icons.car_rental),
-                      //                 Text("2")
-                      //               ],
-                      //             ),
-                      //             Text("Garages")
-                      //           ],
-                      //         ),
-                      //       ],
-                      //     )
-                      //   ],
-                      // )
-                    ],
-                  )),
+                children: [
+                  Align(
+                      alignment: Alignment.centerLeft,
+                      child: Text("Overview", style: TextStyle(fontSize: 24))),
+
+                  Table(
+                      // border: TableBorder.all(),
+                      columnWidths: const <int, TableColumnWidth>{
+                        0: IntrinsicColumnWidth(),
+                        1: FlexColumnWidth(),
+                        2: FixedColumnWidth(64),
+                      },
+                      defaultVerticalAlignment:
+                          TableCellVerticalAlignment.middle,
+                      children: <TableRow>[
+                        TableRow(children: <Widget>[
+                          Container(child: Text("Townhouse")),
+                          Container(height: 32),
+                          Container(
+                            child: Row(
+                              children: [
+                                Icon(Icons.bathtub),
+                                Text("${property.bathrooms}")
+                              ],
+                            ),
+                          ),
+                          Container(height: 32),
+                          Container(height: 32),
+                        ]),
+                        TableRow(children: <Widget>[
+                          Container(child: Text("Prooperty Type")),
+                          Container(height: 32),
+                          Container(child: Text("Bathroom")),
+                          Container(height: 32),
+                          Container(height: 32),
+                        ]),
+                        TableRow(children: <Widget>[
+                          Container(height: 32),
+                          Container(height: 32),
+                          Container(height: 32),
+                          Container(height: 32),
+                          Container(height: 32),
+                        ]),
+                        TableRow(children: <Widget>[
+                          Container(
+                            child: Row(
+                              children: [
+                                Icon(Icons.king_bed),
+                                Text("${property.bedrooms}")
+                              ],
+                            ),
+                          ),
+                          Container(height: 32),
+                          Container(
+                            child: Row(
+                              children: [
+                                Icon(Icons.drive_eta),
+                                Text("${property.garages}") // garages
+                              ],
+                            ),
+                          ),
+                          Container(height: 32),
+                          Container(height: 32),
+                        ]),
+                        TableRow(children: <Widget>[
+                          Container(child: Text("Bedroom")),
+                          Container(height: 32),
+                          Container(child: Text("Garages")),
+                          Container(height: 32),
+                          Container(height: 32),
+                        ]),
+                      ]),
+                  // Row(
+                  //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  //   children: [
+                  //     Column(
+                  //       children: [
+                  //         Column(
+                  //           children: [
+                  //             Text("Townhouse"),
+                  //             Text("Prooperty Type")
+                  //           ],
+                  //         ),
+                  //         Container(
+                  //           height: 30,
+                  //         ),
+                  //         Column(
+                  //           children: [
+                  //             Row(
+                  // children: [
+                  //   Icon(Icons.bathtub),
+                  //   Text("1.5")
+                  // ],
+                  //             ),
+                  //             Text("Bathroom")
+                  //           ],
+                  //         ),
+                  //       ],
+                  //     ),
+                  //     Column(
+                  //       children: [
+                  //         Column(
+                  //           children: [
+                  //             Row(
+                  //               children: [Icon(Icons.king_bed), Text("3")],
+                  //             ),
+                  //             Text("Bedroom")
+                  //           ],
+                  //         ),
+                  //         Container(
+                  //           height: 30,
+                  //         ),
+                  //         Column(
+                  //           children: [
+                  //             Row(
+                  //               children: [
+                  //                 Icon(Icons.car_rental),
+                  //                 Text("2")
+                  //               ],
+                  //             ),
+                  //             Text("Garages")
+                  //           ],
+                  //         ),
+                  //       ],
+                  //     )
+                  //   ],
+                  // )
+                ],
+              )),
             ),
             Container(
                 child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text("Description"),
                 Html(data: property.description),
               ],
             )),
+            // Container(
+            //     color: Colors.grey,
+            //     child: Column(
+            //       children: [
+            //         Text("Description"),
+            //         Html(
+            //             data: getMap(
+            //                 height: MediaQuery.of(context).size.height,
+            //                 width: MediaQuery.of(context).size.width,
+            //                 address: property.address)),
+            //       ],
+            //     )),
+            // Container(
+            //     height: 300,
+            //     width: 400,
+            //     child: WebView(
+            //         // initialUrl: "https://www.youtube.com/embed/f02mOEt11OQ/",
+            //         )),
+            Divider(),
             Container(
-                color: Colors.grey,
-                child: Column(
-                  children: [
-                    Text("Description"),
-                    Html(
-                        data: getMap(
-                            height: MediaQuery.of(context).size.height,
-                            width: MediaQuery.of(context).size.width,
-                            address: property.address)),
-                  ],
-                )),
-            Container(
-                height: 300,
-                width: 400,
-                child: WebView(
-                  // initialUrl: "https://www.youtube.com/embed/f02mOEt11OQ/",
-                )),
-            Container(
-                height: 300,
-                width: 300,
-                child: WebView(
-                  initialUrl: Uri.dataFromString(
-                          '<html><body><iframe width="400" height="315" src="https://www.youtube.com/embed/f02mOEt11OQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></body></html>',
-                          mimeType: 'text/html')
-                      .toString(),
-                  javascriptMode: JavascriptMode.unrestricted,
-                )),
+                height: 400,
+                width: MediaQuery.of(context).size.width,
+                child: GoogleMapsWidget(address: property.address)),
+
+            // Container(
+            //   decoration: BoxDecoration(border: Border.all()),
+            //   child: MapSample())
           ]),
         ),
       ),

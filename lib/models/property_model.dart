@@ -1,82 +1,12 @@
-// class PropertyModel {
-//   int id;
-//   String name;
-//   String description;
-//   List images;
-
-//   PropertyModel({this.id, this.name, this.description, this.images});
-
-  // HouseModel.fromJson(Map<String, dynamic> json)
-  //     : id = json["id"],
-  //       name = json["name"],
-  //       description = json["description"];
-
-  // Map<String, dynamic> toJson() => {
-  //       'id': id,
-  //       'name': name,
-  //       'description': description,
-  //     };
-
-  // factory HouseModel.fromJson(Map<String, dynamic> parsedJson) {
-  //   return HouseModel(
-  //     id: parsedJson['id'],
-  //     name: parsedJson['name'],
-  //     description: parsedJson['description'],
-  //     // images: parseImages(parsedJson['images'])
-  //     images: parsedJson['images'] == null
-  //         ? "Nothing"
-  //         : parseImages(parsedJson['images']),
-  //   );
-  // }
-
-//   PropertyModel.fromJson(Map<String, dynamic> json) {
-//     id = json['id'];
-//     name = json['name'];
-//     description = json['description'];
-//     images = new List<ImageModel>();
-//     json['images'].forEach((v) => {
-//           if (v == "" || v == null)
-//             {print("Null or empty value found.")}
-//           else
-//             {images.add(new ImageModel.fromJson(v))}
-//         });
-//   }
-
-//   String toString(){
-//     return "(id:$id,name:$name,desc:$description,)";
-//   }
-// }
-
-// class ImageModel {
-   
-//    final int id;
-//    final String src;
-//    final String name;
-
-//   ImageModel({this.id, this.src, this.name});
-
-
-//   factory ImageModel.fromJson(Map<String, dynamic> parsedJson){
-//     return ImageModel(
-//       id: parsedJson['id'],
-//       src: parsedJson['src'],
-//       name: parsedJson['name'],
-//     );
-//   }
-
-//   String toString(){
-//     return "$src";
-//   }
-
-// }
-
 class PropertyModel {
   int id;
+  String title;
   String description;
   PropertyMeta propertyMeta;
   List imageUrls;
   PropertyModel.fromJson(Map<String, dynamic> json){
     id = json['id'];
+    title = json['title']==null?"No content":json['title']['rendered'];
     description = json['content']==null?"No content":json['content']['rendered'];
     propertyMeta = PropertyMeta.fromJson(json['property_meta']);
   }
@@ -94,7 +24,7 @@ class PropertyModel {
   String get lng => propertyMeta.houzez_geolocation_long;
 
   String toString(){
-    return "$address;$bathrooms;$bedrooms;$garages;$zipcode;$lat;$lng;$description;";
+    return "$address;$title;$bathrooms;$bedrooms;$garages;$zipcode;$lat;$lng;$description;";
   }
 
 }
