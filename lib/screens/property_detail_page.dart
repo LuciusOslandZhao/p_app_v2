@@ -2,6 +2,7 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_html/flutter_html.dart';
+import 'package:p_app_v2/common/constants.dart';
 import 'package:p_app_v2/models/property_model.dart';
 import 'package:p_app_v2/widgets/google_maps.dart';
 import 'package:p_app_v2/widgets/google_maps_widget.dart';
@@ -41,61 +42,78 @@ class _PropertyDetailPageState extends State<PropertyDetailPage> {
         body: Padding(
           padding: EdgeInsets.all(8),
           child: ListView(scrollDirection: Axis.vertical, children: [
-            SizedBox(
-              height: 300,
-              child: ListView(
-                semanticChildCount: property.imageUrls.length,
-                scrollDirection: Axis.horizontal,
-                children: [
-                  for (var imageurl in property.imageUrls)
-                    Image(
-                      // loadingBuilder: (ctx,image,progress){
-
-                      // },
-                      width: MediaQuery.of(context).size.width,
-                      image: NetworkImage("$imageurl"),
+            Stack(
+              children: [
+                SizedBox(
+                  height: 300,
+                  child: ListView(
+                    semanticChildCount: property.imageUrls.length,
+                    scrollDirection: Axis.horizontal,
+                    children: [
+                      for (var imageurl in property.imageUrls)
+                        Image(
+                          loadingBuilder: (ctx, w, event) {
+                            if (event == null) {
+                              return w;
+                            }
+                            return Container(
+                              width: MediaQuery.of(context).size.width,
+                              height: MediaQuery.of(context).size.width * 2 / 3,
+                              child: Center(
+                                child: CircularProgressIndicator(
+                                  valueColor: AlwaysStoppedAnimation<Color>(
+                                      MyPrimaryColor),
+                                  value: event.expectedTotalBytes != null
+                                      ? event.cumulativeBytesLoaded /
+                                          event.expectedTotalBytes
+                                      : null,
+                                ),
+                              ),
+                            );
+                          },
+                          width: MediaQuery.of(context).size.width,
+                          height: MediaQuery.of(context).size.width * 2 / 3,
+                          fit: BoxFit.cover,
+                          image: NetworkImage("$imageurl"),
+                        ),
+                    ],
+                  ),
+                ),
+                Positioned(
+                  bottom: 0,
+                  right: 0,
+                  child: Padding(
+                    padding: const EdgeInsets.all(3.0),
+                    child: Text(
+                      " ${property.imageUrls.length} Pics ",
+                      style: TextStyle(
+                          color: Colors.white, backgroundColor: Colors.grey),
                     ),
-                ],
-              ),
+                  ),
+                )
+              ],
             ),
             Container(
-                child: 
-              // Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
-              //   Icon(
-              //     Icons.image,
-              //     size: 50,
-              //   ),
-              //   Padding(
-              //       padding: EdgeInsets.all(8),
-              //       child: Row(children: [
-              //         Icon(
-              //           Icons.star,
-              //           size: 50,
-              //         ),
-              //         Icon(
-              //           Icons.share,
-              //           size: 50,
-              //         ),
-              //       ])),
-              // ]),
-
-              Row(
+              child: Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   GestureDetector(
-                    onTap: (){
-                      
-                    },
-                                      child: Container(
-                      margin: const EdgeInsets.only(left:5.0),
-                      padding: const EdgeInsets.only(left:5.0,right:5,top: 3,bottom: 3),
-                      decoration: BoxDecoration(
-                        color: Colors.blue,
-                        borderRadius: BorderRadius.circular(2),
-                          border: Border.all(
-                            color: Colors.blue)),
-                      child: Text("FOR SALE",style: TextStyle(color: Colors.white,fontSize: 14, fontWeight: FontWeight.bold),
-                    )),
+                    onTap: () {},
+                    child: Container(
+                        margin: const EdgeInsets.only(left: 5.0),
+                        padding: const EdgeInsets.only(
+                            left: 5.0, right: 5, top: 3, bottom: 3),
+                        decoration: BoxDecoration(
+                            color: Colors.blue,
+                            borderRadius: BorderRadius.circular(2),
+                            border: Border.all(color: Colors.blue)),
+                        child: Text(
+                          "FOR SALE",
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 14,
+                              fontWeight: FontWeight.bold),
+                        )),
                   )
                 ],
               ),
@@ -113,16 +131,19 @@ class _PropertyDetailPageState extends State<PropertyDetailPage> {
                     style: TextStyle(fontSize: 24),
                   ),
                 ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    Icon(Icons.place),
-                    Padding(
-                      padding: const EdgeInsets.only(left: 5.0),
-                      child: Text("${property.address}"),
-                    ),
-                  ],
+                SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Icon(Icons.place),
+                      Padding(
+                        padding: const EdgeInsets.only(left: 5.0),
+                        child: Text("${property.address}"),
+                      ),
+                    ],
+                  ),
                 ),
                 Padding(
                   padding: EdgeInsets.only(top: 10, bottom: 10),

@@ -78,7 +78,7 @@ Future<List<PropertyModel>> loadProperties({ int page=1,int perPage=1,bool all=f
     for(var _p in resProperties_){
         List tempUrls = [];
         if(_p.propertyMeta.fave_property_images.isEmpty){
-         tempUrls.add("https://picsum.photos/id/1002/367/267"); 
+         tempUrls.add("https://via.placeholder.com/475?text=Preparing%20Pictures"); 
         }else{
           
         for(var _imgId in _p.propertyMeta.fave_property_images){

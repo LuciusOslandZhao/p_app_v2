@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:p_app_v2/common/constants.dart';
 import 'package:p_app_v2/models/app_state_model.dart';
 import 'package:p_app_v2/screens/search_page.dart';
 import 'package:p_app_v2/widgets/category_card_slider_horizontal.dart';
@@ -38,9 +39,7 @@ class _HomePageState extends State<HomePage> {
     return Consumer<AppState>(builder: (ctx, model, idx) {
       return model.homeListLoading
           ? Center(
-              child: CircularProgressIndicator(
-                strokeWidth: 3,
-              ),
+              child: myProgressIndicator,
             )
           : Center(
               child: Column(

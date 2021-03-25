@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:p_app_v2/common/constants.dart';
 import 'package:p_app_v2/models/app_state_model.dart';
 import 'package:p_app_v2/widgets/property_card_vertical.dart';
 import 'package:provider/provider.dart';
@@ -38,9 +39,7 @@ class _SearchPageState extends State<SearchPage> {
       body: Consumer<AppState>(builder: (ctx, model, idx) {
         return model.load
             ? Center(
-                child: CircularProgressIndicator(
-                  strokeWidth: 3,
-                ),
+                child: myProgressIndicator,
               )
             : 
             Column(
@@ -93,15 +92,6 @@ class _SearchPageState extends State<SearchPage> {
       }),
     );
   }
-
-  // Color _getContainerBackgroundColor() {
-  //   return _focusNode.hasFocus ? Colors.blueGrey : Colors.white;
-  // }
-
-  // Color _getAppBarBackgroundColor() {
-  //   return _focusNode.hasFocus ? Colors.green : Colors.red;
-  // }
-
   Color _getInputTextColor() {
     return _focusNode.hasFocus ? Colors.blue : Colors.grey;
   }
