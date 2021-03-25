@@ -19,23 +19,27 @@ class _BrowseListPageState extends State<BrowseListPage> {
               child: myProgressIndicator,
             )
           : NotificationListener<ScrollNotification>(
-            onNotification: (ScrollNotification scrollInfo) {
-    if (scrollInfo.metrics.pixels ==
-        scrollInfo.metrics.maxScrollExtent) {
-          setState(() {
-            currentPage++;
-          });
-      model.loadMore(currentPage);
-      
-    }
-  },
-                      child: ListView(
+              onNotification: (ScrollNotification scrollInfo) {
+                if (scrollInfo.metrics.pixels ==
+                    scrollInfo.metrics.maxScrollExtent) {
+                  setState(() {
+                    currentPage++;
+                  });
+                  model.loadMore(currentPage);
+                }
+              },
+              child: ListView.builder(
                 scrollDirection: Axis.vertical,
-                children: [
-                  for (var item in model.houses) PropertyCardVertical(property:item),
-                ],
+                itemCount: model.houses.length,
+                itemBuilder: (BuildContext context, int index) {
+                  return PropertyCardVertical(property: model.houses[index]);
+                  },
+                // children: [
+                //   for (var item in model.houses)
+                //     PropertyCardVertical(property: item),
+                // ],
               ),
-          );
+            );
     });
   }
 }

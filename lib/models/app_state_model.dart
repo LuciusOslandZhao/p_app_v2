@@ -123,11 +123,13 @@ void logout(){
 
   void loadMore(int currentPage) async {
     print('loading more');
-    var list_ = await loadProperties(page:currentPage);
+
+    List<PropertyModel> list_ = await loadProperties(page:currentPage,perPage: 5);
     print(list_);
     // var newList_ = [..._canberryHouses,...list_];
-    list_.forEach((element) {_canberryHouses.add(element) ;});
+    
     // _canberryHouses = newList_;
+    _canberryHouses.addAll(list_);
     notifyListeners();
   }
 }
