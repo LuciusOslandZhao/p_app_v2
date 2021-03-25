@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_html/flutter_html.dart';
 import 'package:p_app_v2/common/constants.dart';
 import 'package:p_app_v2/models/property_model.dart';
+import 'package:p_app_v2/services/price_num_helper.dart';
 import 'package:p_app_v2/widgets/google_maps.dart';
 import 'package:p_app_v2/widgets/google_maps_widget.dart';
 import 'package:webview_flutter/webview_flutter.dart';
@@ -147,7 +148,7 @@ class _PropertyDetailPageState extends State<PropertyDetailPage> {
                 ),
                 Padding(
                   padding: EdgeInsets.only(top: 10, bottom: 10),
-                  child: Text("By negotiation", style: TextStyle(fontSize: 24)),
+                  child: Text("${formatPriceNum(property.price)}", style: TextStyle(fontSize: 24)),
                 )
               ],
             )),
@@ -204,8 +205,12 @@ class _PropertyDetailPageState extends State<PropertyDetailPage> {
                           Container(
                             child: Row(
                               children: [
-                                Icon(Icons.king_bed),
-                                Text("${property.bedrooms}")
+                                bedroomIcon,
+                              
+                                Padding(
+                                  padding: const EdgeInsets.only(left:3.0),
+                                  child: Text("${property.bedrooms}"),
+                                )
                               ],
                             ),
                           ),
@@ -314,10 +319,21 @@ class _PropertyDetailPageState extends State<PropertyDetailPage> {
             //         // initialUrl: "https://www.youtube.com/embed/f02mOEt11OQ/",
             //         )),
             Divider(),
+
+ Container(
+                height: 400,
+                width: MediaQuery.of(context).size.width,
+                child: MapSample()
+                ),
+
+                Divider(),
+
             Container(
                 height: 400,
                 width: MediaQuery.of(context).size.width,
                 child: GoogleMapsWidget(address: property.address)),
+
+
 
             // Container(
             //   decoration: BoxDecoration(border: Border.all()),

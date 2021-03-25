@@ -2,6 +2,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:p_app_v2/data/data_fetch.dart';
 import 'package:p_app_v2/models/property_model.dart';
+import 'package:p_app_v2/models/property_type_model.dart';
 
 class AppState with ChangeNotifier {
 // constructor
@@ -19,6 +20,7 @@ bool _isLogin = false;
   List<PropertyModel> _items;
   List<PropertyModel> _searchListData;
   List<PropertyModel> _homepageList;
+  List<PropertyTypeModel> _typeList;
 // getters
 
   bool get darkmode => _darkmode;
@@ -99,7 +101,7 @@ void logout(){
     _homepageList = [];
     _homepageList = await loadProperties(page:1,perPage: 3);
     _canberryHouses = await loadProperties(all: true);
-    houseOne = _canberryHouses[0];
+    // houseOne = _canberryHouses[0];
     isLoaded();
     _homeListloading = false;
     notifyListeners();
@@ -118,4 +120,14 @@ void logout(){
   }
 
   notifyListeners();
+
+  void loadMore(int currentPage) async {
+    print('loading more');
+    var list_ = await loadProperties(page:currentPage);
+    print(list_);
+    // var newList_ = [..._canberryHouses,...list_];
+    list_.forEach((element) {_canberryHouses.add(element) ;});
+    // _canberryHouses = newList_;
+    notifyListeners();
+  }
 }

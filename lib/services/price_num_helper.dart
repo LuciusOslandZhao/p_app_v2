@@ -17,14 +17,15 @@ List<String> tests_ = [
 
 
 
-String formatPriceNum (String str){
-  RegExp reg = new RegExp(r'(\d{1,3})(?=(\d{3})+(?!\d))');
-Function mathFunc = (Match match) => '${match[1]},';
-  var res_ =  str.replaceAllMapped(reg, mathFunc);
-  if(res_ == str){
-    return str;
+
+  String formatPriceNum(String str) {
+    var str_ = str.replaceAll(",", "");
+    RegExp reg = new RegExp(r'(\d{1,3})(?=(\d{3})+(?!\d))');
+    Function mathFunc = (Match match) => '${match[1]},';
+    var res_ = str_.replaceAllMapped(reg, mathFunc);
+    if (res_ == str_) {
+      return str_;
+    } else {
+      return "\$ $res_";
+    }
   }
-  else{
-    return "\$ $res_";
-  }
-}

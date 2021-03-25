@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:p_app_v2/common/constants.dart';
 
 class CategoryCard extends StatefulWidget {
 
@@ -29,8 +30,11 @@ class _CategoryCardState extends State<CategoryCard> {
                 loadingBuilder: (BuildContext context, Widget child,
                     ImageChunkEvent loadingProgress) {
                   if (loadingProgress == null) return child;
-                  return Center(
-                    child: CircularProgressIndicator(
+                  return SizedBox(
+                     width: MediaQuery.of(context).size.width * 1 / 2,
+                      height: MediaQuery.of(context).size.width * 1 / 2 * 2 / 3,
+                    child: LinearProgressIndicator(
+                      valueColor: AlwaysStoppedAnimation<Color>(MyPrimaryColor),
                       value: loadingProgress.expectedTotalBytes != null
                           ? loadingProgress.cumulativeBytesLoaded /
                               loadingProgress.expectedTotalBytes

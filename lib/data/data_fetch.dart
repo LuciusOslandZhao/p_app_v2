@@ -4,10 +4,6 @@ import 'package:http/http.dart' as http;
 import 'package:p_app_v2/models/agent_model.dart';
 import 'package:p_app_v2/models/property_model.dart';
 
-
-
-
-
 List<PropertyModel> parseHouses(String responseBody) {
   final parsed = jsonDecode(responseBody).cast<Map<String, dynamic>>();
 
@@ -32,10 +28,10 @@ Future<List<PropertyModel>> fetchHouses() async {
   }
 }
 
-
 // ignore: non_constant_identifier_names
 final String BaseURL2 = "https://www.canberryproperties.com.au/wp-json/wp/v2";
-final String FirstPageOfFive = "https://canberryproperties.com.au/wp-json/wp/v2/properties?page=1&per_page=5" ;
+final String FirstPageOfFive =
+    "https://canberryproperties.com.au/wp-json/wp/v2/properties?page=1&per_page=5";
 final String BaseURL = "https://jsonplaceholder.typicode.com";
 
 Future<http.Response> fetchData(String endpoint) async {
@@ -44,8 +40,6 @@ Future<http.Response> fetchData(String endpoint) async {
   return await client.get(Uri.parse("$BaseURL/$endpoint"));
 }
 
-
-
 Future<List<AgentModel>> loadAgents() async {
   http.Client client = new http.Client();
   final _response = await client.get(Uri.parse("$BaseURL2/agents"));
@@ -53,7 +47,7 @@ Future<List<AgentModel>> loadAgents() async {
     List users = json.decode(_response.body);
     print(users);
     var resUsers_ = users.map((user) => AgentModel.fromJson(user)).toList();
-    for(var _user in resUsers_){
+    for (var _user in resUsers_) {
       var url = await fetchMediaUrl("${_user.featured_media}");
       _user.setImgUrl(url);
       _user.loaded();
@@ -64,35 +58,41 @@ Future<List<AgentModel>> loadAgents() async {
   }
 }
 
-
-
-Future<List<PropertyModel>> loadProperties({ int page=1,int perPage=1,bool all=false}) async {
+Future<List<PropertyModel>> loadProperties(
+    {int page = 1, int perPage = -1, bool all = false}) async {
   http.Client client = new http.Client();
   // final _response = await client.get(Uri.parse("$BaseURL2/properties"));
-  final _response = all?await client.get(Uri.parse("$BaseURL2/properties")): await client.get(Uri.parse("$BaseURL2/properties?page=$page&per_page=$perPage"));
+  final _response = all
+      ? await client.get(Uri.parse("$BaseURL2/properties"))
+      : await client
+          .get(Uri.parse("$BaseURL2/properties?page=$page&per_page=$perPage"));
   // final _response = await client.get(Uri.parse("$BaseURL2/properties"));
-  if (_response != null && _response.statusCode == 200) {
-    List properties = json.decode(_response.body);
-    print(properties);
-    var resProperties_ = properties.map((p) => PropertyModel.fromJson(p)).toList();
-    for(var _p in resProperties_){
+  try {
+    if (_response != null && _response.statusCode == 200) {
+      List properties = json.decode(_response.body);
+      print(properties);
+      var resProperties_ =
+          properties.map((p) => PropertyModel.fromJson(p)).toList();
+      for (var _p in resProperties_) {
         List tempUrls = [];
-        if(_p.propertyMeta.fave_property_images.isEmpty){
-         tempUrls.add("https://via.placeholder.com/475?text=Preparing%20Pictures"); 
-        }else{
-          
-        for(var _imgId in _p.propertyMeta.fave_property_images){
-          var _imgUrl = await fetchMediaUrl("$_imgId");
-          tempUrls.add(_imgUrl);
-        }
+        if (_p.propertyMeta.fave_property_images.isEmpty) {
+          tempUrls
+              .add("https://via.placeholder.com/475?text=Preparing%20Pictures");
+        } else {
+          for (var _imgId in _p.propertyMeta.fave_property_images) {
+            var _imgUrl = await fetchMediaUrl("$_imgId");
+            tempUrls.add(_imgUrl);
+          }
         }
         _p.setImageUrls(tempUrls);
-      
+      }
+      return resProperties_;
+    } else {
+      return [];
     }
-    return resProperties_;
-  } else {
+  } catch (e) {
+    print(e);
     return [];
-    
   }
 }
 
@@ -102,7 +102,7 @@ Future<String> fetchMediaUrl(String mediaId) async {
 
   if (_res != null && _res.statusCode == 200) {
     String mediaUrl = json.decode(_res.body)['source_url'];
-print(mediaUrl);
+    print(mediaUrl);
     return mediaUrl;
   } else {
     return randomPicId();

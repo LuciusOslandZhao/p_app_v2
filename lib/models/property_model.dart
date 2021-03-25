@@ -37,7 +37,7 @@ String get price => propertyMeta.fave_property_price;
   String get lng => propertyMeta.houzez_geolocation_long;
 
   String toString() {
-    return "$address;$title;$bathrooms;$bedrooms;$garages;$zipcode;$lat;$lng;$description;";
+    return "$address;$title;$bathrooms;$bedrooms;$garages;$price;$zipcode;$lat;$lng;$description;";
   }
 
   Map<String, dynamic> toMap() {
@@ -148,4 +148,12 @@ class PropertyMeta {
         ? []
         : json['fave_property_images'];
   }
+}
+
+
+String getPropertyType(int type){
+  const types = {
+
+    
+  };
 }

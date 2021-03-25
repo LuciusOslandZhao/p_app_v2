@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:p_app_v2/common/constants.dart';
 import 'package:p_app_v2/models/app_state_model.dart';
 import 'package:p_app_v2/models/property_model.dart';
 import 'package:p_app_v2/screens/property_detail_page.dart';
@@ -38,8 +39,13 @@ class _ListCardState extends State<ListCard> {
                   loadingBuilder: (BuildContext context, Widget child,
                       ImageChunkEvent loadingProgress) {
                     if (loadingProgress == null) return child;
-                    return Center(
-                      child: CircularProgressIndicator(
+                    return SizedBox(
+                       height: MediaQuery.of(context).size.width * 1 / 2 * 2 / 3,
+                         width: MediaQuery.of(context).size.width * 1 / 2,
+                      child: LinearProgressIndicator(
+                        valueColor: AlwaysStoppedAnimation<Color>(
+                          MyPrimaryColor
+                        ),
                         value: loadingProgress.expectedTotalBytes != null
                             ? loadingProgress.cumulativeBytesLoaded /
                                 loadingProgress.expectedTotalBytes

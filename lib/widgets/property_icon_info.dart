@@ -36,9 +36,12 @@ class _PropertyIconInfoState extends State<PropertyIconInfo> {
             color: imageColor,
             image: AssetImage("assets/images/bedroom.png"),
           ),
-          Text(
-            "${property.bedrooms}",
-            style: TextStyle(color: textColor),
+          Padding(            padding: const EdgeInsets.only( left:3.0),
+
+            child: Text(
+              "${property.bedrooms}",
+              style: TextStyle(color: textColor),
+            ),
           ),
           Spacer(),
           Image(
@@ -47,9 +50,12 @@ class _PropertyIconInfoState extends State<PropertyIconInfo> {
             color: imageColor,
             image: AssetImage("assets/images/bathroom.png"),
           ),
-          Text(
-            "${property.bathrooms}",
-            style: TextStyle(color: textColor),
+          Padding(            padding: const EdgeInsets.only( left:3.0),
+
+            child: Text(
+              "${property.bathrooms}",
+              style: TextStyle(color: textColor),
+            ),
           ),
           Spacer(),
           Image(
@@ -58,9 +64,12 @@ class _PropertyIconInfoState extends State<PropertyIconInfo> {
             color: imageColor,
             image: AssetImage("assets/images/car.png"),
           ),
-          Text(
-            "${property.garages}",
-            style: TextStyle(color: textColor),
+          Padding(
+            padding: const EdgeInsets.only( left:3.0),
+            child: Text(
+              "${property.garages}",
+              style: TextStyle(color: textColor),
+            ),
           ),
         ],
       ),

@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:p_app_v2/common/constants.dart';
 import 'package:p_app_v2/models/app_state_model.dart';
 import 'package:p_app_v2/models/property_model.dart';
 import 'package:p_app_v2/screens/property_detail_page.dart';
+import 'package:p_app_v2/services/price_num_helper.dart';
 import 'package:p_app_v2/widgets/fav_button.dart';
 import 'package:p_app_v2/widgets/property_icon_info.dart';
 import 'package:provider/provider.dart';
@@ -39,28 +41,38 @@ class _PropertyCardVerticalState extends State<PropertyCardVertical> {
                 padding: EdgeInsets.all(0),
                 child: Column(children: [
                   // Text("${property.images}"),
-                  Image(
-                    loadingBuilder: (ctx, w, event) {
-                      if (event == null) {
-                        return w;
-                      }
-                      return Container(
-                        width: MediaQuery.of(context).size.width,
-                        height: MediaQuery.of(context).size.width * 2 / 3,
-                        child: Center(
-                          child: CircularProgressIndicator(
-                            value: event.expectedTotalBytes != null
-                                ? event.cumulativeBytesLoaded /
-                                    event.expectedTotalBytes
-                                : null,
+                  ShaderMask(
+                                       shaderCallback: (rect) {
+    return LinearGradient(
+      begin: Alignment.bottomCenter,
+      end: Alignment.topCenter,
+      colors: [Colors.black, Colors.grey],
+    ).createShader(Rect.fromLTRB(0, 0, rect.width, rect.height));
+  },
+  blendMode: BlendMode.dstIn,
+                                      child: Image(
+                      loadingBuilder: (ctx, w, event) {
+                        if (event == null) {
+                          return w;
+                        }
+                        return Container(
+                          width: MediaQuery.of(context).size.width,
+                          height: MediaQuery.of(context).size.width * 2 / 3,
+                          child: Center(
+                            child: CircularProgressIndicator(
+                              value: event.expectedTotalBytes != null
+                                  ? event.cumulativeBytesLoaded /
+                                      event.expectedTotalBytes
+                                  : null,
+                            ),
                           ),
-                        ),
-                      );
-                    },
-                    fit: BoxFit.cover,
-                    width: MediaQuery.of(context).size.width,
-                    height: MediaQuery.of(context).size.width * 2 / 3,
-                    image: NetworkImage("${property.imageUrls[0]}"),
+                        );
+                      },
+                      fit: BoxFit.cover,
+                      width: MediaQuery.of(context).size.width,
+                      height: MediaQuery.of(context).size.width * 2 / 3,
+                      image: NetworkImage("${property.imageUrls[0]}"),
+                    ),
                   ),
                   // Text("${property.id}"),
 
@@ -99,11 +111,14 @@ class _PropertyCardVerticalState extends State<PropertyCardVertical> {
               Positioned(
                   bottom: 0,
                   right: 0,
-                  child: PropertyIconInfo(
-                    size:20,
-                      property: property,
-                      imageColor: Colors.white,
-                      textColor: Colors.white))
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: PropertyIconInfo(
+                      size:20,
+                        property: property,
+                        imageColor: Colors.white,
+                        textColor: Colors.white),
+                  ))
             ]),
             SizedBox(
               width: MediaQuery.of(context).size.width,
@@ -112,11 +127,16 @@ class _PropertyCardVerticalState extends State<PropertyCardVertical> {
                 children: [
                   Padding(
                     padding: const EdgeInsets.all(8.0),
-                    child: Text("${property.title}"),
+                    child: Text("${property.title}",
+                    
+                    style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold),),
                   ),
                   Padding(
                     padding: const EdgeInsets.all(8.0),
-                    child: Text("${property.address}"),
+                    child: Text("${property.address}",
+                    style: TextStyle(color: MySecondaryColor),),
                   )
                 ],
               ),
@@ -127,17 +147,7 @@ class _PropertyCardVerticalState extends State<PropertyCardVertical> {
     );
   }
 
-  String formatPriceNum(String str) {
-    var str_ = str.replaceAll(",", "");
-    RegExp reg = new RegExp(r'(\d{1,3})(?=(\d{3})+(?!\d))');
-    Function mathFunc = (Match match) => '${match[1]},';
-    var res_ = str_.replaceAllMapped(reg, mathFunc);
-    if (res_ == str_) {
-      return str_;
-    } else {
-      return "\$ $res_";
-    }
-  }
+
 }
 
 //  Positioned(

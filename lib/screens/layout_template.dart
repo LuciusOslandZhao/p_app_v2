@@ -40,10 +40,12 @@ class _MainLayoutTemplateState extends State<MainLayoutTemplate> {
           elevation: 0.5,
           toolbarHeight: 120,
           title: 
-          Image(
-            height: 120 ,
-            fit: BoxFit.contain,
-            image: AssetImage("assets/images/logo_with_title_large.png"),),
+          Center(
+            child: Image(
+              height: 120 ,
+              fit: BoxFit.contain,
+              image: AssetImage("assets/images/logo_with_title_large.png"),),
+          ),
         ),
         body: Padding(
           padding: EdgeInsets.all(8),

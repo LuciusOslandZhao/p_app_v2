@@ -10,6 +10,7 @@ class BrowseListPage extends StatefulWidget {
 }
 
 class _BrowseListPageState extends State<BrowseListPage> {
+  int currentPage = 1;
   @override
   Widget build(BuildContext context) {
     return Consumer<AppState>(builder: (ctx, model, idx) {
@@ -17,12 +18,24 @@ class _BrowseListPageState extends State<BrowseListPage> {
           ? Center(
               child: myProgressIndicator,
             )
-          : ListView(
-              scrollDirection: Axis.vertical,
-              children: [
-                for (var item in model.houses) PropertyCardVertical(property:item),
-              ],
-            );
+          : NotificationListener<ScrollNotification>(
+            onNotification: (ScrollNotification scrollInfo) {
+    if (scrollInfo.metrics.pixels ==
+        scrollInfo.metrics.maxScrollExtent) {
+          setState(() {
+            currentPage++;
+          });
+      model.loadMore(currentPage);
+      
+    }
+  },
+                      child: ListView(
+                scrollDirection: Axis.vertical,
+                children: [
+                  for (var item in model.houses) PropertyCardVertical(property:item),
+                ],
+              ),
+          );
     });
   }
 }
