@@ -14,5 +14,4 @@ class PropertyTypeModel {
     link = json['link'];
     name = json['name'];
   }
-  
 }

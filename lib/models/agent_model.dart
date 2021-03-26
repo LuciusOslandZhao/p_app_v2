@@ -12,7 +12,6 @@ class AgentModel {
   String thumbnail_id;
   String fave_agent_logo;
   String imgUrl;
-  bool loading = true;
 
   AgentModel(
       {this.id,
@@ -48,9 +47,7 @@ class AgentModel {
     imgUrl = url;
   }
 
-  void loaded(){
-    loading = false;
-  }
+  
 }
 
 class AgentTitleModel {

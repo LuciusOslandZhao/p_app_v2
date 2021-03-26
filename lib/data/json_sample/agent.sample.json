@@ -1,0 +1,617 @@
+[
+    {
+      "id": 158,
+      "date": "2016-02-03T20:42:19",
+      "date_gmt": "2016-02-03T09:42:19",
+      "guid": {
+        "rendered": "https:\/\/sandbox.favethemes.com\/houzez\/?post_type=houzez_agent&#038;p=158"
+      },
+      "modified": "2021-03-05T16:23:12",
+      "modified_gmt": "2021-03-05T05:23:12",
+      "slug": "celiya-young",
+      "status": "publish",
+      "type": "houzez_agent",
+      "link": "https:\/\/www.canberryproperties.com.au\/index.php\/agent\/celiya-young\/",
+      "title": {
+        "rendered": "Celiya Young"
+      },
+      "content": {
+        "rendered": "\n<p>Hi, I’m Celiya, I’m passionate about connecting people with property and making sure people live where they love. I love Canberra and have been living locally for over ten years, I speak 4 languages and my background was in Project Management and Finance. People and their stories inspire me which makes the process of buying and selling a home even more personal. When working with someone I always want them to walk away from the experience thinking that I have added a personal touch, have exceeded their expectations, and that I made the process easy.<\/p>\n",
+        "protected": false
+      },
+      "featured_media": 17412,
+      "parent": 0,
+      "menu_order": 4,
+      "template": "",
+      "agent_category": [
+        104
+      ],
+      "agent_city": [],
+      "agent_meta": {
+        "fave_agent_position": [
+          "Sales Agent"
+        ],
+        "fave_agent_mobile": [
+          "0430078831"
+        ],
+        "fave_agent_facebook": [
+          "#"
+        ],
+        "fave_agent_youtube": [
+          "#"
+        ],
+        "fave_agent_email": [
+          "celiya.young@canberryproperties.com.au"
+        ],
+        "_dp_original": [
+          "156"
+        ],
+        "fave_agent_instagram": [
+          "#"
+        ],
+        "houzez_user_meta_id": [
+          "2206"
+        ],
+        "fave_agent_licenses": [
+          ""
+        ],
+        "fave_agent_language": [
+          "English, Chinese"
+        ],
+        "fave_agent_linkedin": [
+          "#"
+        ],
+        "fave_agent_website": [
+          "https:\/\/www.canberryproperties.com.au\/"
+        ],
+        "fave_agent_service_area": [
+          "Canberra"
+        ],
+        "houzez_total_rating": [
+          "4"
+        ],
+        "_wxr_import_user_slug": [
+          "zheshow"
+        ],
+        "ekit_post_views_count": [
+          "31"
+        ],
+        "_edit_lock": [
+          "1614921890:1"
+        ],
+        "_edit_last": [
+          "1"
+        ],
+        "fave_agent_visible": [
+          "0"
+        ],
+        "rs_page_bg_color": [
+          ""
+        ],
+        "_thumbnail_id": [
+          "17412"
+        ],
+        "fave_agent_logo": [
+          "17126"
+        ]
+      },
+      "_links": {
+        "self": [
+          {
+            "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/agents\/158"
+          }
+        ],
+        "collection": [
+          {
+            "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/agents"
+          }
+        ],
+        "about": [
+          {
+            "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/types\/houzez_agent"
+          }
+        ],
+        "version-history": [
+          {
+            "count": 3,
+            "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/agents\/158\/revisions"
+          }
+        ],
+        "predecessor-version": [
+          {
+            "id": 17758,
+            "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/agents\/158\/revisions\/17758"
+          }
+        ],
+        "wp:featuredmedia": [
+          {
+            "embeddable": true,
+            "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/media\/17412"
+          }
+        ],
+        "wp:attachment": [
+          {
+            "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/media?parent=158"
+          }
+        ],
+        "wp:term": [
+          {
+            "taxonomy": "agent_category",
+            "embeddable": true,
+            "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/agent_category?post=158"
+          },
+          {
+            "taxonomy": "agent_city",
+            "embeddable": true,
+            "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/agent_city?post=158"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https:\/\/api.w.org\/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 156,
+      "date": "2016-02-03T20:40:11",
+      "date_gmt": "2016-02-03T09:40:11",
+      "guid": {
+        "rendered": "https:\/\/sandbox.favethemes.com\/houzez\/?post_type=houzez_agent&#038;p=156"
+      },
+      "modified": "2021-03-05T16:23:00",
+      "modified_gmt": "2021-03-05T05:23:00",
+      "slug": "bob-zhuang",
+      "status": "publish",
+      "type": "houzez_agent",
+      "link": "https:\/\/www.canberryproperties.com.au\/index.php\/agent\/bob-zhuang\/",
+      "title": {
+        "rendered": "Bob Zhuang"
+      },
+      "content": {
+        "rendered": "\n<p>Hi I’m Bob, my focus is on delivering great customer service and exceptional results. I have been a Canberra local for 20 years and have a background in the finance industry. My attention to details and personal approach has helped me build lasting relationships with my clients, leading to referrals on many occasions to their friends and family. I have a strong work ethic and are commitment to providing my clients with the best advice.I enjoy helping people, so whether you are looking to purchase your dream home, or need advice on growing your investment portfolio, I am here to help!<\/p>\n",
+        "protected": false
+      },
+      "featured_media": 17747,
+      "parent": 0,
+      "menu_order": 2,
+      "template": "",
+      "agent_category": [
+        104
+      ],
+      "agent_city": [],
+      "agent_meta": {
+        "_thumbnail_id": [
+          "17747"
+        ],
+        "_vc_post_settings": [
+          "a:1:{s:10:\"vc_grid_id\";a:0:{}}"
+        ],
+        "fave_agent_position": [
+          "Sales Agent"
+        ],
+        "fave_agent_mobile": [
+          "0405217036"
+        ],
+        "fave_agent_facebook": [
+          "#"
+        ],
+        "fave_agent_youtube": [
+          "#"
+        ],
+        "fave_agent_email": [
+          "bob.zhuang@canberryproperties.com.au"
+        ],
+        "fave_agent_website": [
+          "https:\/\/www.canberryproperties.com.au\/"
+        ],
+        "fave_agent_language": [
+          "English, Chinese"
+        ],
+        "_dp_original": [
+          "150"
+        ],
+        "fave_agent_instagram": [
+          "#"
+        ],
+        "fave_agent_linkedin": [
+          "#"
+        ],
+        "fave_agent_licenses": [
+          ""
+        ],
+        "houzez_user_meta_id": [
+          "2205"
+        ],
+        "fave_agent_service_area": [
+          "Canberra"
+        ],
+        "fave_agent_specialties": [
+          "Property management, Real estate development, Real estate appraising, Retail leasing"
+        ],
+        "houzez_total_rating": [
+          "5"
+        ],
+        "_wxr_import_user_slug": [
+          "zheshow"
+        ],
+        "ekit_post_views_count": [
+          "64"
+        ],
+        "_edit_lock": [
+          "1614921890:1"
+        ],
+        "_edit_last": [
+          "1"
+        ],
+        "fave_agent_visible": [
+          "0"
+        ],
+        "rs_page_bg_color": [
+          ""
+        ],
+        "fave_agent_logo": [
+          "17753"
+        ]
+      },
+      "_links": {
+        "self": [
+          {
+            "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/agents\/156"
+          }
+        ],
+        "collection": [
+          {
+            "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/agents"
+          }
+        ],
+        "about": [
+          {
+            "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/types\/houzez_agent"
+          }
+        ],
+        "version-history": [
+          {
+            "count": 8,
+            "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/agents\/156\/revisions"
+          }
+        ],
+        "predecessor-version": [
+          {
+            "id": 17752,
+            "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/agents\/156\/revisions\/17752"
+          }
+        ],
+        "wp:featuredmedia": [
+          {
+            "embeddable": true,
+            "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/media\/17747"
+          }
+        ],
+        "wp:attachment": [
+          {
+            "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/media?parent=156"
+          }
+        ],
+        "wp:term": [
+          {
+            "taxonomy": "agent_category",
+            "embeddable": true,
+            "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/agent_category?post=156"
+          },
+          {
+            "taxonomy": "agent_city",
+            "embeddable": true,
+            "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/agent_city?post=156"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https:\/\/api.w.org\/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 150,
+      "date": "2016-02-03T20:37:12",
+      "date_gmt": "2016-02-03T09:37:12",
+      "guid": {
+        "rendered": "https:\/\/sandbox.favethemes.com\/houzez\/?post_type=houzez_agent&#038;p=150"
+      },
+      "modified": "2021-03-05T16:23:07",
+      "modified_gmt": "2021-03-05T05:23:07",
+      "slug": "curtis-dong",
+      "status": "publish",
+      "type": "houzez_agent",
+      "link": "https:\/\/www.canberryproperties.com.au\/index.php\/agent\/curtis-dong\/",
+      "title": {
+        "rendered": "Curtis Dong"
+      },
+      "content": {
+        "rendered": "\n<p>Hi, I’m Curtis, I am passionate about property and understand the benefits of the long game in terms of investment. The Canberra Property Market is very exciting, and I am glad I can use my experience and knowledge to help people. Giving my clients up to date professional advice, so they have the knowledge to proceed with confidence is my goal. I love communicating with people and use my analytical and marketing skills to walk you through the buying or selling process. I call Canberra home and understand the local market. So, whether you are looking to buy, sell or build your next dream home, I am here to help!<\/p>\n",
+        "protected": false
+      },
+      "featured_media": 17439,
+      "parent": 0,
+      "menu_order": 3,
+      "template": "",
+      "agent_category": [
+        104
+      ],
+      "agent_city": [],
+      "agent_meta": {
+        "fave_agent_website": [
+          "https:\/\/www.canberryproperties.com.au\/"
+        ],
+        "fave_agent_position": [
+          "Sales Agent"
+        ],
+        "fave_agent_mobile": [
+          "0449889665"
+        ],
+        "fave_agent_facebook": [
+          "#"
+        ],
+        "fave_agent_linkedin": [
+          "#"
+        ],
+        "fave_agent_youtube": [
+          "#"
+        ],
+        "fave_agent_email": [
+          "curtis@canberryproperties.com.au"
+        ],
+        "fave_agent_licenses": [
+          ""
+        ],
+        "houzez_user_meta_id": [
+          "3149"
+        ],
+        "fave_agent_language": [
+          "English, Chinese"
+        ],
+        "fave_agent_instagram": [
+          "#"
+        ],
+        "houzez_total_rating": [
+          "4"
+        ],
+        "_wxr_import_user_slug": [
+          "zheshow"
+        ],
+        "ekit_post_views_count": [
+          "29"
+        ],
+        "_edit_lock": [
+          "1614921890:1"
+        ],
+        "_edit_last": [
+          "1"
+        ],
+        "fave_agent_visible": [
+          "0"
+        ],
+        "rs_page_bg_color": [
+          ""
+        ],
+        "_thumbnail_id": [
+          "17439"
+        ],
+        "fave_agent_logo": [
+          "17753"
+        ]
+      },
+      "_links": {
+        "self": [
+          {
+            "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/agents\/150"
+          }
+        ],
+        "collection": [
+          {
+            "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/agents"
+          }
+        ],
+        "about": [
+          {
+            "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/types\/houzez_agent"
+          }
+        ],
+        "version-history": [
+          {
+            "count": 5,
+            "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/agents\/150\/revisions"
+          }
+        ],
+        "predecessor-version": [
+          {
+            "id": 17764,
+            "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/agents\/150\/revisions\/17764"
+          }
+        ],
+        "wp:featuredmedia": [
+          {
+            "embeddable": true,
+            "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/media\/17439"
+          }
+        ],
+        "wp:attachment": [
+          {
+            "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/media?parent=150"
+          }
+        ],
+        "wp:term": [
+          {
+            "taxonomy": "agent_category",
+            "embeddable": true,
+            "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/agent_category?post=150"
+          },
+          {
+            "taxonomy": "agent_city",
+            "embeddable": true,
+            "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/agent_city?post=150"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https:\/\/api.w.org\/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 72,
+      "date": "2016-02-02T18:15:01",
+      "date_gmt": "2016-02-02T07:15:01",
+      "guid": {
+        "rendered": "https:\/\/sandbox.favethemes.com\/houzez\/?post_type=houzez_agent&#038;p=72"
+      },
+      "modified": "2021-03-05T16:22:54",
+      "modified_gmt": "2021-03-05T05:22:54",
+      "slug": "shan-gap",
+      "status": "publish",
+      "type": "houzez_agent",
+      "link": "https:\/\/www.canberryproperties.com.au\/index.php\/agent\/shan-gap\/",
+      "title": {
+        "rendered": "Shan Gao"
+      },
+      "content": {
+        "rendered": "\n<p>Hi I’m Shan, and I am proud to lead the Canberry Properties team. I have a strong network of local and international clients and have lived in Canberra for over 25 years. Having built a successful brand in the hospitality industry, I understand the importance of great customer service and how to deliver results to exceed my clients expectations. After many years in the real estate industry, I pride myself on understanding my client’s needs. I take the time to listen and will work with you to design a strategy that works for you. I am here to take the stress out of your property transactions, and I will guide you through the whole process with a very personalapproach.So, whether you are selling, buying or just want general information on the property market, feel free to give me a call&#8230;. Coffee is on me!<\/p>\n",
+        "protected": false
+      },
+      "featured_media": 17755,
+      "parent": 0,
+      "menu_order": 1,
+      "template": "",
+      "agent_category": [
+        104
+      ],
+      "agent_city": [],
+      "agent_meta": {
+        "fave_agent_email": [
+          "shan@canberryproperties.com.au"
+        ],
+        "fave_agent_licenses": [
+          ""
+        ],
+        "houzez_user_meta_id": [
+          "3148"
+        ],
+        "houzez_total_rating": [
+          "5"
+        ],
+        "_wxr_import_user_slug": [
+          "zheshow"
+        ],
+        "_edit_lock": [
+          "1614921890:1"
+        ],
+        "_edit_last": [
+          "1"
+        ],
+        "fave_agent_visible": [
+          "0"
+        ],
+        "rs_page_bg_color": [
+          ""
+        ],
+        "fave_agent_website": [
+          "https:\/\/www.canberryproperties.com.au\/"
+        ],
+        "fave_agent_facebook": [
+          "#"
+        ],
+        "fave_agent_linkedin": [
+          "#"
+        ],
+        "fave_agent_youtube": [
+          "#"
+        ],
+        "fave_agent_instagram": [
+          "#"
+        ],
+        "fave_agent_mobile": [
+          "0457038888"
+        ],
+        "ekit_post_views_count": [
+          "41"
+        ],
+        "fave_agent_position": [
+          "Director of Sales"
+        ],
+        "_thumbnail_id": [
+          "17755"
+        ],
+        "fave_agent_logo": [
+          "17126"
+        ]
+      },
+      "_links": {
+        "self": [
+          {
+            "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/agents\/72"
+          }
+        ],
+        "collection": [
+          {
+            "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/agents"
+          }
+        ],
+        "about": [
+          {
+            "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/types\/houzez_agent"
+          }
+        ],
+        "version-history": [
+          {
+            "count": 3,
+            "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/agents\/72\/revisions"
+          }
+        ],
+        "predecessor-version": [
+          {
+            "id": 17756,
+            "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/agents\/72\/revisions\/17756"
+          }
+        ],
+        "wp:featuredmedia": [
+          {
+            "embeddable": true,
+            "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/media\/17755"
+          }
+        ],
+        "wp:attachment": [
+          {
+            "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/media?parent=72"
+          }
+        ],
+        "wp:term": [
+          {
+            "taxonomy": "agent_category",
+            "embeddable": true,
+            "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/agent_category?post=72"
+          },
+          {
+            "taxonomy": "agent_city",
+            "embeddable": true,
+            "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/agent_city?post=72"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https:\/\/api.w.org\/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    }
+  ]

@@ -1,0 +1,111 @@
+{
+    "id": 17755,
+    "date": "2021-03-01T17:42:18",
+    "date_gmt": "2021-03-01T06:42:18",
+    "guid": {
+        "rendered": "https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2016\/02\/Shan4x4Allhomes.png"
+    },
+    "modified": "2021-03-01T17:42:18",
+    "modified_gmt": "2021-03-01T06:42:18",
+    "slug": "shan4x4allhomes",
+    "status": "inherit",
+    "type": "attachment",
+    "link": "https:\/\/www.canberryproperties.com.au\/index.php\/agent\/shan-gap\/shan4x4allhomes\/",
+    "title": {
+        "rendered": "Shan4x4Allhomes"
+    },
+    "author": 1,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": [],
+    "description": {
+        "rendered": "<p class=\"attachment\"><a href='https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2016\/02\/Shan4x4Allhomes.png'><img width=\"300\" height=\"300\" src=\"https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2016\/02\/Shan4x4Allhomes-300x300.png\" class=\"attachment-medium size-medium\" alt=\"\" loading=\"lazy\" srcset=\"https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2016\/02\/Shan4x4Allhomes-300x300.png 300w, https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2016\/02\/Shan4x4Allhomes-150x150.png 150w, https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2016\/02\/Shan4x4Allhomes.png 400w\" sizes=\"(max-width: 300px) 100vw, 300px\" \/><\/a><\/p>\n"
+    },
+    "caption": {
+        "rendered": ""
+    },
+    "alt_text": "",
+    "media_type": "image",
+    "mime_type": "image\/png",
+    "media_details": {
+        "width": 400,
+        "height": 400,
+        "file": "2016\/02\/Shan4x4Allhomes.png",
+        "sizes": {
+            "medium": {
+                "file": "Shan4x4Allhomes-300x300.png",
+                "width": 300,
+                "height": 300,
+                "mime_type": "image\/png",
+                "source_url": "https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2016\/02\/Shan4x4Allhomes-300x300.png"
+            },
+            "thumbnail": {
+                "file": "Shan4x4Allhomes-150x150.png",
+                "width": 150,
+                "height": 150,
+                "mime_type": "image\/png",
+                "source_url": "https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2016\/02\/Shan4x4Allhomes-150x150.png"
+            },
+            "houzez-map-info": {
+                "file": "Shan4x4Allhomes-120x90.png",
+                "width": 120,
+                "height": 90,
+                "mime_type": "image\/png",
+                "source_url": "https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2016\/02\/Shan4x4Allhomes-120x90.png"
+            },
+            "full": {
+                "file": "Shan4x4Allhomes.png",
+                "width": 400,
+                "height": 400,
+                "mime_type": "image\/png",
+                "source_url": "https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2016\/02\/Shan4x4Allhomes.png"
+            }
+        },
+        "image_meta": {
+            "aperture": "0",
+            "credit": "",
+            "camera": "",
+            "caption": "",
+            "created_timestamp": "0",
+            "copyright": "",
+            "focal_length": "0",
+            "iso": "0",
+            "shutter_speed": "0",
+            "title": "",
+            "orientation": "0",
+            "keywords": []
+        }
+    },
+    "post": 72,
+    "source_url": "https:\/\/www.canberryproperties.com.au\/wp-content\/uploads\/2016\/02\/Shan4x4Allhomes.png",
+    "_links": {
+        "self": [
+            {
+                "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/media\/17755"
+            }
+        ],
+        "collection": [
+            {
+                "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/media"
+            }
+        ],
+        "about": [
+            {
+                "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/types\/attachment"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/users\/1"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https:\/\/www.canberryproperties.com.au\/index.php\/wp-json\/wp\/v2\/comments?post=17755"
+            }
+        ]
+    }
+}
