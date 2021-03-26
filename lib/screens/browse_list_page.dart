@@ -10,7 +10,7 @@ class BrowseListPage extends StatefulWidget {
 }
 
 class _BrowseListPageState extends State<BrowseListPage> {
-  int currentPage = 1;
+  int currentPage = 2;
   @override
   Widget build(BuildContext context) {
     return Consumer<AppState>(builder: (ctx, model, idx) {

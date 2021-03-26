@@ -60,6 +60,7 @@ class _PropertyCardVerticalState extends State<PropertyCardVertical> {
                           height: MediaQuery.of(context).size.width * 2 / 3,
                           child: Center(
                             child: CircularProgressIndicator(
+                              valueColor: AlwaysStoppedAnimation<Color>(MyPrimaryColor),
                               value: event.expectedTotalBytes != null
                                   ? event.cumulativeBytesLoaded /
                                       event.expectedTotalBytes
@@ -136,7 +137,7 @@ class _PropertyCardVerticalState extends State<PropertyCardVertical> {
                   Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Text("${property.address}",
-                    style: TextStyle(color: MySecondaryColor),),
+                    ),
                   )
                 ],
               ),

@@ -59,7 +59,7 @@ Future<List<AgentModel>> loadAgents() async {
 }
 
 Future<List<PropertyModel>> loadProperties(
-    {int page = 1, int perPage = -1, bool all = false}) async {
+    {int page = 1, int perPage = 5, bool all = false}) async {
   http.Client client = new http.Client();
   // final _response = await client.get(Uri.parse("$BaseURL2/properties"));
   final _response = all

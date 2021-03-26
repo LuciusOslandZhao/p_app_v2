@@ -10,7 +10,7 @@ class AppState with ChangeNotifier {
     loadHouses();
   }
 // data
-bool _isLogin = false;
+  bool _isLogin = false;
   bool loading = true;
   bool _homeListloading = true;
   bool _darkmode = false;
@@ -39,25 +39,126 @@ bool _isLogin = false;
       }
     return false;
   }
-
-ThemeData light = ThemeData(backgroundColor: Colors.white,primaryColor: Colors.white);
-ThemeData dark = ThemeData(backgroundColor: Colors.black, primaryColor: Colors.black);
-ThemeData get themeData {
-print('excuted get themedata');
-return _darkmode? dark:light;
-} 
-
-void login(){
-  _isLogin = true;
-  notifyListeners();
+TextStyle whiteText(){
+  return TextStyle(color: Colors.black);
 }
 
-void logout(){
-  _isLogin = false;
-  notifyListeners();
+
+final darkTheme = ThemeData(
+    primarySwatch: Colors.lightBlue,
+    primaryColor: Color(0xFF212121),
+    brightness: Brightness.dark,
+    backgroundColor: const Color(0xFF212121),
+    accentColor: Colors.white,
+    accentIconTheme: IconThemeData(color: Colors.black),
+    dividerColor: Colors.black12,
+  );
+
+  final lightTheme = ThemeData(
+    primarySwatch: Colors.grey,
+    primaryColor: Colors.white,
+    brightness: Brightness.light,
+    backgroundColor: const Color(0xFFE5E5E5),
+    accentColor: Colors.black,
+    accentIconTheme: IconThemeData(color: Colors.white),
+    dividerColor: Colors.white54,
+  );
+
+  ThemeData light =
+      ThemeData(
+        textTheme: TextTheme().apply(
+          bodyColor: Colors.black,
+          displayColor: Colors.black
+        ),
+
+        scaffoldBackgroundColor: Colors.white,
+        canvasColor: Colors.white,
+        backgroundColor: Colors.white, primaryColor: Colors.white);
+  ThemeData dark =
+      ThemeData(
+
+        textTheme: TextTheme(
+
+          bodyText1: TextStyle(color: Colors.white),
+        ).apply(
+          bodyColor: Colors.white,
+          displayColor: Colors.white
+        ),
+        canvasColor: Colors.black,
+        scaffoldBackgroundColor: Colors.black,
+        backgroundColor: Colors.black, primaryColor: Colors.black);
+  ThemeData get themeData {
+    print('excuted get themedata');
+    return _darkmode ? darkTheme : lightTheme;
+  }
+
+final iconHeight = 30.00;
+final iconWidth = 30.00;
+
+
+Image get bathroomIcon {
+  return darkmode ? Image(
+  width: iconWidth,
+  height: iconHeight,
+  fit: BoxFit.fill,
+  color: Colors.white,
+  image: AssetImage('assets/images/bathroom.png'),
+):Image(
+  width: iconWidth,
+  height: iconHeight,
+  color: Colors.black,
+  fit: BoxFit.fill,
+  image: AssetImage('assets/images/bathroom.png'),
+);
+}
+Image get bedroomIcon {
+return darkmode ? Image(
+  width: iconWidth,
+  height: iconHeight,
+  fit: BoxFit.fill,
+  color: Colors.white,
+  image: AssetImage('assets/images/bedroom.png'),
+):Image(
+  width: iconWidth,
+  height: iconHeight,
+  color: Colors.black,
+  fit: BoxFit.fill,
+  image: AssetImage('assets/images/bedroom.png'),
+);
+}
+Image get garageIcon {
+return darkmode ? Image(
+  width: iconWidth,
+  height: iconHeight,
+  fit: BoxFit.fill,
+  color: Colors.white,
+
+  image: AssetImage('assets/images/car.png'),
+):Image(
+  width: iconWidth,
+  height: iconHeight,
+  fit: BoxFit.fill,
+  color: Colors.black,
+
+  image: AssetImage('assets/images/car.png'),
+);
 }
 
-  void toggleDarkmode(){
+Color get imageIconColor {
+  
+  return _darkmode ? Colors.white: Colors.black;
+}
+  void login() {
+    _isLogin = true;
+    notifyListeners();
+  }
+
+  void logout() {
+    _isLogin = false;
+    notifyListeners();
+  }
+
+  void toggleDarkmode() {
     _darkmode = !_darkmode;
     print("Now darkmode = $darkmode");
     notifyListeners();
@@ -99,7 +200,7 @@ void logout(){
     _favouriteList = [];
     _items = [];
     _homepageList = [];
-    _homepageList = await loadProperties(page:1,perPage: 3);
+    _homepageList = await loadProperties(page: 1, perPage: 3);
     _canberryHouses = await loadProperties(all: true);
     // houseOne = _canberryHouses[0];
     isLoaded();
@@ -124,10 +225,11 @@ void logout(){
   void loadMore(int currentPage) async {
     print('loading more');
 
-    List<PropertyModel> list_ = await loadProperties(page:currentPage,perPage: 5);
+    List<PropertyModel> list_ =
+        await loadProperties(page: currentPage, perPage: 5);
     print(list_);
     // var newList_ = [..._canberryHouses,...list_];
-    
+
     // _canberryHouses = newList_;
     _canberryHouses.addAll(list_);
     notifyListeners();

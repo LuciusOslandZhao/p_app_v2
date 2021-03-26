@@ -21,23 +21,24 @@ class _FavouriteListPageState extends State<FavouriteListPage> {
               child: myProgressIndicator,
             )
           : model.favourites.length<1 ? Center(child: Text('No Content'),):
-          // ListView(
-          //     scrollDirection: Axis.vertical,
-          //     children: model.favourites.isEmpty? [
-          //      Center(child: 
-          //       Text("No Favourites")
-          //       ,),
-          //     ]:[
-          //       for (var item in model.favourites) PropertyCardVertical(property:item),
-          //     ],
-          //   )
-          AnimatedList(
-  key: listKey,
-  initialItemCount: model.favourites.length,
-  itemBuilder: (context, index, animation) {
-    return buildItem(context, index, animation, model.favourites[index]); // Refer step 3
-  },
-)
+          ListView(
+              scrollDirection: Axis.vertical,
+              children: model.favourites.isEmpty? [
+               Center(child: 
+                Text("No Favourites")
+                ,),
+              ]:[
+                for (var item in model.favourites) PropertyCardVertical(property:item),
+              ],
+            )
+
+//           AnimatedList(
+//   key: listKey,
+//   initialItemCount: model.favourites.length,
+//   itemBuilder: (context, index, animation) {
+//     return buildItem(context, index, animation, model.favourites[index]); // Refer step 3
+//   },
+// )
             ;
     });
   }

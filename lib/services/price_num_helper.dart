@@ -19,7 +19,8 @@ List<String> tests_ = [
 
 
   String formatPriceNum(String str) {
-    var str_ = str.replaceAll(",", "");
+    var str_ = str.replaceAll(",", "").replaceAll("\$", "");
+    
     RegExp reg = new RegExp(r'(\d{1,3})(?=(\d{3})+(?!\d))');
     Function mathFunc = (Match match) => '${match[1]},';
     var res_ = str_.replaceAllMapped(reg, mathFunc);

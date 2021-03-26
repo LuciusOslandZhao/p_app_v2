@@ -51,22 +51,26 @@ class _MainLayoutTemplateState extends State<MainLayoutTemplate> {
           padding: EdgeInsets.all(8),
           child: screens[_currentIndex],
         ),
-        bottomNavigationBar: BottomNavigationBar(
-          currentIndex: _currentIndex,
-          onTap: changeTab,
-          selectedItemColor: MyPrimaryColor,
-          unselectedItemColor: Colors.grey,
-          items: [
-            BottomNavigationBarItem(icon: Icon(Icons.home_outlined), label: "Home"),
-            BottomNavigationBarItem(
-                icon: Icon(Icons.list_alt_outlined), label: "List"),
-            BottomNavigationBarItem(
-                icon: Icon(Icons.star_border_outlined), label: "Save"),
-            BottomNavigationBarItem(
-                icon: Icon(Icons.person_outline), label: "Me"),
-            // BottomNavigationBarItem(
-            //     icon: Icon(Icons.person_outline), label: ""),
-          ],
+        bottomNavigationBar: Theme(
+          data:model.themeData,
+                  child: BottomNavigationBar(
+          
+            currentIndex: _currentIndex,
+            onTap: changeTab,
+            selectedItemColor: MyPrimaryColor,
+            unselectedItemColor: Colors.grey,
+            items: [
+              BottomNavigationBarItem(icon: Icon(Icons.home_outlined), label: "Home"),
+              BottomNavigationBarItem(
+                  icon: Icon(Icons.list_alt_outlined), label: "List"),
+              BottomNavigationBarItem(
+                  icon: Icon(Icons.star_border_outlined), label: "Save"),
+              BottomNavigationBarItem(
+                  icon: Icon(Icons.person_outline), label: "Me"),
+              // BottomNavigationBarItem(
+              //     icon: Icon(Icons.person_outline), label: ""),
+            ],
+          ),
         ),
       ),
     );

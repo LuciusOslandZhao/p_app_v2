@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:p_app_v2/models/app_state_model.dart';
 import 'package:p_app_v2/models/property_model.dart';
+import 'package:provider/provider.dart';
 
 class PropertyIconInfo extends StatefulWidget {
   final double size;
@@ -26,7 +28,8 @@ class _PropertyIconInfoState extends State<PropertyIconInfo> {
       {this.size, this.property, this.imageColor, this.textColor});
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
+    return Consumer<AppState>(builder: (ctx,model,child){
+      return SizedBox(
       width: 120,
       child: Row(
         children: [
@@ -74,5 +77,6 @@ class _PropertyIconInfoState extends State<PropertyIconInfo> {
         ],
       ),
     );
+    });
   }
 }
