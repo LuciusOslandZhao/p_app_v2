@@ -1,9 +1,15 @@
+import 'agent_model.dart';
+
 class PropertyModel {
   int id;
   String title;
   String description;
   PropertyMeta propertyMeta;
   List imageUrls;
+  int featureMediaId;
+  String featureMediaUrl;
+int statusId;
+int typeId;
 
 
   PropertyModel({
@@ -11,20 +17,31 @@ class PropertyModel {
     this.description,
     this.title,
     this.propertyMeta,
-    this.imageUrls
+    this.imageUrls,
+    this.statusId,
+    this.typeId
   });
 
 
   PropertyModel.fromJson(Map<String, dynamic> json) {
     id = json['id'];
     title = json['title'] == null ? "No content" : json['title']['rendered'];
+    featureMediaId = json['featured_media'];
+    
     description =
         json['content'] == null ? "No content" : json['content']['rendered'];
     propertyMeta = PropertyMeta.fromJson(json['property_meta']);
+
+    statusId = json['property_status'][0];
+    typeId = json['property_type'][0];
   }
 
   void setImageUrls(List list) {
     imageUrls = list;
+  }
+
+  void setFeatureUrl(String url){
+    featureMediaUrl = url;
   }
 
 String get price => propertyMeta.fave_property_price;
@@ -35,9 +52,10 @@ String get price => propertyMeta.fave_property_price;
   String get zipcode => propertyMeta.fave_property_zip;
   String get lat => propertyMeta.houzez_geolocation_lat;
   String get lng => propertyMeta.houzez_geolocation_long;
+  List  get agentIds => propertyMeta.fave_agents;
 
   String toString() {
-    return "$address;$title;$bathrooms;$bedrooms;$garages;$price;$zipcode;$lat;$lng;$description;";
+    return "$id;$address;$title;$bathrooms;$bedrooms;$garages;$price;$zipcode;$lat;$lng;$description;";
   }
 
   Map<String, dynamic> toMap() {
@@ -73,6 +91,7 @@ class PropertyMeta {
   String fave_property_bathrooms;
   String fave_property_garage;
   List   fave_property_images;
+  List   fave_agents;
 
   PropertyMeta(
     {
@@ -86,6 +105,7 @@ class PropertyMeta {
   this.fave_property_bathrooms,
   this.fave_property_garage,
   this.fave_property_images,
+  this.fave_agents
     }
   );
 
@@ -147,6 +167,8 @@ class PropertyMeta {
     fave_property_images = json['fave_property_images'] == null
         ? []
         : json['fave_property_images'];
+
+        fave_agents = json['fave_agents']==null? []:json['fave_agents'];
   }
 }
 

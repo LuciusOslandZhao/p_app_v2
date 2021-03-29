@@ -1,10 +1,12 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
-import 'package:flutter_html/flutter_html.dart';
+import 'package:html/parser.dart';
 import 'package:p_app_v2/common/constants.dart';
 import 'package:p_app_v2/models/app_state_model.dart';
 import 'package:p_app_v2/models/property_model.dart';
+import 'package:p_app_v2/models/property_type_model.dart';
 import 'package:p_app_v2/services/price_num_helper.dart';
+import 'package:p_app_v2/widgets/foldable_text.dart';
 import 'package:p_app_v2/widgets/google_maps_widget.dart';
 import 'package:provider/provider.dart';
 import 'package:webview_flutter/webview_flutter.dart';
@@ -21,18 +23,28 @@ class PropertyDetailPage extends StatefulWidget {
 }
 
 class _PropertyDetailPageState extends State<PropertyDetailPage> {
-
   final PropertyModel property;
   _PropertyDetailPageState({this.property});
 
-  String maps;
+  PropertyTypeModel type;
+
+  // String maps;
   final _textParagraphStyle = TextStyle(fontSize: 16);
   final _textDescStyle = TextStyle(fontSize: 18);
+
+//here goes the function
+  String _parseHtmlString(String htmlString) {
+    final document = parse(htmlString);
+    final String parsedString = parse(document.body.text).documentElement.text;
+
+    return parsedString;
+  }
+
   @override
   void initState() {
-    print(property);
-    maps =
-        '<html lang="en"><body><iframe width="100%" height="100%" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCXHxN1Jd-3wYZUrPq0zIRe-t52puaGR2U &q=${property.address}"></iframe></body></html>';
+    // print(property);
+    // maps =
+    //     '<html lang="en"><body><iframe width="100%" height="100%" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCXHxN1Jd-3wYZUrPq0zIRe-t52puaGR2U &q=${property.address}"></iframe></body></html>';
     if (Platform.isAndroid) WebView.platform = SurfaceAndroidWebView();
     super.initState();
   }
@@ -116,7 +128,7 @@ class _PropertyDetailPageState extends State<PropertyDetailPage> {
                                 borderRadius: BorderRadius.circular(2),
                                 border: Border.all(color: Colors.blue)),
                             child: Text(
-                              "FOR SALE",
+                              "${model.getStatusById(property.statusId).name.toString().toUpperCase()}",
                               style: TextStyle(
                                   color: Colors.white,
                                   fontSize: 14,
@@ -132,6 +144,7 @@ class _PropertyDetailPageState extends State<PropertyDetailPage> {
                     child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
+                    // Text("$property"),
                     Padding(
                       padding: EdgeInsets.only(top: 10, bottom: 10),
                       child: Text(
@@ -164,122 +177,106 @@ class _PropertyDetailPageState extends State<PropertyDetailPage> {
                 Padding(
                   padding: EdgeInsets.only(top: 20),
                   child: Container(
-                      // color: Colors.yellow,
-                      child: Column(
-                    children: [
-                      Align(
-                          alignment: Alignment.centerLeft,
-                          child:
-                              Text("Overview", style: TextStyle(fontSize: 24))),
-                      Table(
-                          // border: TableBorder.all(),
-                          columnWidths: const <int, TableColumnWidth>{
-                            0: IntrinsicColumnWidth(),
-                            1: FlexColumnWidth(),
-                            2: FixedColumnWidth(64),
-                          },
-                          defaultVerticalAlignment:
-                              TableCellVerticalAlignment.middle,
-                          children: <TableRow>[
-                            TableRow(children: <Widget>[
-                              Container(child: Text("Townhouse")),
-                              Container(height: 32),
-                              Container(
-                                child: Row(
-                                  children: [
-                                    model.bathroomIcon,
-                                    Padding(
-                                      padding: const EdgeInsets.all(3.0),
-                                      child: Text(
-                                        "${property.bathrooms}",
-                                        style: _textParagraphStyle,
-                                      ),
-                                    )
-                                  ],
-                                ),
-                              ),
-                              Container(height: 32),
-                              Container(height: 32),
-                            ]),
-                            TableRow(children: <Widget>[
-                              Container(child: Text("Prooperty Type")),
-                              Container(height: 32),
-                              Container(
-                                  child: Text(
-                                "Bathroom",
-                                style: _textParagraphStyle,
-                              )),
-                              Container(height: 32),
-                              Container(height: 32),
-                            ]),
-                            TableRow(children: <Widget>[
-                              Container(height: 32),
-                              Container(height: 32),
-                              Container(height: 32),
-                              Container(height: 32),
-                              Container(height: 32),
-                            ]),
-                            TableRow(children: <Widget>[
-                              Container(
-                                child: Row(
-                                  children: [
-                                    model.bedroomIcon,
-                                    Padding(
-                                      padding: const EdgeInsets.only(left: 3.0),
-                                      child: Text(
-                                        "${property.bedrooms}",
-                                        style: _textParagraphStyle,
-                                      ),
-                                    )
-                                  ],
-                                ),
-                              ),
-                              Container(height: 32),
-                              Container(
-                                child: Row(
-                                  children: [
-                                    model.garageIcon,
-                                    Padding(
-                                      padding: const EdgeInsets.all(3.0),
-                                      child: Text(
-                                        "${property.garages}",
-                                        style: _textParagraphStyle,
-                                      ),
-                                    ) // garages
-                                  ],
-                                ),
-                              ),
-                              Container(height: 32),
-                              Container(height: 32),
-                            ]),
-                            TableRow(children: <Widget>[
-                              Container(
-                                  child: Text(
-                                "Bedroom",
-                                style: _textParagraphStyle,
-                              )),
-                              Container(height: 32),
-                              Container(
-                                  child: Text(
-                                "Garages",
-                                style: _textParagraphStyle,
-                              )),
-                              Container(height: 32),
-                              Container(height: 32),
-                            ]),
-                          ]),
-                    ],
-                  )),
+                    // color: Colors.yellow,
+                    child: Align(
+                        alignment: Alignment.centerLeft,
+                        child:
+                            Text("Overview", style: TextStyle(fontSize: 24))),
+                  ),
                 ),
+                Column(children: [
+                  Row(
+                    children: [
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                                "${model.getTypeById(property.typeId).name}"), ///////??????????????????????????????????????
+                            Text("Property Type"),
+                          ],
+                        ),
+                      ),
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Row(
+                              children: [
+                                model.bedroomIcon,
+                                Padding(
+                                  padding: const EdgeInsets.all(3.0),
+                                  child: Text(
+                                    "${property.bedrooms}",
+                                    style: _textParagraphStyle,
+                                  ),
+                                )
+                              ],
+                            ),
+                            Text("Bedroom")
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Row(
+                              children: [
+                                model.bathroomIcon,
+                                Padding(
+                                  padding: const EdgeInsets.all(3.0),
+                                  child: Text(
+                                    "${property.bathrooms}",
+                                    style: _textParagraphStyle,
+                                  ),
+                                )
+                              ],
+                            ),
+                            Text("Bathroom")
+                          ],
+                        ),
+                      ),
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Row(
+                              children: [
+                                model.garageIcon,
+                                Padding(
+                                  padding: const EdgeInsets.all(3.0),
+                                  child: Text(
+                                    "${property.garages}",
+                                    style: _textParagraphStyle,
+                                  ),
+                                )
+                              ],
+                            ),
+                            Text("Garages")
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                ]),
                 Container(
                     child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text("Description"),
-                    Html(
-                      data: property.description,
-                      defaultTextStyle: _textDescStyle,
-                    ),
+                    Text("Description", style: TextStyle(fontSize: 24)),
+
+                    DescriptionTextWidget(
+                        text: _parseHtmlString(property.description)),
+
+                    // Html(
+                    //   data: property.description,
+                    //   defaultTextStyle: _textDescStyle,
+                    // ),
                   ],
                 )),
                 Divider(),
@@ -292,9 +289,12 @@ class _PropertyDetailPageState extends State<PropertyDetailPage> {
                       address: property.address,
                     )),
                 Divider(),
+                Text(
+                  "Contact Agent",
+                  style: TextStyle(fontSize: 24),
+                ),
                 Container(
                     child: Column(children: [
-                  Text("Contact Agent"),
                   Row(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -316,12 +316,19 @@ class _PropertyDetailPageState extends State<PropertyDetailPage> {
                                 height: 60,
                                 width: 60,
                                 fit: BoxFit.fitHeight,
-                                image: AssetImage('assets/images/banner.png'),
+                                // image: AssetImage('assets/images/banner.png'),
+                                image: NetworkImage(model
+                                    .getAgentById(property.agentIds[0])
+                                    .imgUrl),
                               )),
                         ),
                         Spacer(),
                         Column(
-                          children: [Text("Kudou"), Text("View agent profile")],
+                          children: [
+                            Text(
+                                "${model.getAgentById(property.agentIds[0]).fullName}"),
+                            Text("View agent profile")
+                          ],
                         ),
                         Spacer(),
                         Padding(
@@ -339,7 +346,8 @@ class _PropertyDetailPageState extends State<PropertyDetailPage> {
                               ),
                               child: FlatButton(
                                   onPressed: () {
-                                    call("tel:21213123123");
+                                    call(
+                                        "mailto:${model.getAgentById(property.agentIds[0]).email}");
                                   },
                                   child: Icon(
                                     Icons.message,
@@ -361,7 +369,8 @@ class _PropertyDetailPageState extends State<PropertyDetailPage> {
                               ),
                               child: FlatButton(
                                   onPressed: () {
-                                    call("tel:21213123123");
+                                    call(
+                                        "tel:${model.getAgentById(property.agentIds[0]).mobile}");
                                   },
                                   child: Icon(
                                     Icons.call,

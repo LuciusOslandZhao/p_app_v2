@@ -10,9 +10,13 @@ class PropertyStatusModel {
   });
 
   PropertyStatusModel.fromJson(Map<String, dynamic> json){
+
     id = json['id'];
     link = json['link'];
     name = json['name'];
   }
-  
+    String toString(){
+    return "$id;$link;$name";
+  }
+
 }

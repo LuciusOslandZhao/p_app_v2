@@ -3,6 +3,8 @@ import 'dart:math';
 import 'package:http/http.dart' as http;
 import 'package:p_app_v2/models/agent_model.dart';
 import 'package:p_app_v2/models/property_model.dart';
+import 'package:p_app_v2/models/property_status_model.dart';
+import 'package:p_app_v2/models/property_type_model.dart';
 
 List<PropertyModel> parseHouses(String responseBody) {
   final parsed = jsonDecode(responseBody).cast<Map<String, dynamic>>();
@@ -50,11 +52,12 @@ Future<List<AgentModel>> loadAgents() async {
     for (var _user in resUsers_) {
       var url = await fetchMediaUrl("${_user.featured_media}");
       _user.setImgUrl(url);
-      _user.loaded();
+      // _user.loaded();
     }
     return resUsers_;
   } else {
-    throw Exception("No data fetched.");
+    print("Mot agents fetched.");
+    return [];
   }
 }
 
@@ -70,20 +73,23 @@ Future<List<PropertyModel>> loadProperties(
   try {
     if (_response != null && _response.statusCode == 200) {
       List properties = json.decode(_response.body);
-      print(properties);
+      // print(properties);
       var resProperties_ =
           properties.map((p) => PropertyModel.fromJson(p)).toList();
       for (var _p in resProperties_) {
         List tempUrls = [];
+        final imagePlaceholder =
+            "https://via.placeholder.com/475?text=Preparing%20Pictures";
         if (_p.propertyMeta.fave_property_images.isEmpty) {
-          tempUrls
-              .add("https://via.placeholder.com/475?text=Preparing%20Pictures");
+          tempUrls.add(imagePlaceholder);
         } else {
           for (var _imgId in _p.propertyMeta.fave_property_images) {
             var _imgUrl = await fetchMediaUrl("$_imgId");
             tempUrls.add(_imgUrl);
           }
         }
+        var featureImgUrl = await fetchMediaUrl("${_p.featureMediaId}");
+        _p.setFeatureUrl(featureImgUrl);
         _p.setImageUrls(tempUrls);
       }
       return resProperties_;
@@ -96,13 +102,52 @@ Future<List<PropertyModel>> loadProperties(
   }
 }
 
+Future<List<PropertyTypeModel>> fetchTypes() async {
+  http.Client client = new http.Client();
+
+  final _typeURL = "$BaseURL2/property_type";
+  final _response = await client.get(_typeURL);
+  try {
+    if (_response != null && _response.statusCode == 200) {
+      List types = jsonDecode(_response.body);
+      return types.map((el) => PropertyTypeModel.fromJson(el)).toList();
+    } else {
+      return [];
+    }
+  } catch (e) {
+    return [];
+  }
+}
+
+Future<List<PropertyStatusModel>> fetchStatus() async {
+  http.Client client = new http.Client();
+
+  final _statusURL = "$BaseURL2/property_status";
+  final _response = await client.get(_statusURL);
+  try {
+    if (_response != null && _response.statusCode == 200) {
+      List statuses = jsonDecode(_response.body);
+      return    statuses.map((el) => PropertyStatusModel.fromJson(el)).toList();
+      //  _temp;
+    } else {
+      return [];
+    }
+  } catch (e) {
+    return [];
+  }
+}
+
+Future<AgentModel> fetchAgent(String agentId) async {
+  return null;
+}
+
 Future<String> fetchMediaUrl(String mediaId) async {
   http.Client client = new http.Client();
   final _res = await client.get(Uri.parse("$BaseURL2/media/$mediaId"));
 
   if (_res != null && _res.statusCode == 200) {
     String mediaUrl = json.decode(_res.body)['source_url'];
-    print(mediaUrl);
+    // print(mediaUrl);
     return mediaUrl;
   } else {
     return randomPicId();

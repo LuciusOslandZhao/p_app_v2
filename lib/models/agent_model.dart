@@ -6,12 +6,14 @@ class AgentModel {
   Uri link;
   String content;
   int featured_media;
-  String fave_agent_mobile;
-  String fave_agent_email;
   List<String> fave_agent_language;
   String thumbnail_id;
   String fave_agent_logo;
   String imgUrl;
+  AgentMeta meta;
+
+  String get mobile => meta.fave_agent_mobile;
+  String get email => meta.fave_agent_email;
 
   AgentModel(
       {this.id,
@@ -19,8 +21,6 @@ class AgentModel {
       this.link,
       this.content,
       this.featured_media,
-      this.fave_agent_mobile,
-      this.fave_agent_email,
       this.fave_agent_language,
       this.thumbnail_id,
       this.fave_agent_logo});
@@ -31,9 +31,7 @@ class AgentModel {
     link = Uri.parse(json['link']);
     content = json['content']['rendered'];
     featured_media = json['featured_media'];
-    fave_agent_mobile =
-        json['fave_agent_mobile'] != null ? json['fave_agent_mobile'][0] : "";
-    fave_agent_email = json["fave_agent_email"];
+
     fave_agent_language = json['fave_agent_language'] == null
         ? [""]
         : List<String>.from(json['fave_agent_language']);
@@ -41,13 +39,30 @@ class AgentModel {
         json['_thumbnail_id'] == null ? "" : json['_thumbnail_id'][0];
     fave_agent_logo =
         json['fave_agent_logo'] == null ? "" : json['fave_agent_logo'][0];
+        meta = json['agent_meta'] == null ? {}:AgentMeta.fromJson(json['agent_meta']);
+  }
+
+  String toString() {
+    return "id:$id;fullName:$fullName;email:$email;mobile:$mobile";
   }
 
   void setImgUrl(String url) {
     imgUrl = url;
   }
+}
 
-  
+class AgentMeta {
+  String fave_agent_mobile;
+  String fave_agent_email;
+
+  AgentMeta({this.fave_agent_email, this.fave_agent_mobile});
+
+  AgentMeta.fromJson(Map<String, dynamic> json) {
+    fave_agent_email =
+        json["fave_agent_email"] == null ? "" : json["fave_agent_email"][0];
+    fave_agent_mobile =
+        json['fave_agent_mobile'] == null ? "" : json['fave_agent_mobile'][0];
+  }
 }
 
 class AgentTitleModel {

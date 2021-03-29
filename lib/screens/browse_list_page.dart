@@ -28,16 +28,26 @@ class _BrowseListPageState extends State<BrowseListPage> {
                   model.loadMore(currentPage);
                 }
               },
-              child: ListView.builder(
-                scrollDirection: Axis.vertical,
-                itemCount: model.houses.length,
-                itemBuilder: (BuildContext context, int index) {
-                  return PropertyCardVertical(property: model.houses[index]);
-                  },
-                // children: [
-                //   for (var item in model.houses)
-                //     PropertyCardVertical(property: item),
-                // ],
+              // child: ListView.builder(
+              //   scrollDirection: Axis.vertical,
+              //   itemCount: model.houses.length,
+              //   itemBuilder: (BuildContext context, int index) {
+              //     return PropertyCardVertical(property: model.houses[index]);
+              //     },
+                
+              // ),
+              child: ListView(
+                children: [
+                  for(var property in model.houses)
+                  PropertyCardVertical(property:property),
+
+                  model.loadingMore ?Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Center(
+              child: myProgressIndicator,
+            ),
+                  ) :Spacer()
+                ],
               ),
             );
     });

@@ -72,7 +72,7 @@ class _PropertyCardVerticalState extends State<PropertyCardVertical> {
                       fit: BoxFit.cover,
                       width: MediaQuery.of(context).size.width,
                       height: MediaQuery.of(context).size.width * 2 / 3,
-                      image: NetworkImage("${property.imageUrls[0]}"),
+                      image: NetworkImage("${property.featureMediaUrl}"),
                     ),
                   ),
                   // Text("${property.id}"),
