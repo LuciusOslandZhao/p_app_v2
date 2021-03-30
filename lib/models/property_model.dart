@@ -8,26 +8,23 @@ class PropertyModel {
   List imageUrls;
   int featureMediaId;
   String featureMediaUrl;
-int statusId;
-int typeId;
+  int statusId;
+  int typeId;
 
-
-  PropertyModel({
-    this.id,
-    this.description,
-    this.title,
-    this.propertyMeta,
-    this.imageUrls,
-    this.statusId,
-    this.typeId
-  });
-
+  PropertyModel(
+      {this.id,
+      this.description,
+      this.title,
+      this.propertyMeta,
+      this.imageUrls,
+      this.statusId,
+      this.typeId});
 
   PropertyModel.fromJson(Map<String, dynamic> json) {
     id = json['id'];
     title = json['title'] == null ? "No content" : json['title']['rendered'];
     featureMediaId = json['featured_media'];
-    
+
     description =
         json['content'] == null ? "No content" : json['content']['rendered'];
     propertyMeta = PropertyMeta.fromJson(json['property_meta']);
@@ -40,11 +37,11 @@ int typeId;
     imageUrls = list;
   }
 
-  void setFeatureUrl(String url){
+  void setFeatureUrl(String url) {
     featureMediaUrl = url;
   }
 
-String get price => propertyMeta.fave_property_price;
+  String get price => propertyMeta.fave_property_price;
   String get address => propertyMeta.fave_property_map_address;
   String get bathrooms => propertyMeta.fave_property_bathrooms;
   String get bedrooms => propertyMeta.fave_property_bedrooms;
@@ -52,7 +49,7 @@ String get price => propertyMeta.fave_property_price;
   String get zipcode => propertyMeta.fave_property_zip;
   String get lat => propertyMeta.houzez_geolocation_lat;
   String get lng => propertyMeta.houzez_geolocation_long;
-  List  get agentIds => propertyMeta.fave_agents;
+  List get agentIds => propertyMeta.fave_agents;
 
   String toString() {
     return "$id;$address;$title;$bathrooms;$bedrooms;$garages;$price;$zipcode;$lat;$lng;$description;";
@@ -69,14 +66,13 @@ String get price => propertyMeta.fave_property_price;
     };
   }
 
-  PropertyModel fromMap(Map<String, dynamic> map){
+  PropertyModel fromMap(Map<String, dynamic> map) {
     return new PropertyModel(
-      id: map['id'],
-      description: map['description'],
-      title: map['title'],
-      propertyMeta: new PropertyMeta.fromJson(map['propertyMeta']),
-      imageUrls: List.from(map['imageUrls'])
-    );
+        id: map['id'],
+        description: map['description'],
+        title: map['title'],
+        propertyMeta: new PropertyMeta.fromJson(map['propertyMeta']),
+        imageUrls: List.from(map['imageUrls']));
   }
 }
 
@@ -90,24 +86,21 @@ class PropertyMeta {
   String fave_property_bedrooms;
   String fave_property_bathrooms;
   String fave_property_garage;
-  List   fave_property_images;
-  List   fave_agents;
+  List fave_property_images;
+  List fave_agents;
 
   PropertyMeta(
-    {
-  this.houzez_geolocation_lat,
-  this.houzez_geolocation_long,
-  this.houzez_total_property_views,
-  this.fave_property_map_address,
-  this.fave_property_price,
-  this.fave_property_zip,
-  this.fave_property_bedrooms,
-  this.fave_property_bathrooms,
-  this.fave_property_garage,
-  this.fave_property_images,
-  this.fave_agents
-    }
-  );
+      {this.houzez_geolocation_lat,
+      this.houzez_geolocation_long,
+      this.houzez_total_property_views,
+      this.fave_property_map_address,
+      this.fave_property_price,
+      this.fave_property_zip,
+      this.fave_property_bedrooms,
+      this.fave_property_bathrooms,
+      this.fave_property_garage,
+      this.fave_property_images,
+      this.fave_agents});
 
   Map<String, dynamic> toMap() {
     return {
@@ -119,21 +112,22 @@ class PropertyMeta {
       "fave_property_bedrooms": fave_property_bedrooms,
       "fave_property_bathrooms": fave_property_bathrooms,
       "fave_property_garage": fave_property_garage,
-      "fave_property_images": Map.fromIterable(fave_property_images, key: (e)=>e[0],value:(e)=>e[1]),
+      "fave_property_images": Map.fromIterable(fave_property_images,
+          key: (e) => e[0], value: (e) => e[1]),
     };
   }
 
-   PropertyMeta fromMap(Map<String, dynamic> map){
+  PropertyMeta fromMap(Map<String, dynamic> map) {
     return new PropertyMeta(
-  houzez_geolocation_lat:map['houzez_geolocation_lat'],
-  houzez_geolocation_long:map['houzez_geolocation_long'],
-  houzez_total_property_views:map['houzez_total_property_views'],
-  fave_property_map_address:map['fave_property_map_address'],
-  fave_property_zip:map['fave_property_zip'],
-  fave_property_bedrooms:map['fave_property_bedrooms'],
-  fave_property_bathrooms:map['fave_property_bathrooms'],
-  fave_property_garage:map['fave_property_garage'],
-  fave_property_images: List.from(map['fave_property_images']),
+      houzez_geolocation_lat: map['houzez_geolocation_lat'],
+      houzez_geolocation_long: map['houzez_geolocation_long'],
+      houzez_total_property_views: map['houzez_total_property_views'],
+      fave_property_map_address: map['fave_property_map_address'],
+      fave_property_zip: map['fave_property_zip'],
+      fave_property_bedrooms: map['fave_property_bedrooms'],
+      fave_property_bathrooms: map['fave_property_bathrooms'],
+      fave_property_garage: map['fave_property_garage'],
+      fave_property_images: List.from(map['fave_property_images']),
     );
   }
 
@@ -153,29 +147,27 @@ class PropertyMeta {
         : json['fave_property_map_address'][0];
     fave_property_zip =
         json['fave_property_zip'] == null ? "" : json['fave_property_zip'][0];
-    fave_property_price = json['fave_property_price']==null? "Contact Agent": json['fave_property_price'][0];
-    
+    fave_property_price = json['fave_property_price'] == null
+        ? "Contact Agent"
+        : json['fave_property_price'][0];
+
     fave_property_bedrooms = json['fave_property_bedrooms'] == null
-        ? ""
+        ? "0"
         : json['fave_property_bedrooms'][0];
     fave_property_bathrooms = json['fave_property_bathrooms'] == null
-        ? ""
+        ? "0"
         : json['fave_property_bathrooms'][0];
     fave_property_garage = json['fave_property_garage'] == null
-        ? ""
+        ? "0"
         : json['fave_property_garage'][0];
     fave_property_images = json['fave_property_images'] == null
         ? []
         : json['fave_property_images'];
 
-        fave_agents = json['fave_agents']==null? []:json['fave_agents'];
+    fave_agents = json['fave_agents'] == null ? [] : json['fave_agents'];
   }
 }
 
-
-String getPropertyType(int type){
-  const types = {
-
-    
-  };
+String getPropertyType(int type) {
+  const types = {};
 }

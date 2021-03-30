@@ -1,6 +1,8 @@
 import 'package:shared_preferences/shared_preferences.dart';
 
 class StorageManager {
+
+  
   static void saveData(String key, dynamic value) async {
     final prefs = await SharedPreferences.getInstance();
     if (value is int) {
@@ -24,4 +26,14 @@ class StorageManager {
     final prefs = await SharedPreferences.getInstance();
     return prefs.remove(key);
   }
+
+  static void setDarkmode(bool b)async{
+    final prefs = await SharedPreferences.getInstance();
+    prefs.setBool('darkmode', b);
+  }
+
+  // static Future<bool> readDarkmode() async{
+  //   final prefs = await SharedPreferences.getInstance();
+  //   // return Future<bool>prefs.getBool('darkmode');
+  // }
 }

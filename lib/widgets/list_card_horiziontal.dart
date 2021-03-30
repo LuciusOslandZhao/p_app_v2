@@ -40,8 +40,8 @@ class _ListCardState extends State<ListCard> {
                       ImageChunkEvent loadingProgress) {
                     if (loadingProgress == null) return child;
                     return SizedBox(
-                       height: MediaQuery.of(context).size.width * 1 / 2 * 2 / 3,
-                         width: MediaQuery.of(context).size.width * 1 / 2,
+                       width: MediaQuery.of(context).size.width  * 2 / 3,
+                         height: MediaQuery.of(context).size.width * 1.5 / 3,
                       child: LinearProgressIndicator(
                         valueColor: AlwaysStoppedAnimation<Color>(
                           MyPrimaryColor

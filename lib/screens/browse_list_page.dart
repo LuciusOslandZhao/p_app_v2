@@ -46,7 +46,9 @@ class _BrowseListPageState extends State<BrowseListPage> {
                     child: Center(
               child: myProgressIndicator,
             ),
-                  ) :Spacer()
+                  ) :SizedBox(
+                    height:0
+                  )
                 ],
               ),
             );

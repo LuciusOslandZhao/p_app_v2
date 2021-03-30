@@ -1,6 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:p_app_v2/data/data_fetch.dart';
+import 'package:p_app_v2/data/storage_manager.dart';
 import 'package:p_app_v2/models/agent_model.dart';
 import 'package:p_app_v2/models/property_model.dart';
 import 'package:p_app_v2/models/property_status_model.dart';
@@ -12,6 +13,7 @@ class AppState with ChangeNotifier {
     loadHouses();
   }
 // data
+StorageManager storageManager;
   bool _isLogin = false;
   bool loading = true;
   bool _loadingMore = false;
@@ -37,13 +39,23 @@ class AppState with ChangeNotifier {
   List<PropertyModel> get houses => _canberryHouses;
   List<PropertyModel> get pickList => _items;
   List<PropertyModel> get homepageList => _homepageList;
-List<PropertyTypeModel> get types => _typeList;
-List<PropertyStatusModel> get statuses => _statusList;
+  List<PropertyTypeModel> get types => _typeList;
+  List<PropertyStatusModel> get statuses => _statusList;
   List<AgentModel> get agents => _agents;
 
   AgentModel getAgentById(String id) {
-    var res = _agents.firstWhere((element) => "${element.id}" == id);
-    return res == null ? {} : res;
+    var res = _agents.firstWhere((element) => "${element.id}" == id ,orElse: () => _agents[0]);
+    return res == null
+        ? AgentModel(
+            id: 0,
+            fullName: "",
+            link: Uri.parse('https://www.google.com'),
+            content: "",
+            featured_media: 0,
+            fave_agent_language: ["0", "1"],
+            thumbnail_id: "0",
+            fave_agent_logo: "1")
+        : res;
   }
 
   bool ifFavouriedById(int id) {
@@ -171,6 +183,7 @@ List<PropertyStatusModel> get statuses => _statusList;
 
   void toggleDarkmode() {
     _darkmode = !_darkmode;
+    StorageManager.setDarkmode(_darkmode);
     print("Now darkmode = $darkmode");
     notifyListeners();
   }
@@ -217,6 +230,8 @@ List<PropertyStatusModel> get statuses => _statusList;
   }
 
   void loadHouses() async {
+
+    // _darkmode =
     _canberryHouses = [];
     _favouriteList = [];
     _items = [];
@@ -239,13 +254,21 @@ List<PropertyStatusModel> get statuses => _statusList;
   }
 
   PropertyStatusModel getStatusById(int id) {
-    var _res = _statusList.firstWhere((element) => element.id == id);
-    return _res==null?{}:_res;
+    var _res = _statusList.firstWhere((element) => element.id == id,
+    orElse: () => _statusList[0],
+    
+    );
+    return _res == null
+        ? PropertyStatusModel(id: 0, link: "", name: "Not Set")
+        : _res;
   }
 
   PropertyTypeModel getTypeById(int id) {
-    var _res = _typeList.firstWhere((element) => element.id == id);
-    return _res==null?{}:_res;
+    var _res = _typeList.firstWhere((element) => element.id == id,
+    orElse: ()=> _typeList[0]);
+    return _res == null
+        ? PropertyTypeModel(id: 0, link: "", name: "Not Set")
+        : _res;
   }
 
   void filterSearchResults(String query) async {

@@ -31,11 +31,12 @@ class _DescriptionTextWidgetState extends State<DescriptionTextWidget> {
 
   @override
   Widget build(BuildContext context) {
-    return new Container(
+    return new Container(alignment: Alignment.centerLeft,
       padding: new EdgeInsets.symmetric(horizontal: 10.0, vertical: 10.0),
       child: secondHalf.isEmpty
           ? new Text(firstHalf)
           : new Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                 new Text(flag ? (firstHalf + "...") : (firstHalf + secondHalf)),
                 new InkWell(

@@ -113,6 +113,10 @@ class _PropertyDetailPageState extends State<PropertyDetailPage> {
                     )
                   ],
                 ),
+                SizedBox(
+                  height:10
+                )
+                ,
                 Container(
                   child: Row(
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -327,7 +331,7 @@ class _PropertyDetailPageState extends State<PropertyDetailPage> {
                           children: [
                             Text(
                                 "${model.getAgentById(property.agentIds[0]).fullName}"),
-                            Text("View agent profile")
+                            // Text("View agent profile")
                           ],
                         ),
                         Spacer(),
