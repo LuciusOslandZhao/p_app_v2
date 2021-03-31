@@ -31,7 +31,11 @@ Future<List<PropertyModel>> fetchHouses() async {
 }
 
 // ignore: non_constant_identifier_names
+
 final String BaseURL2 = "https://www.canberryproperties.com.au/wp-json/wp/v2";
+
+// final String BaseURL2 = "https://127.0.0.1:3000";
+
 final String FirstPageOfFive =
     "https://canberryproperties.com.au/wp-json/wp/v2/properties?page=1&per_page=5";
 final String BaseURL = "https://jsonplaceholder.typicode.com";
@@ -43,34 +47,40 @@ Future<http.Response> fetchData(String endpoint) async {
 }
 
 Future<List<AgentModel>> loadAgents() async {
-  http.Client client = new http.Client();
-  final _response = await client.get(Uri.parse("$BaseURL2/agents"));
-  if (_response != null && _response.statusCode == 200) {
-    List users = json.decode(_response.body);
-    print(users);
-    var resUsers_ = users.map((user) => AgentModel.fromJson(user)).toList();
-    for (var _user in resUsers_) {
-      var url = await fetchMediaUrl("${_user.featured_media}");
-      _user.setImgUrl(url);
-      // _user.loaded();
+  try {
+    http.Client client = new http.Client();
+    final _response = await client.get(Uri.parse("$BaseURL2/agents"));
+    if (_response != null && _response.statusCode == 200) {
+      List users = json.decode(_response.body);
+      print(users);
+      var resUsers_ = users.map((user) => AgentModel.fromJson(user)).toList();
+      for (var _user in resUsers_) {
+        var url = await fetchMediaUrl("${_user.featured_media}");
+        _user.setImgUrl(url);
+        // _user.loaded();
+      }
+      return resUsers_;
+    } else {
+      print("Mot agents fetched.");
+      return [];
     }
-    return resUsers_;
-  } else {
-    print("Mot agents fetched.");
+  } catch (e) {
     return [];
   }
 }
 
 Future<List<PropertyModel>> loadProperties(
     {int page = 1, int perPage = 5, bool all = false}) async {
-  http.Client client = new http.Client();
-  // final _response = await client.get(Uri.parse("$BaseURL2/properties"));
-  final _response = all
-      ? await client.get(Uri.parse("$BaseURL2/properties"))
-      : await client
-          .get(Uri.parse("$BaseURL2/properties?page=$page&per_page=$perPage"));
-  // final _response = await client.get(Uri.parse("$BaseURL2/properties"));
   try {
+    http.Client client = new http.Client();
+    // final _response = await client.get(Uri.parse("$BaseURL2/properties"));
+    final _response = all
+        ? await client.get(Uri.parse("$BaseURL2/properties"))
+        : await client.get(
+            Uri.parse("$BaseURL2/properties?page=$page&per_page=$perPage"));
+
+    // final _response = await http.get(Uri.http('localhost:3000', 'properties'));
+    // final _response = await client.get(Uri.parse("$BaseURL2/properties"));
     if (_response != null && _response.statusCode == 200) {
       List properties = json.decode(_response.body);
       // print(properties);
@@ -103,11 +113,11 @@ Future<List<PropertyModel>> loadProperties(
 }
 
 Future<List<PropertyTypeModel>> fetchTypes() async {
-  http.Client client = new http.Client();
-
-  final _typeURL = "$BaseURL2/property_type";
-  final _response = await client.get(_typeURL);
   try {
+    http.Client client = new http.Client();
+
+    final _typeURL = "$BaseURL2/property_type";
+    final _response = await client.get(_typeURL);
     if (_response != null && _response.statusCode == 200) {
       List types = jsonDecode(_response.body);
       return types.map((el) => PropertyTypeModel.fromJson(el)).toList();
@@ -120,14 +130,14 @@ Future<List<PropertyTypeModel>> fetchTypes() async {
 }
 
 Future<List<PropertyStatusModel>> fetchStatus() async {
-  http.Client client = new http.Client();
-
-  final _statusURL = "$BaseURL2/property_status";
-  final _response = await client.get(_statusURL);
   try {
+    http.Client client = new http.Client();
+
+    final _statusURL = "$BaseURL2/property_status";
+    final _response = await client.get(_statusURL);
     if (_response != null && _response.statusCode == 200) {
       List statuses = jsonDecode(_response.body);
-      return    statuses.map((el) => PropertyStatusModel.fromJson(el)).toList();
+      return statuses.map((el) => PropertyStatusModel.fromJson(el)).toList();
       //  _temp;
     } else {
       return [];

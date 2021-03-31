@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'agent_model.dart';
 
 class PropertyModel {
@@ -60,9 +62,9 @@ class PropertyModel {
       "id": id,
       "title": title,
       "description": description,
-      "propertyMeta": propertyMeta.toMap(),
-      "imageUrls":
-          Map.fromIterable(imageUrls, key: (e) => e[0], value: (e) => e[1])
+      "propertyMeta": jsonEncode(propertyMeta.toMap()),
+      // "imageUrls": imageUrls.length<1?"": imageUrls.toString().replaceAll("[", "").replaceAll("]", ""),
+      "imageUrls": jsonEncode(imageUrls),
     };
   }
 
@@ -71,8 +73,8 @@ class PropertyModel {
         id: map['id'],
         description: map['description'],
         title: map['title'],
-        propertyMeta: new PropertyMeta.fromJson(map['propertyMeta']),
-        imageUrls: List.from(map['imageUrls']));
+        propertyMeta: new PropertyMeta().fromMap(jsonDecode(map['propertyMeta'])),
+        imageUrls: map['imageUrls'].split(","));
   }
 }
 
@@ -112,8 +114,12 @@ class PropertyMeta {
       "fave_property_bedrooms": fave_property_bedrooms,
       "fave_property_bathrooms": fave_property_bathrooms,
       "fave_property_garage": fave_property_garage,
-      "fave_property_images": Map.fromIterable(fave_property_images,
-          key: (e) => e[0], value: (e) => e[1]),
+      // "fave_property_images": fave_property_images.length<1?"": fave_property_images
+      //     .toString()
+      //     .replaceAll("[", "")
+      //     .replaceAll("]", ""),
+
+            "fave_property_images": jsonEncode(fave_property_images),
     };
   }
 
@@ -127,7 +133,7 @@ class PropertyMeta {
       fave_property_bedrooms: map['fave_property_bedrooms'],
       fave_property_bathrooms: map['fave_property_bathrooms'],
       fave_property_garage: map['fave_property_garage'],
-      fave_property_images: List.from(map['fave_property_images']),
+      fave_property_images: map['fave_property_images'].split(","),
     );
   }
 
@@ -166,8 +172,4 @@ class PropertyMeta {
 
     fave_agents = json['fave_agents'] == null ? [] : json['fave_agents'];
   }
-}
-
-String getPropertyType(int type) {
-  const types = {};
 }

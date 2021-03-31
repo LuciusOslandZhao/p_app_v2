@@ -1,11 +1,12 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:p_app_v2/data/data_fetch.dart';
-import 'package:p_app_v2/data/storage_manager.dart';
+import 'package:p_app_v2/data/sql/sql_helper.dart';
 import 'package:p_app_v2/models/agent_model.dart';
 import 'package:p_app_v2/models/property_model.dart';
 import 'package:p_app_v2/models/property_status_model.dart';
 import 'package:p_app_v2/models/property_type_model.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class AppState with ChangeNotifier {
 // constructor
@@ -13,7 +14,8 @@ class AppState with ChangeNotifier {
     loadHouses();
   }
 // data
-StorageManager storageManager;
+  SQLHelper sqlHelper;
+  SharedPreferences prefs;
   bool _isLogin = false;
   bool loading = true;
   bool _loadingMore = false;
@@ -44,7 +46,8 @@ StorageManager storageManager;
   List<AgentModel> get agents => _agents;
 
   AgentModel getAgentById(String id) {
-    var res = _agents.firstWhere((element) => "${element.id}" == id ,orElse: () => _agents[0]);
+    var res = _agents.firstWhere((element) => "${element.id}" == id,
+        orElse: () => _agents[0]);
     return res == null
         ? AgentModel(
             id: 0,
@@ -181,10 +184,12 @@ StorageManager storageManager;
     notifyListeners();
   }
 
-  void toggleDarkmode() {
+  void toggleDarkmode() async {
     _darkmode = !_darkmode;
-    StorageManager.setDarkmode(_darkmode);
-    print("Now darkmode = $darkmode");
+    // StorageManager.setDarkmode(_darkmode);
+    prefs = await SharedPreferences.getInstance();
+    prefs.setBool("darkmode", _darkmode);
+    print("Now darkmode = $_darkmode");
     notifyListeners();
   }
 
@@ -198,14 +203,16 @@ StorageManager storageManager;
     notifyListeners();
   }
 
-  void addFavById(int id) {
+  void addFavById(int id) async {
     var elem = _canberryHouses.firstWhere((element) => element.id == id);
     _favouriteList.add(elem);
+    // await sqlHelper.insertProperty(elem);
     notifyListeners();
   }
 
-  void removeFavById(int id) {
+  void removeFavById(int id) async {
     _favouriteList.removeWhere((fav) => fav.id == id);
+    // await sqlHelper.deleteFavProperty(id);
     notifyListeners();
   }
 
@@ -229,11 +236,23 @@ StorageManager storageManager;
     notifyListeners();
   }
 
-  void loadHouses() async {
-
+  void loadSettings() async {
+    prefs = await SharedPreferences.getInstance();
     // _darkmode =
+    if (prefs.getBool('darkmode') == null) {
+      _darkmode = false;
+    } else {
+      _darkmode = prefs.getBool('darkmode');
+    }
+    notifyListeners();
+  }
+
+  void loadHouses() async {
+    sqlHelper = new SQLHelper();
+    loadSettings();
     _canberryHouses = [];
     _favouriteList = [];
+    // _favouriteList = await sqlHelper.loadFavProperties();
     _items = [];
     _homepageList = [];
     _agents = [];
@@ -242,7 +261,8 @@ StorageManager storageManager;
     _statusList = [];
     _statusList = await fetchStatus();
     _homepageList = await loadProperties(page: 1, perPage: 3);
-    _canberryHouses = await loadProperties(all: true);
+    _canberryHouses = await loadProperties(page: 1,perPage: 5);
+    // _canberryHouses = await loadProperties(all: true);
     _agents = await loadAgents();
     // houseOne = _canberryHouses[0];
     isLoaded();
@@ -254,9 +274,9 @@ StorageManager storageManager;
   }
 
   PropertyStatusModel getStatusById(int id) {
-    var _res = _statusList.firstWhere((element) => element.id == id,
-    orElse: () => _statusList[0],
-    
+    var _res = _statusList.firstWhere(
+      (element) => element.id == id,
+      orElse: () => _statusList[0],
     );
     return _res == null
         ? PropertyStatusModel(id: 0, link: "", name: "Not Set")
@@ -265,7 +285,7 @@ StorageManager storageManager;
 
   PropertyTypeModel getTypeById(int id) {
     var _res = _typeList.firstWhere((element) => element.id == id,
-    orElse: ()=> _typeList[0]);
+        orElse: () => _typeList[0]);
     return _res == null
         ? PropertyTypeModel(id: 0, link: "", name: "Not Set")
         : _res;
