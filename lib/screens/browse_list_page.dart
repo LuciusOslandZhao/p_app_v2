@@ -10,7 +10,7 @@ class BrowseListPage extends StatefulWidget {
 }
 
 class _BrowseListPageState extends State<BrowseListPage> {
-  int currentPage = 2;
+  // int currentPage = 2;
   @override
   Widget build(BuildContext context) {
     return Consumer<AppState>(builder: (ctx, model, idx) {
@@ -22,11 +22,13 @@ class _BrowseListPageState extends State<BrowseListPage> {
               onNotification: (ScrollNotification scrollInfo) {
                 if (scrollInfo.metrics.pixels ==
                     scrollInfo.metrics.maxScrollExtent) {
-                  setState(() {
-                    currentPage++;
-                  });
-                  model.loadMore(currentPage);
+                  // setState(() {
+                  //   currentPage++;
+                  // });
+                  model.loadMore();
+                  
                 }
+                return false;
               },
               // child: ListView.builder(
               //   scrollDirection: Axis.vertical,
@@ -34,21 +36,28 @@ class _BrowseListPageState extends State<BrowseListPage> {
               //   itemBuilder: (BuildContext context, int index) {
               //     return PropertyCardVertical(property: model.houses[index]);
               //     },
-                
+
               // ),
               child: ListView(
                 children: [
-                  for(var property in model.houses)
-                  PropertyCardVertical(property:property),
-
-                  model.loadingMore ?Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Center(
-              child: myProgressIndicator,
-            ),
-                  ) :SizedBox(
-                    height:0
-                  )
+                  for (var property in model.houses)
+                    PropertyCardVertical(property: property),
+                  model.loadingMore
+                      ? Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Center(
+                            child: myProgressIndicator,
+                          ),
+                        )
+                      : SizedBox(height: 0),
+                  model.hasNoMore
+                      ? Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Center(
+                            child: Text("No More"),
+                          ),
+                        )
+                      : SizedBox(height: 0),
                 ],
               ),
             );

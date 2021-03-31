@@ -5,6 +5,7 @@ import 'package:p_app_v2/screens/browse_list_page.dart';
 import 'package:p_app_v2/screens/fav_list_page.dart';
 import 'package:p_app_v2/screens/home_page.dart';
 import 'package:p_app_v2/screens/settings_page.dart';
+import 'package:p_app_v2/screens/test_screens/sql_test/sql_test_page.dart';
 import 'package:p_app_v2/screens/test_screens/test_lifecycle.dart';
 import 'package:provider/provider.dart';
 
@@ -16,6 +17,7 @@ class MainLayoutTemplate extends StatefulWidget {
 class _MainLayoutTemplateState extends State<MainLayoutTemplate> {
   int _currentIndex;
   List screens = [
+    // SQLTestPage(),
     // TestParentScrollScreen(),
     HomePage(),
     // TestLifeCycle(),
@@ -60,6 +62,7 @@ class _MainLayoutTemplateState extends State<MainLayoutTemplate> {
             selectedItemColor: MyPrimaryColor,
             unselectedItemColor: Colors.grey,
             items: [
+              // BottomNavigationBarItem(icon: Icon(Icons.text_snippet_outlined), label: "Test"),
               BottomNavigationBarItem(icon: Icon(Icons.home_outlined), label: "Home"),
               BottomNavigationBarItem(
                   icon: Icon(Icons.list_alt_outlined), label: "List"),

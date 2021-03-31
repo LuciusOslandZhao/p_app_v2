@@ -14,14 +14,17 @@ class AppState with ChangeNotifier {
     loadHouses();
   }
 // data
+// 
   SQLHelper sqlHelper;
   SharedPreferences prefs;
   bool _isLogin = false;
   bool loading = true;
+  bool _hasNoMore = false;
   bool _loadingMore = false;
   bool _homeListloading = true;
   bool _darkmode = false;
   var houseOne;
+  int loadMorePageIndex = 2;
   List<PropertyModel> _canberryHouses;
   List<PropertyModel> _favouriteList;
   List<PropertyModel> _items;
@@ -37,6 +40,7 @@ class AppState with ChangeNotifier {
   bool get homeListLoading => _homeListloading;
   bool get isLogin => _isLogin;
   bool get load => loading;
+  bool get hasNoMore => _hasNoMore;
   List<PropertyModel> get favourites => _favouriteList;
   List<PropertyModel> get houses => _canberryHouses;
   List<PropertyModel> get pickList => _items;
@@ -305,16 +309,23 @@ class AppState with ChangeNotifier {
 
   notifyListeners();
 
-  void loadMore(int currentPage) async {
+  void setHasNoMore(bool value){
+    _hasNoMore = value;
+    notifyListeners();
+  }
+
+  void loadMore() async {
+    if(_loadingMore){
+      return;
+    }
     print('loading more');
     isLoadingMore();
     List<PropertyModel> list_ =
-        await loadProperties(page: currentPage, perPage: 5);
+        await loadProperties(page: loadMorePageIndex, perPage: 5);
     print(list_);
-    // var newList_ = [..._canberryHouses,...list_];
-
-    // _canberryHouses = newList_;
+    setHasNoMore(list_.length<5);
     _canberryHouses.addAll(list_);
+    loadMorePageIndex++;
     isLoadedMore();
     notifyListeners();
   }

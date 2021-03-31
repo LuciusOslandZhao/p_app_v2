@@ -56,6 +56,10 @@ class PropertyModel {
   String toString() {
     return "$id;$address;$title;$bathrooms;$bedrooms;$garages;$price;$zipcode;$lat;$lng;$description;";
   }
+  // 
+  // String toString(){
+  //   return jsonEncode(this);
+  // }
 
   Map<String, dynamic> toMap() {
     return {
