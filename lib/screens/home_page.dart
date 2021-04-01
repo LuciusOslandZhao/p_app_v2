@@ -51,10 +51,13 @@ class _HomePageState extends State<HomePage> {
                       builder: (ctx, model, child) {
                         return TextField(
                           onTap: () {
+                            if (!_focusNode.hasPrimaryFocus) {
+          _focusNode.unfocus();
+        }
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (_) => SearchPage()));
+                                    builder: (_) => SearchPage(search:editingController.text)));
                           },
                           style: new TextStyle(color: _getInputTextColor()),
                           focusNode: _focusNode,

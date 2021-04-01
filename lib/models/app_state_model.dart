@@ -324,6 +324,9 @@ class AppState with ChangeNotifier {
         await loadProperties(page: loadMorePageIndex, perPage: 5);
     print(list_);
     setHasNoMore(list_.length<5);
+    if(_loadingMore){
+      setHasNoMore(false);
+    }
     _canberryHouses.addAll(list_);
     loadMorePageIndex++;
     isLoadedMore();
