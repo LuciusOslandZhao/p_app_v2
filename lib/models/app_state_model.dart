@@ -216,7 +216,7 @@ class AppState with ChangeNotifier {
 
   void removeFavById(int id) async {
     _favouriteList.removeWhere((fav) => fav.id == id);
-    // await sqlHelper.deleteFavProperty(id);
+    await sqlHelper.deleteFavProperty(id);
     notifyListeners();
   }
 
@@ -242,7 +242,7 @@ class AppState with ChangeNotifier {
 
   void loadSettings() async {
     prefs = await SharedPreferences.getInstance();
-    // _darkmode =
+    //
     if (prefs.getBool('darkmode') == null) {
       _darkmode = false;
     } else {

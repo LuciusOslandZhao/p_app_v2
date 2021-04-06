@@ -22,6 +22,7 @@ class PropertyCardVertical extends StatefulWidget {
 
 class _PropertyCardVerticalState extends State<PropertyCardVertical> {
   final PropertyModel property;
+
   _PropertyCardVerticalState({this.property});
 
   @override
@@ -42,15 +43,16 @@ class _PropertyCardVerticalState extends State<PropertyCardVertical> {
                 child: Column(children: [
                   // Text("${property.images}"),
                   ShaderMask(
-                                       shaderCallback: (rect) {
-    return LinearGradient(
-      begin: Alignment.bottomCenter,
-      end: Alignment.topCenter,
-      colors: [Colors.black, Colors.grey],
-    ).createShader(Rect.fromLTRB(0, 0, rect.width, rect.height));
-  },
-  blendMode: BlendMode.dstIn,
-                                      child: Image(
+                    shaderCallback: (rect) {
+                      return LinearGradient(
+                        begin: Alignment.bottomCenter,
+                        end: Alignment.topCenter,
+                        colors: [Colors.black, Colors.grey],
+                      ).createShader(
+                          Rect.fromLTRB(0, 0, rect.width, rect.height));
+                    },
+                    blendMode: BlendMode.dstIn,
+                    child: Image(
                       loadingBuilder: (ctx, w, event) {
                         if (event == null) {
                           return w;
@@ -60,7 +62,8 @@ class _PropertyCardVerticalState extends State<PropertyCardVertical> {
                           height: MediaQuery.of(context).size.width * 2 / 3,
                           child: Center(
                             child: CircularProgressIndicator(
-                              valueColor: AlwaysStoppedAnimation<Color>(MyPrimaryColor),
+                              valueColor:
+                                  AlwaysStoppedAnimation<Color>(MyPrimaryColor),
                               value: event.expectedTotalBytes != null
                                   ? event.cumulativeBytesLoaded /
                                       event.expectedTotalBytes
@@ -115,7 +118,7 @@ class _PropertyCardVerticalState extends State<PropertyCardVertical> {
                   child: Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: PropertyIconInfo(
-                      size:20,
+                        size: 20,
                         property: property,
                         imageColor: Colors.white,
                         textColor: Colors.white),
@@ -128,15 +131,16 @@ class _PropertyCardVerticalState extends State<PropertyCardVertical> {
                 children: [
                   Padding(
                     padding: const EdgeInsets.all(8.0),
-                    child: Text("${property.title}",
-                    
-                    style: TextStyle(
-                      fontSize: 18,
-                      fontWeight: FontWeight.bold),),
+                    child: Text(
+                      "${property.title}",
+                      style:
+                          TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                    ),
                   ),
                   Padding(
                     padding: const EdgeInsets.all(8.0),
-                    child: Text("${property.address}",
+                    child: Text(
+                      "${property.address}",
                     ),
                   )
                 ],
@@ -147,10 +151,4 @@ class _PropertyCardVerticalState extends State<PropertyCardVertical> {
       ),
     );
   }
-
-
 }
-
-//  Positioned(
-
-//              child: Text("${property.address}")),

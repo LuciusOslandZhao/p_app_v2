@@ -38,12 +38,15 @@ class SQLHelper {
 
   Future<void> insertProperty(PropertyModel property) async {
     Database db = await initDataBase();
+    print("Property Start");
+    print(property.toMap());
+    print("Property End");
     var _res = await db.insert(
       tableName,
       property.toMap(),
       conflictAlgorithm: ConflictAlgorithm.replace,
     );
-    print(_res);
+    // print(_res);
   }
 
   Future<List<PropertyModel>> loadFavProperties() async {
