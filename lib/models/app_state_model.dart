@@ -14,7 +14,7 @@ class AppState with ChangeNotifier {
     loadHouses();
   }
 // data
-// 
+//
   SQLHelper sqlHelper;
   SharedPreferences prefs;
   bool _isLogin = false;
@@ -265,7 +265,7 @@ class AppState with ChangeNotifier {
     _statusList = [];
     _statusList = await fetchStatus();
     _homepageList = await loadProperties(page: 1, perPage: 3);
-    _canberryHouses = await loadProperties(page: 1,perPage: 5);
+    _canberryHouses = await loadProperties(page: 1, perPage: 5);
     // _canberryHouses = await loadProperties(all: true);
     _agents = await loadAgents();
     // houseOne = _canberryHouses[0];
@@ -305,17 +305,17 @@ class AppState with ChangeNotifier {
           });
       _items = (_searchListData);
     }
+    notifyListeners();
   }
 
-  notifyListeners();
-
-  void setHasNoMore(bool value){
+  void setHasNoMore(bool value) {
     _hasNoMore = value;
     notifyListeners();
   }
 
   void loadMore() async {
-    if(_loadingMore){
+    if (_loadingMore) {
+      setHasNoMore(false);
       return;
     }
     print('loading more');
@@ -323,10 +323,11 @@ class AppState with ChangeNotifier {
     List<PropertyModel> list_ =
         await loadProperties(page: loadMorePageIndex, perPage: 5);
     print(list_);
-    setHasNoMore(list_.length<5);
+
     _canberryHouses.addAll(list_);
     loadMorePageIndex++;
     isLoadedMore();
+    setHasNoMore(list_.length < 5);
     notifyListeners();
   }
 }

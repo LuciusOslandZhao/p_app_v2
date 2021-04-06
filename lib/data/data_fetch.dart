@@ -84,9 +84,10 @@ Future<List<PropertyModel>> loadProperties(
     if (_response != null && _response.statusCode == 200) {
       List properties = json.decode(_response.body);
       // print(properties);
-      var resProperties_ =
+      var _resProperties =
           properties.map((p) => PropertyModel.fromJson(p)).toList();
-      for (var _p in resProperties_) {
+      for (var _p in _resProperties) {
+        print(_p);
         List tempUrls = [];
         final imagePlaceholder =
             "https://via.placeholder.com/475?text=Preparing%20Pictures";
@@ -102,7 +103,7 @@ Future<List<PropertyModel>> loadProperties(
         _p.setFeatureUrl(featureImgUrl);
         _p.setImageUrls(tempUrls);
       }
-      return resProperties_;
+      return _resProperties;
     } else {
       return [];
     }
