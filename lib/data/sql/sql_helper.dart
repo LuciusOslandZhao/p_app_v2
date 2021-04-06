@@ -5,10 +5,8 @@ import 'package:flutter/widgets.dart';
 import 'package:sqflite/sqflite.dart';
 
 class SQLHelper {
-
-
-final tableName = 'fav_properties';
-final databaseName = 'canberry_database.db';
+  final tableName = 'fav_properties';
+  final databaseName = 'canberry_database.db';
 
   Future<Database> initDataBase() async {
     WidgetsFlutterBinding.ensureInitialized();
@@ -17,7 +15,7 @@ final databaseName = 'canberry_database.db';
       // Set the path to the database. Note: Using the `join` function from the
       // `path` package is best practice to ensure the path is correctly
       // constructed for each platform.
-      join(await getDatabasesPath(),databaseName ),
+      join(await getDatabasesPath(), databaseName),
       // When the database is first created, create a table to store dogs.
       onCreate: (db, version) {
         return db.execute(
@@ -31,25 +29,24 @@ final databaseName = 'canberry_database.db';
     return database;
   }
 
-
-      //   "id": id,
-      // "title": title,
-      // "description": description,
-      // "propertyMeta": jsonEncode(propertyMeta.toMap()),
-      // "imageUrls": imageUrls.toString().replaceAll("[", "").replaceAll("]", ""),
-    // };
+  //   "id": id,
+  // "title": title,
+  // "description": description,
+  // "propertyMeta": jsonEncode(propertyMeta.toMap()),
+  // "imageUrls": imageUrls.toString().replaceAll("[", "").replaceAll("]", ""),
+  // };
 
   Future<void> insertProperty(PropertyModel property) async {
     Database db = await initDataBase();
-    await db.insert(
+    var _res = await db.insert(
       tableName,
       property.toMap(),
       conflictAlgorithm: ConflictAlgorithm.replace,
     );
+    print(_res);
   }
 
-
-Future<List<PropertyModel>> loadFavProperties() async {
+  Future<List<PropertyModel>> loadFavProperties() async {
     // Get a reference to the database.
     final Database db = await initDataBase();
 
@@ -57,20 +54,19 @@ Future<List<PropertyModel>> loadFavProperties() async {
     final List<Map<String, dynamic>> maps = await db.query(tableName);
 
     // Convert the List<Map<String, dynamic> into a List<Dog>.
-    return List.generate(maps.length, (i) {
-      return PropertyModel().fromMap(maps[i]);
+    var _res = List.generate(maps.length, (i) {
+      print(maps[i]);
+      return PropertyModel.fromMap(maps[i]);
     });
+    return _res;
   }
 
-
-
-
-Future<void> updateFavProperty(PropertyModel property) async {
+  Future<void> updateFavProperty(PropertyModel property) async {
     // Get a reference to the database.
     final db = await initDataBase();
 
     // Update the given Dog.
-    await db.update(
+    var _res = await db.update(
       tableName,
       property.toMap(),
       // Ensure that the Dog has a matching id.
@@ -78,6 +74,7 @@ Future<void> updateFavProperty(PropertyModel property) async {
       // Pass the Dog's id as a whereArg to prevent SQL injection.
       whereArgs: [property.id],
     );
+    print(_res);
   }
 
   Future<void> deleteFavProperty(int id) async {
@@ -85,16 +82,13 @@ Future<void> updateFavProperty(PropertyModel property) async {
     final db = await initDataBase();
 
     // Remove the Dog from the database.
-    await db.delete(
+    var _res = await db.delete(
       tableName,
       // Use a `where` clause to delete a specific dog.
       where: "id = ?",
       // Pass the Dog's id as a whereArg to prevent SQL injection.
       whereArgs: [id],
     );
+    print(_res);
   }
-
-  
-
-
 }

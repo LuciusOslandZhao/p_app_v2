@@ -42,66 +42,70 @@ class _HomePageState extends State<HomePage> {
               child: myProgressIndicator,
             )
           : Center(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Consumer<AppState>(
-                      builder: (ctx, model, child) {
-                        return TextField(
-                          onTap: () {
-                            if (!_focusNode.hasPrimaryFocus) {
-          _focusNode.unfocus();
-        }
-                            Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                    builder: (_) => SearchPage(search:editingController.text)));
-                          },
-                          style: new TextStyle(color: _getInputTextColor()),
-                          focusNode: _focusNode,
-                          onChanged: (value) {
-                            model.filterSearchResults(value);
-                          },
-                          controller: editingController,
-                          decoration: InputDecoration(
-                              focusedBorder: OutlineInputBorder(
+              child: SingleChildScrollView(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Consumer<AppState>(
+                        builder: (ctx, model, child) {
+                          return TextField(
+                            onTap: () {
+                              if (!_focusNode.hasPrimaryFocus) {
+                                _focusNode.unfocus();
+                              }
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (_) => SearchPage(
+                                          search: editingController.text)));
+                            },
+                            style: new TextStyle(color: _getInputTextColor()),
+                            focusNode: _focusNode,
+                            onChanged: (value) {
+                              model.filterSearchResults(value);
+                            },
+                            controller: editingController,
+                            decoration: InputDecoration(
+                                focusedBorder: OutlineInputBorder(
+                                    borderRadius:
+                                        BorderRadius.all(Radius.circular(5.0)),
+                                    borderSide: BorderSide(
+                                        color: _getInputTextColor())),
+                                labelText: "Search",
+                                labelStyle:
+                                    TextStyle(color: _getInputTextColor()),
+                                hintText: "Search",
+                                hintStyle:
+                                    TextStyle(color: _getInputTextColor()),
+                                prefixIcon: Icon(Icons.search),
+                                border: OutlineInputBorder(
                                   borderRadius:
-                                      BorderRadius.all(Radius.circular(5.0)),
-                                  borderSide:
-                                      BorderSide(color: _getInputTextColor())),
-                              labelText: "Search",
-                              labelStyle:
-                                  TextStyle(color: _getInputTextColor()),
-                              hintText: "Search",
-                              hintStyle: TextStyle(color: _getInputTextColor()),
-                              prefixIcon: Icon(Icons.search),
-                              border: OutlineInputBorder(
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(25.0)),
-                              )),
-                        );
-                      },
+                                      BorderRadius.all(Radius.circular(25.0)),
+                                )),
+                          );
+                        },
+                      ),
                     ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Text(
-                      "Categories",
-                      style: TextStyle(fontSize: 24),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Text(
+                        "Categories",
+                        style: TextStyle(fontSize: 24),
+                      ),
                     ),
-                  ),
-                  CategoryCardSlider(),
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Text(
-                      "Feature Properties",
-                      style: TextStyle(fontSize: 24),
+                    CategoryCardSlider(),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Text(
+                        "Feature Properties",
+                        style: TextStyle(fontSize: 24),
+                      ),
                     ),
-                  ),
-                  ListCardSlider(),
-                ],
+                    ListCardSlider(),
+                  ],
+                ),
               ),
             );
     });

@@ -210,7 +210,7 @@ class AppState with ChangeNotifier {
   void addFavById(int id) async {
     var elem = _canberryHouses.firstWhere((element) => element.id == id);
     _favouriteList.add(elem);
-    // await sqlHelper.insertProperty(elem);
+    await sqlHelper.insertProperty(elem);
     notifyListeners();
   }
 
@@ -314,6 +314,7 @@ class AppState with ChangeNotifier {
   }
 
   void loadMore() async {
+    // sqlHelper = SQLHelper();
     if (_loadingMore) {
       setHasNoMore(false);
       return;
@@ -324,11 +325,11 @@ class AppState with ChangeNotifier {
         await loadProperties(page: loadMorePageIndex, perPage: 5);
     print(list_);
 
-    setHasNoMore(list_.length<5);
-    if(_loadingMore){
+    setHasNoMore(list_.length < 5);
+    if (_loadingMore) {
       setHasNoMore(false);
     }
-    
+
     _canberryHouses.addAll(list_);
     loadMorePageIndex++;
     isLoadedMore();

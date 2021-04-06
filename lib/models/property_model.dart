@@ -44,19 +44,28 @@ class PropertyModel {
   }
 
   String get price => propertyMeta.fave_property_price;
+
   String get address => propertyMeta.fave_property_map_address;
+
   String get bathrooms => propertyMeta.fave_property_bathrooms;
+
   String get bedrooms => propertyMeta.fave_property_bedrooms;
+
   String get garages => propertyMeta.fave_property_garage;
+
   String get zipcode => propertyMeta.fave_property_zip;
+
   String get lat => propertyMeta.houzez_geolocation_lat;
+
   String get lng => propertyMeta.houzez_geolocation_long;
+
   List get agentIds => propertyMeta.fave_agents;
 
   String toString() {
     return "$id;$address;$title;$bathrooms;$bedrooms;$garages;$price;$zipcode;$lat;$lng;$description;";
   }
-  // 
+
+  //
   // String toString(){
   //   return jsonEncode(this);
   // }
@@ -77,8 +86,17 @@ class PropertyModel {
         id: map['id'],
         description: map['description'],
         title: map['title'],
-        propertyMeta: new PropertyMeta().fromMap(jsonDecode(map['propertyMeta'])),
+        propertyMeta:
+            new PropertyMeta().fromMap(jsonDecode(map['propertyMeta'])),
         imageUrls: map['imageUrls'].split(","));
+  }
+
+  PropertyModel.fromMap(Map<String, dynamic> map) {
+    id = map['id'];
+    description = map['description'];
+    title = map['title'];
+    propertyMeta = PropertyMeta.fromMap(jsonDecode(map['propertyMeta']));
+    imageUrls = map['imageUrls'].split(",");
   }
 }
 
@@ -123,8 +141,20 @@ class PropertyMeta {
       //     .replaceAll("[", "")
       //     .replaceAll("]", ""),
 
-            "fave_property_images": jsonEncode(fave_property_images),
+      "fave_property_images": jsonEncode(fave_property_images),
     };
+  }
+
+  PropertyMeta.fromMap(Map<String, dynamic> map) {
+    houzez_geolocation_lat = map['houzez_geolocation_lat'];
+    houzez_geolocation_long = map['houzez_geolocation_long'];
+    houzez_total_property_views = map['houzez_total_property_views'];
+    fave_property_map_address = map['fave_property_map_address'];
+    fave_property_zip = map['fave_property_zip'];
+    fave_property_bedrooms = map['fave_property_bedrooms'];
+    fave_property_bathrooms = map['fave_property_bathrooms'];
+    fave_property_garage = map['fave_property_garage'];
+    fave_property_images = map['fave_property_images'].split(",");
   }
 
   PropertyMeta fromMap(Map<String, dynamic> map) {
