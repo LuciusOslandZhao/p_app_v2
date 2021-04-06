@@ -5,14 +5,18 @@ import 'package:p_app_v2/widgets/property_card_vertical.dart';
 import 'package:provider/provider.dart';
 
 class SearchPage extends StatefulWidget {
+  final String search;
+
+  const SearchPage({Key key, this.search}) : super(key: key);
   @override
-  State<StatefulWidget> createState() => _SearchPageState();
+  State<StatefulWidget> createState() => _SearchPageState(search:search);
 }
 
 class _SearchPageState extends State<SearchPage> {
   FocusNode _focusNode;
   TextEditingController editingController = TextEditingController();
-
+ String search;
+ _SearchPageState({this.search});
   @override
   void dispose() {
     super.dispose();
@@ -22,6 +26,7 @@ class _SearchPageState extends State<SearchPage> {
   @override
   void initState() {
     super.initState();
+    
     _focusNode = new FocusNode();
     _focusNode.addListener(_onOnFocusNodeEvent);
   }
@@ -50,6 +55,9 @@ class _SearchPageState extends State<SearchPage> {
                       style: new TextStyle(color: _getInputTextColor()),
                       focusNode: _focusNode,
                       onChanged: (value) {
+                        // setState(() {
+                        //   search = value;
+                        // });
                         model.filterSearchResults(value);
                       },
                       controller: editingController,
