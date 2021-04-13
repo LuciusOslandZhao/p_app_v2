@@ -32,7 +32,9 @@ Future<List<PropertyModel>> fetchHouses() async {
 
 // ignore: non_constant_identifier_names
 
-final String BaseURL2 = "https://www.canberryproperties.com.au/wp-json/wp/v2";
+// final String BaseURL2 = "https://www.canberryproperties.com.au/wp-json/wp/v2";
+// final String BaseURL2 = "http://10.0.2.2:3000"; // Android Studio Emulator
+final String BaseURL2 = "http://localhost:3000"; // Android Studio Emulator
 
 // final String BaseURL2 = "https://127.0.0.1:3000";
 

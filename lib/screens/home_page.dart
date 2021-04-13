@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:p_app_v2/common/constants.dart';
 import 'package:p_app_v2/models/app_state_model.dart';
 import 'package:p_app_v2/screens/search_page.dart';
+import 'package:p_app_v2/test/test_loading_w.dart';
 import 'package:p_app_v2/widgets/category_card_slider_horizontal.dart';
 import 'package:p_app_v2/widgets/list_card_slider_horizontal.dart';
 import 'package:provider/provider.dart';
@@ -9,6 +10,9 @@ import 'package:provider/provider.dart';
 class HomePage extends StatefulWidget {
   @override
   State<StatefulWidget> createState() => _HomePageState();
+
+
+  
 }
 
 class _HomePageState extends State<HomePage> {
@@ -34,6 +38,9 @@ class _HomePageState extends State<HomePage> {
     });
   }
 
+  bool thisBool = false;
+  bool get boolean_ => thisBool;
+
   @override
   Widget build(BuildContext context) {
     return Consumer<AppState>(builder: (ctx, model, idx) {
@@ -46,6 +53,12 @@ class _HomePageState extends State<HomePage> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
+                    TestLoadingWidget(widget_: ListCardSlider(),load_ :boolean_),
+                    FlatButton(onPressed: (){
+                      setState((){
+                        this.thisBool = !this.thisBool;
+                      });
+                    }, child: Text("Change Bool")),
                     Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Consumer<AppState>(

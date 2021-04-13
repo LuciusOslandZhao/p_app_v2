@@ -7,6 +7,7 @@ import 'package:p_app_v2/screens/home_page.dart';
 import 'package:p_app_v2/screens/settings_page.dart';
 import 'package:p_app_v2/screens/test_screens/sql_test/sql_test_page.dart';
 import 'package:p_app_v2/screens/test_screens/test_lifecycle.dart';
+import 'package:p_app_v2/test/test_loading_w.dart';
 import 'package:provider/provider.dart';
 
 class MainLayoutTemplate extends StatefulWidget {
@@ -19,6 +20,7 @@ class _MainLayoutTemplateState extends State<MainLayoutTemplate> {
   List screens = [
     // SQLTestPage(),
     // TestParentScrollScreen(),
+  //  TestLoadingWidget(),
     HomePage(),
     // TestLifeCycle(),
     BrowseListPage(),
